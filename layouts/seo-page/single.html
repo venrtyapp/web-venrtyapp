@@ -1,0 +1,141 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $faq := .Params.faqs }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": "{{ $faq.question }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ $faq.answer }}"
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- SEO Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>{{ .Title }}</span>
+    </nav>
+    <h1>{{ .Params.heroTitle | default .Title }}</h1>
+    {{ with .Description }}<p class="subtitle">{{ . }}</p>{{ end }}
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust bar -->
+<div class="vx-trust-bar" style="padding:24px 0;">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <span class="vx-logo-item">500+ Companies</span>
+      <span class="vx-logo-item">⭐ 4.8/5 Rating</span>
+      <span class="vx-logo-item">14-Day Free Trial</span>
+      <span class="vx-logo-item">India Data Residency</span>
+      <span class="vx-logo-item">No Credit Card Required</span>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content -->
+<section class="vx-section">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Content -->
+      <div class="col-lg-8">
+        <div class="vx-seo-content" data-aos="fade-up">
+          {{ .Content }}
+        </div>
+
+        {{ if .Params.faqs }}
+        <div style="margin-top:48px;" data-aos="fade-up">
+          <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+          <h2 style="font-size:1.75rem;margin-bottom:24px;">Frequently Asked Questions</h2>
+          <div class="vx-faq-section">
+            {{ range $i, $faq := .Params.faqs }}
+            <div class="vx-faq-item {{ if eq $i 0 }}open{{ end }}">
+              <div class="vx-faq-question">
+                <h4>{{ $faq.question }}</h4>
+                <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+              </div>
+              <div class="vx-faq-answer"><p>{{ $faq.answer }}</p></div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <!-- CTA Card -->
+        <div style="background:var(--vx-gradient-dark);border-radius:20px;padding:32px;margin-bottom:24px;position:sticky;top:88px;" data-aos="fade-left">
+          <h3 style="color:white;font-size:1.25rem;margin-bottom:12px;">Ready to Get Started?</h3>
+          <p style="color:rgba(255,255,255,0.65);font-size:0.9rem;margin-bottom:24px;">Book a free demo and see exactly how Ventryx solves your specific challenges.</p>
+          <a href="/book-demo" class="btn-vx-white w-100 justify-content-center mb-3">
+            <i class="bi bi-calendar-check"></i> Book Free Demo
+          </a>
+          <a href="/pricing" style="display:block;text-align:center;color:rgba(255,255,255,0.55)!important;font-size:0.875rem;padding:8px;">View Pricing →</a>
+          <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.10);">
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:rgba(255,255,255,0.55);">
+                <i class="bi bi-check-circle-fill" style="color:#34D399;"></i>14-day free trial
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:rgba(255,255,255,0.55);">
+                <i class="bi bi-check-circle-fill" style="color:#34D399;"></i>No credit card required
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:rgba(255,255,255,0.55);">
+                <i class="bi bi-check-circle-fill" style="color:#34D399;"></i>Setup in 30 minutes
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:rgba(255,255,255,0.55);">
+                <i class="bi bi-check-circle-fill" style="color:#34D399;"></i>India data residency
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Pages -->
+        <div style="background:white;border:1px solid var(--vx-border);border-radius:16px;padding:24px;" data-aos="fade-left">
+          <h4 style="font-size:0.875rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--vx-text);margin-bottom:14px;">Related Resources</h4>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+            <li><a href="/visitor-management-system" style="font-size:0.875rem;color:var(--vx-secondary)!important;display:flex;align-items:center;gap:6px;"><i class="bi bi-arrow-right-short" style="color:var(--vx-primary);"></i>Visitor Management System</a></li>
+            <li><a href="/attendance-management-system" style="font-size:0.875rem;color:var(--vx-secondary)!important;display:flex;align-items:center;gap:6px;"><i class="bi bi-arrow-right-short" style="color:var(--vx-primary);"></i>Attendance Management System</a></li>
+            <li><a href="/pricing" style="font-size:0.875rem;color:var(--vx-secondary)!important;display:flex;align-items:center;gap:6px;"><i class="bi bi-arrow-right-short" style="color:var(--vx-primary);"></i>View Pricing Plans</a></li>
+            <li><a href="/faq" style="font-size:0.875rem;color:var(--vx-secondary)!important;display:flex;align-items:center;gap:6px;"><i class="bi bi-arrow-right-short" style="color:var(--vx-primary);"></i>FAQ</a></li>
+            <li><a href="/blog" style="font-size:0.875rem;color:var(--vx-secondary)!important;display:flex;align-items:center;gap:6px;"><i class="bi bi-arrow-right-short" style="color:var(--vx-primary);"></i>Blog &amp; Resources</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>{{ .Params.ctaHeading | default "Start Your Free Trial Today" }}</h2>
+    <p>{{ .Params.ctaSubheading | default "Join 500+ Indian businesses already using Ventryx. 14-day free trial, no credit card required." }}</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">See Pricing</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

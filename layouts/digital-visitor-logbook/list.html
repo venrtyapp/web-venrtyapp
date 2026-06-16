@@ -1,0 +1,312 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a digital visitor log book?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A digital visitor log book is a software system that replaces the traditional paper visitor register at office entrances. Instead of writing in a physical book, visitors check in digitally - their information is stored in a searchable, secure database with timestamps, photos, and purpose of visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a digital visitor log book acceptable for audits and compliance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx digital visitor logs are legally valid for ISO 27001 audits, SEBI compliance, factory inspections, and security audits. All records are timestamped, tamper-proof, and can be exported as PDF or Excel. Many auditors prefer digital logs over paper registers because they are searchable and cannot be altered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long are visitor records stored in Ventryx?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "By default, Ventryx stores visitor records for 1 year. Enterprise customers can configure retention periods from 6 months to 7 years based on their compliance requirements. All data is stored in India (Mumbai AWS region)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I search old visitor records?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Ventryx, you can search visitor records by visitor name, company, host, date range, purpose of visit, or any custom field. Finding a specific visitor from 3 months ago takes seconds, not hours of manual register-flipping."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the digital visitor log tamper-proof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every entry in Ventryx carries a server-side timestamp and an audit trail - you can see who created, edited, or deleted any record. Unlike a paper register (which can be altered or destroyed), digital logs in Ventryx are cryptographically timestamped and backed up in real time."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Digital Visitor Log Book</span>
+    </nav>
+    <h1>The <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Digital Visitor Log Book</span> India's Businesses Trust</h1>
+    <p class="subtitle">Replace your paper visitor register permanently. Searchable, tamper-proof, compliant digital records - ready for ISO 27001, SEBI, factory inspections, and more. Trusted by 500+ Indian businesses.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-lock-fill text-primary me-2"></i>Tamper-Proof Records</div>
+      <div class="vx-logo-item"><i class="bi bi-search text-primary me-2"></i>Instant Search</div>
+      <div class="vx-logo-item"><i class="bi bi-award text-primary me-2"></i>ISO 27001 Ready</div>
+      <div class="vx-logo-item"><i class="bi bi-cloud-check text-primary me-2"></i>India Cloud Backup</div>
+      <div class="vx-logo-item"><i class="bi bi-file-earmark-arrow-down text-primary me-2"></i>PDF &amp; Excel Export</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-journal-check"></i> Digital Log Features</span>
+      <h2 class="section-heading">Everything a Paper Register Can't Do</h2>
+      <p class="section-subheading centered">Ventryx's digital visitor log captures more data, protects visitor privacy, and makes every audit instant - without any manual effort.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-search"></i></div>
+        <h4>Instant Search</h4>
+        <p>Find any visitor record in seconds - search by name, company, date, host, purpose, or any custom field. No manual page-flipping.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-lock"></i></div>
+        <h4>Tamper-Proof Records</h4>
+        <p>Every entry is server-timestamped with a full audit trail. Unlike paper registers, digital logs in Ventryx cannot be altered or destroyed.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-camera"></i></div>
+        <h4>Photo at Check-in</h4>
+        <p>Kiosk camera captures visitor photo at entry. Every log record has a face attached - eliminating the "John Doe, Google" problem of paper registers.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
+        <h4>One-Click Audit Export</h4>
+        <p>Export visitor logs as PDF or Excel for any date range - instantly. Audit-ready in seconds, not hours of manual preparation.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-eye-slash"></i></div>
+        <h4>Visitor Privacy Protected</h4>
+        <p>Each visitor sees only their own entry - not everyone else's. Unlike paper registers where your entire client list is visible to every new visitor.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+        <h4>Automatic Cloud Backup</h4>
+        <p>Records backed up in real time to India servers (Mumbai AWS). A fire, flood, or office move cannot destroy years of visitor records.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-clock-history"></i></div>
+        <h4>Full Visit Timeline</h4>
+        <p>Every record shows check-in time, check-out time, total duration, and purpose - all automatically captured without manual entry.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-sliders"></i></div>
+        <h4>Custom Fields</h4>
+        <p>Add custom fields to your log: vehicle number, NDA signed, PPE compliance, ID document number - whatever your compliance requires.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:64px 0;">
+  <div class="container">
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">500+</div>
+        <div class="vx-stat-label">Indian Companies</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">12L+</div>
+        <div class="vx-stat-label">Visitors Logged</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">4.8★</div>
+        <div class="vx-stat-label">Customer Rating</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">80%</div>
+        <div class="vx-stat-label">Faster Check-in</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-clipboard-check"></i> Compliance Use Cases</span>
+        <h2 class="section-heading">Audit-Ready for Every Indian Compliance Framework</h2>
+        <p class="section-subheading">From ISO 27001 to SEBI to the Factories Act - Ventryx's digital log meets every Indian compliance requirement out of the box.</p>
+        <ul class="vx-check-list" style="margin-top:24px;">
+          <li><i class="bi bi-check-circle-fill"></i> ISO 27001 A.11.1 physical access control - full visitor log</li>
+          <li><i class="bi bi-check-circle-fill"></i> SEBI audit trail - timestamped visits with ID proof</li>
+          <li><i class="bi bi-check-circle-fill"></i> Factories Act - contractor and visitor records per gate</li>
+          <li><i class="bi bi-check-circle-fill"></i> Emergency evacuation list - one-tap, real-time</li>
+          <li><i class="bi bi-check-circle-fill"></i> NAAC compliance for schools - parent visit verification</li>
+        </ul>
+        <div style="margin-top:28px;">
+          <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Demo</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#F0FDF4,#ECFEFF);border:1px solid #BBF7D0;border-radius:20px;padding:36px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.07);">
+            <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#94A3B8;margin-bottom:14px;font-family:'Inter',sans-serif;">Paper Register vs. Ventryx Digital Log</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.75rem;font-weight:600;color:#64748B;font-family:'Inter',sans-serif;padding-bottom:6px;border-bottom:1px solid #F1F5F9;">
+                <span>Aspect</span><span style="text-align:center;">Paper</span><span style="text-align:center;color:#2563EB;">Ventryx</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;">
+                <span style="color:#374151;">Search speed</span>
+                <span style="text-align:center;color:#EF4444;">Hours</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">&lt;10 sec</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;background:#F8FAFC;border-radius:6px;padding:6px 4px;">
+                <span style="color:#374151;">Privacy</span>
+                <span style="text-align:center;color:#EF4444;">None</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">Protected</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;">
+                <span style="color:#374151;">Tamper-proof</span>
+                <span style="text-align:center;color:#EF4444;">No</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">Yes</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;background:#F8FAFC;border-radius:6px;padding:6px 4px;">
+                <span style="color:#374151;">Disaster risk</span>
+                <span style="text-align:center;color:#EF4444;">High</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">Zero</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;">
+                <span style="color:#374151;">Audit export</span>
+                <span style="text-align:center;color:#EF4444;">Manual</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">1 click</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Digital Visitor Log Book - Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What is a digital visitor log book?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>A digital visitor log book is a software system that replaces the traditional paper visitor register. Visitors check in digitally - their information is stored in a searchable, secure database with timestamps, photos, and purpose of visit.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Is a digital visitor log book acceptable for audits and compliance?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx digital visitor logs are valid for ISO 27001 audits, SEBI compliance, factory inspections, and security audits. All records are timestamped, tamper-proof, and exportable as PDF or Excel. Auditors prefer digital logs because they're searchable and cannot be altered.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How long are visitor records stored in Ventryx?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>By default, Ventryx stores visitor records for 1 year. Enterprise customers can configure retention from 6 months to 7 years. All data is stored in India on Mumbai AWS servers.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can I search old visitor records?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Search by visitor name, company, host, date range, purpose of visit, or any custom field. Finding a specific visitor from 3 months ago takes seconds - not hours of manual register-flipping.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Is the digital visitor log tamper-proof?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Every entry carries a server-side timestamp and audit trail. You can see who created, edited, or deleted any record. Unlike a paper register, digital logs in Ventryx are cryptographically timestamped and backed up in real time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Retire Your Paper Register Today</h2>
+    <p>Make the switch in 30 minutes. 500+ Indian offices already have. Start your free 14-day trial.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Audit-ready from day one &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>India data residency</p>
+  </div>
+</section>
+
+{{ end }}

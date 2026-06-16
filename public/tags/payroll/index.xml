@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Payroll on Ventryx – Visitor &amp; Attendance Management Software India</title>
+		<link>http://localhost:39789/tags/payroll/</link>
+		<description>Recent content in Payroll on Ventryx – Visitor &amp; Attendance Management Software India</description>
+		<generator>Hugo</generator>
+		<language>en-IN</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:39789/tags/payroll/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>The Complete Guide to Leave Management Systems for Indian Businesses</title>
+				<link>http://localhost:39789/blog/leave-management-system-guide/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:39789/blog/leave-management-system-guide/</guid>
+				<description>&lt;p&gt;Ask any HR manager at a mid-sized Indian company how they track employee leaves, and you will likely get one of two answers: &amp;ldquo;We use an Excel sheet&amp;rdquo; or &amp;ldquo;We have a WhatsApp group for that.&amp;rdquo; Both work - until they stop working. And they always stop working.&lt;/p&gt;&#xA;&lt;p&gt;Whether you are running a 50-person startup in Pune or managing HR for a 500-employee manufacturing firm in Coimbatore, leave management is one of those invisible problems that quietly drains productivity, creates payroll headaches, and causes more interpersonal friction than almost any other workplace issue. An employee thinks they applied for Diwali leave. The manager thinks they approved it. Payroll thinks it was unpaid. Nobody is wrong, but everyone is frustrated.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How Attendance Management Software Reduces Payroll Errors by Up to 90%</title>
+				<link>http://localhost:39789/blog/how-to-reduce-payroll-errors-attendance-software/</link>
+				<pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:39789/blog/how-to-reduce-payroll-errors-attendance-software/</guid>
+				<description>&lt;p&gt;Every payroll cycle, Indian HR teams repeat the same stressful ritual: collect attendance registers, cross-check against leave applications, manually calculate overtime, verify late-coming deductions, and then hand off a spreadsheet to the payroll team hoping nothing was missed. Most months, something is missed.&lt;/p&gt;&#xA;&lt;p&gt;A 2023 survey by a leading HR technology association found that companies relying on manual attendance tracking reported salary errors in more than 12% of their monthly payslips. That number sounds manageable until you multiply it across a 200-person company - that is 24 employees receiving incorrect pay every single month. Some are overpaid, creating a liability. Others are underpaid, creating grievances, attrition risk, and potential legal exposure.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide</title>
+				<link>http://localhost:39789/blog/payroll-integration-attendance-how-to/</link>
+				<pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:39789/blog/payroll-integration-attendance-how-to/</guid>
+				<description>&lt;p&gt;At the end of every month, something predictable happens in hundreds of Indian offices: someone in HR exports an attendance report, cleans it up in Excel, and emails it to payroll. Someone in payroll opens it, maps the columns to their payroll software format, and imports it. If everything goes right, payroll runs. If anything goes wrong - a column name changed, a formula carried forward an error, or the export was from the wrong date range - it goes wrong quietly, and the error shows up in salary slips that have already been communicated.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,169 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+locale: en
+
+collections:
+
+  # ── Blog Posts ──────────────────────────────────────────────────────────────
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", format: "2006-01-02", date_format: "YYYY-MM-DD", time_format: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Keywords"
+        name: "keywords"
+        widget: "list"
+        hint: "SEO keywords for this post"
+      - { label: "Author", name: "author", widget: "string", default: "Ventryx Team" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Visitor Management"
+          - "Attendance Management"
+          - "Security"
+          - "Solutions"
+          - "HR Compliance"
+          - "Guides"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+      - { label: "Reading Time", name: "readingTime", widget: "string", default: "5 min read" }
+      - label: "FAQs (Optional)"
+        name: "faqs"
+        widget: "list"
+        required: false
+        hint: "FAQs appear on the blog page with FAQPage schema for Google rich results"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  # ── Main Pages ───────────────────────────────────────────────────────────────
+  - name: "pages"
+    label: "Main Pages"
+    files:
+      - label: "About Us"
+        name: "about"
+        file: "content/about/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Careers"
+        name: "careers"
+        file: "content/careers/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "FAQ"
+        name: "faq"
+        file: "content/faq/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Pricing"
+        name: "pricing"
+        file: "content/pricing/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Changelog"
+        name: "changelog"
+        file: "content/changelog/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Partners"
+        name: "partners"
+        file: "content/partners/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Cookie Policy"
+        name: "cookie-policy"
+        file: "content/cookie-policy/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Security"
+        name: "security"
+        file: "content/security/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Privacy Policy"
+        name: "privacy-policy"
+        file: "content/privacy-policy/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - label: "Terms & Conditions"
+        name: "terms"
+        file: "content/terms-and-conditions/_index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+  # ── Solutions ─────────────────────────────────────────────────────────────────
+  - name: "solutions"
+    label: "Solutions"
+    folder: "content/solutions"
+    create: false
+    filter: { field: "draft", value: false }
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Industry", name: "industry", widget: "string" }
+      - { label: "Hero Title", name: "heroTitle", widget: "string" }
+      - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "desc", widget: "text" }
+          - { label: "Icon (Bootstrap Icons class)", name: "icon", widget: "string" }
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }

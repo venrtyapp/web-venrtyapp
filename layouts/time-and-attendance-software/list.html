@@ -1,0 +1,328 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is time and attendance software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Time and attendance software tracks when employees start and end work, calculates total hours worked, overtime, late arrivals, and absences - then feeds this data into payroll. Modern systems like Ventryx do this via mobile app, web, and kiosk, replacing traditional biometric punch-in machines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is mobile time and attendance tracking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx uses GPS location verification and optional selfie capture to ensure accuracy. The system timestamps every check-in to the second and stores this data with GPS coordinates. This creates a more verifiable record than biometric punch-in, which has no location proof."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I track overtime automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx automatically calculates overtime based on your configured shift rules. You define the standard working hours per shift, and the system calculates anything beyond that as overtime. Managers see overtime alerts in real-time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx time tracking integrate with payroll software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx exports payroll-ready data compatible with GreytHR, Keka, Razorpay Payroll, and all major Indian payroll systems. Custom Excel/CSV export is available for any other system. Enterprise customers can use the REST API for real-time payroll integration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx work for manufacturing and factory shift workers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx handles three-shift A/B/C operations, night shift differentials, rotational rosters, and biometric device integration for factory gates. It tracks shift-wise attendance separately and generates factory-specific compliance reports."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Time and Attendance Software</span>
+    </nav>
+    <h1>Time &amp; Attendance <span style="background:linear-gradient(135deg,#A78BFA,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Software</span> Built for India's Diverse Workforce</h1>
+    <p class="subtitle">Track work hours, overtime, and absences automatically across every workforce type - factory workers, remote employees, field teams, and office staff on one platform.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-clock-fill"></i> Second-Precise Timestamps</div>
+      <div class="vx-logo-item"><i class="bi bi-calculator"></i> Auto Overtime Calculation</div>
+      <div class="vx-logo-item"><i class="bi bi-file-earmark-check"></i> Payroll-Ready Export</div>
+      <div class="vx-logo-item"><i class="bi bi-layers"></i> Multi-Shift Support</div>
+      <div class="vx-logo-item"><i class="bi bi-building"></i> All Industries</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-clock-fill"></i> Time Tracking Features</span>
+      <h2 class="section-heading">Accurate Time Tracking for Every Workforce Configuration</h2>
+      <p class="section-subheading centered">From the single-shift office to the 24/7 manufacturing plant - Ventryx tracks time accurately across all configurations.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-phone"></i></div>
+        <h4>Multi-Mode Check-In</h4>
+        <p>Mobile app, web portal, tablet kiosk, or biometric device sync - employees use the method suited to their work context.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-layers-half"></i></div>
+        <h4>Shift-Based Time Rules</h4>
+        <p>Define unlimited shifts with start time, end time, grace period, break deductions, and overtime thresholds. Apply different rules per department.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+        <h4>Automated Calculations</h4>
+        <p>Regular hours, overtime, late minutes, early departures, and break adjustments - all calculated automatically, zero manual work.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-moon-stars-fill"></i></div>
+        <h4>Night Shift Support</h4>
+        <p>Correct handling of shifts that cross midnight. Night shift differentials, minimum rest between shifts, and overnight overtime rules.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-bar-chart-steps"></i></div>
+        <h4>Real-Time Dashboard</h4>
+        <p>Live view of who has checked in, current overtime accumulation, late arrivals, and staffing levels - updated as employees punch in.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+        <h4>Rotational Roster Engine</h4>
+        <p>Define rotation patterns - the system generates monthly rosters automatically. Review and approve in minutes, not hours.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+        <h4>Payroll Export</h4>
+        <p>Month-end payroll preparation in one click. All time calculations done - export to GreytHR, Keka, Razorpay, or any custom format.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-shield-check"></i></div>
+        <h4>Compliance Reports</h4>
+        <p>Factories Act and S&amp;E Act compliance reports. Track maximum hours, mandatory rest periods, and weekly overtime limits automatically.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:80px 0;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:#E2E8F0;"><i class="bi bi-graph-up-arrow"></i> ROI</span>
+      <h2 class="section-heading" style="color:white;">The True Cost of Manual Time Tracking</h2>
+      <p class="section-subheading centered" style="color:#94A3B8;">Manual time tracking has hidden costs that add up fast. Ventryx eliminates them entirely.</p>
+    </div>
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="8">0</div>
+        <div class="stat-suffix">hrs</div>
+        <div class="stat-label">HR time saved per 100 employees per month on attendance compilation</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="5">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Payroll error rate from manual data entry - eliminated with Ventryx export</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="4">0</div>
+        <div class="stat-suffix">hrs</div>
+        <div class="stat-label">Average time spent resolving a single attendance dispute - now zero</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="500">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label">Indian businesses that have made the switch from manual to Ventryx</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight Row -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-gear-wide-connected"></i> Industry Coverage</span>
+        <h2 class="section-heading" style="text-align:left;">Time Tracking Configured for Your Industry</h2>
+        <p class="section-subheading">Every industry has different time tracking needs. Ventryx is pre-configured with industry-specific templates and can be customised to your exact requirements.</p>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-gear-fill" style="font-size:1.25rem;color:#2563EB;"></i>
+            <div><strong>Manufacturing &amp; Factory</strong> - Three-shift A/B/C rosters, gate kiosk, biometric sync</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-laptop" style="font-size:1.25rem;color:#7C3AED;"></i>
+            <div><strong>IT &amp; Services</strong> - Flexible hours, remote work, project-based teams</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-hospital" style="font-size:1.25rem;color:#059669;"></i>
+            <div><strong>Healthcare</strong> - Doctor rosters, nurse rotations, on-call duty tracking</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-headset" style="font-size:1.25rem;color:#D97706;"></i>
+            <div><strong>BPO &amp; Call Centres</strong> - 24/7 global time zones, shift productivity tracking</div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;padding:12px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-cart" style="font-size:1.25rem;color:#DC2626;"></i>
+            <div><strong>Retail &amp; Hospitality</strong> - Part-time workers, weekend shifts, seasonal staffing</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#F5F3FF,#EFF6FF);border:1px solid #DDD6FE;border-radius:20px;padding:32px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+            <div style="font-size:0.9375rem;font-weight:700;color:#0F172A;font-family:'Poppins',sans-serif;margin-bottom:16px;">Time Summary - June 2026</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;">
+              <div style="background:#F0FDF4;border-radius:10px;padding:14px;text-align:center;">
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:0.05em;">Regular Hours</div>
+                <div style="font-size:1.5rem;font-weight:800;color:#10B981;font-family:'Poppins',sans-serif;">176h</div>
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;">Avg per employee</div>
+              </div>
+              <div style="background:#FEF9C3;border-radius:10px;padding:14px;text-align:center;">
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:0.05em;">Overtime</div>
+                <div style="font-size:1.5rem;font-weight:800;color:#D97706;font-family:'Poppins',sans-serif;">12h</div>
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;">Avg per employee</div>
+              </div>
+              <div style="background:#EFF6FF;border-radius:10px;padding:14px;text-align:center;">
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:0.05em;">Attendance Rate</div>
+                <div style="font-size:1.5rem;font-weight:800;color:#2563EB;font-family:'Poppins',sans-serif;">96.2%</div>
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;">Company-wide</div>
+              </div>
+              <div style="background:#FFF1F2;border-radius:10px;padding:14px;text-align:center;">
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;text-transform:uppercase;letter-spacing:0.05em;">Late Arrivals</div>
+                <div style="font-size:1.5rem;font-weight:800;color:#E11D48;font-family:'Poppins',sans-serif;">3.1%</div>
+                <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;">Down 40% vs last month</div>
+              </div>
+            </div>
+            <button style="width:100%;padding:10px;background:linear-gradient(135deg,#2563EB,#7C3AED);border:none;border-radius:8px;color:white;font-size:0.875rem;font-weight:600;font-family:'Inter',sans-serif;cursor:pointer;">
+              <i class="bi bi-download me-2"></i>Export Payroll Report
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Time and Attendance Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What is time and attendance software?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Time and attendance software tracks when employees start and end work, calculates total hours worked, overtime, late arrivals, and absences - then feeds this data into payroll. Modern systems like Ventryx do this via mobile app, web, and kiosk, replacing traditional biometric punch-in machines with a more flexible and accurate cloud-based approach.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How accurate is mobile time and attendance tracking?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Ventryx uses GPS location verification and optional selfie capture to ensure accuracy. The system timestamps every check-in to the second and stores this data with GPS coordinates. This creates a more verifiable record than biometric punch-in, which only confirms presence at the device location - not the actual work location for field employees.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can I track overtime automatically?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx automatically calculates overtime based on your configured shift rules. You define the standard working hours per shift, and the system calculates anything beyond that as overtime. Managers see overtime alerts in real-time, and reports show overtime by employee, department, or shift - ready for payroll processing.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does Ventryx time tracking integrate with payroll software?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx exports payroll-ready data compatible with GreytHR, Keka, Razorpay Payroll, and all major Indian payroll systems. Custom Excel/CSV export is available for any other system. Enterprise customers can use the Ventryx REST API for real-time payroll integration.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does Ventryx work for manufacturing and factory shift workers?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx handles three-shift A/B/C operations, night shift differentials, rotational rosters, and biometric device integration for factory gates. It tracks shift-wise attendance separately, generates Factories Act compliance reports, and manages contractor labour tracking independently from permanent staff.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Track Time, Manage Attendance, Simplify Payroll</h2>
+    <p>See how Ventryx replaces biometric punch-in and manual registers with accurate, automated time tracking. Book a personalised demo today.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Works for teams of 10 to 10,000 &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Cancel anytime</p>
+  </div>
+</section>
+
+{{ end }}

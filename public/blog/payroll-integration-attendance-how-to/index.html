@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="no-js">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39789&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+<title>How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide - Ventryx</title>
+<meta name="description" content="A practical guide for Indian HR and finance teams on integrating attendance data with payroll - covering integration methods, data points, common Indian payroll systems, and a pre-launch checklist." />
+<meta name="keywords" content="attendance payroll integration India, HR software integration, attendance to payroll automation, HRMS attendance integration" />
+<meta name="author" content="Ventryx" />
+<meta name="robots" content="index, follow" />
+
+
+<link rel="canonical" href="http://localhost:39789/blog/payroll-integration-attendance-how-to/" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide - Ventryx" />
+<meta property="og:description" content="A practical guide for Indian HR and finance teams on integrating attendance data with payroll - covering integration methods, data points, common Indian payroll systems, and a pre-launch checklist." />
+<meta property="og:url" content="http://localhost:39789/blog/payroll-integration-attendance-how-to/" />
+<meta property="og:site_name" content="Ventryx" />
+<meta property="og:image" content="http://localhost:39789//images/og-ventryx.png" />
+<meta property="og:locale" content="en_IN" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@ventryxhq" />
+<meta name="twitter:title" content="How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide - Ventryx" />
+<meta name="twitter:description" content="A practical guide for Indian HR and finance teams on integrating attendance data with payroll - covering integration methods, data points, common Indian payroll systems, and a pre-launch checklist." />
+<meta name="twitter:image" content="http://localhost:39789//images/og-ventryx.png" />
+
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#2563EB" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7dHcYxKFO1JRvDZsmMIf3wNjZNe7q6OFhtdgCUWCHlkTH9bC1R7A8HRZ+hJq" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ventryx",
+  "url": "http:\/\/localhost:39789\/",
+  "logo": "http:\/\/localhost:39789\/images/ventryx-logo.svg",
+  "description": "Ventryx is India\u0027s most trusted Visitor Management System and Attendance Management Software. Automate check-ins, secure premises, and track attendance in real time.",
+  "email": "hello@ventryx.in",
+  "telephone": "\u002b91 98765 43210",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https:\/\/linkedin.com\/company\/ventryx"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@ventryx.in",
+    "availableLanguage": ["English", "Hindi"]
+  }
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "http:\/\/localhost:39789\/"}
+    
+    ,{"@type": "ListItem", "position": 2, "name": "\"Blog – Workplace Management Insights for Indian Businesses\"", "item": "http:\/\/localhost:39789\/blog\/"}
+    ,{"@type": "ListItem", "position": 3, "name": "\"How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide\"", "item": "http:\/\/localhost:39789\/blog\/payroll-integration-attendance-how-to\/"}
+    
+  ]
+}
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+  
+  
+
+  
+<div class="vx-announcement-bar d-none d-md-block">
+  <i class="bi bi-stars me-1"></i>
+  Trusted by 500+ Indian businesses - <strong>Free 14-day trial</strong>, no credit card required.
+  <a href="/book-demo">Start for free →</a>
+</div>
+
+
+<nav class="vx-navbar" role="navigation" aria-label="Main navigation">
+  <div class="vx-navbar-inner nav-inner">
+
+    
+    <a href="/" class="vx-logo" aria-label="Ventryx Home">
+      <div class="vx-logo-mark" aria-hidden="true">
+        <i class="bi bi-building-check"></i>
+      </div>
+      <span class="vx-logo-text">Ventr<span>yx</span></span>
+    </a>
+
+    
+    <ul class="vx-nav-links" role="list">
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Product
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/visitor-management-system" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Visitor Management
+                </a>
+              
+                <a href="/attendance-management-system" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Attendance Management
+                </a>
+              
+            </div>
+          </li>
+        
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Solutions
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/solutions/corporate-offices" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Corporate Offices
+                </a>
+              
+                <a href="/solutions/schools" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Schools &amp; Colleges
+                </a>
+              
+                <a href="/solutions/hospitals" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Hospitals
+                </a>
+              
+                <a href="/solutions/manufacturing" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Manufacturing
+                </a>
+              
+            </div>
+          </li>
+        
+      
+        
+          <li>
+            <a href="/pricing" >
+              Pricing
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Resources
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/blog" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Blog
+                </a>
+              
+                <a href="/help-center" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Help Center
+                </a>
+              
+            </div>
+          </li>
+        
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Company
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/about" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  About Us
+                </a>
+              
+                <a href="/contact" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Contact Us
+                </a>
+              
+                <a href="/careers" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Careers
+                </a>
+              
+            </div>
+          </li>
+        
+      
+    </ul>
+
+    
+    <div class="vx-nav-cta">
+      <a href="/contact" class="btn-vx-outline d-none d-lg-inline-flex">
+        Contact Sales
+      </a>
+      <a href="/book-demo" class="btn-vx-primary">
+        <i class="bi bi-calendar-check"></i>
+        Book Demo
+      </a>
+    </div>
+
+    
+    <button class="vx-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+
+  </div>
+</nav>
+
+
+<div class="vx-mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Product</div>
+    <a href="/visitor-management-system">
+      <i class="bi bi-person-badge"></i> Visitor Management System
+    </a>
+    <a href="/attendance-management-system">
+      <i class="bi bi-calendar-check"></i> Attendance Management System
+    </a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Solutions</div>
+    <a href="/solutions/corporate-offices"><i class="bi bi-building"></i> Corporate Offices</a>
+    <a href="/solutions/schools"><i class="bi bi-mortarboard"></i> Schools & Colleges</a>
+    <a href="/solutions/hospitals"><i class="bi bi-hospital"></i> Hospitals</a>
+    <a href="/solutions/manufacturing"><i class="bi bi-gear"></i> Manufacturing</a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Resources</div>
+    <a href="/pricing"><i class="bi bi-tag"></i> Pricing</a>
+    <a href="/blog"><i class="bi bi-journal-text"></i> Blog</a>
+    <a href="/help-center"><i class="bi bi-question-circle"></i> Help Center</a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Company</div>
+    <a href="/about"><i class="bi bi-info-circle"></i> About Us</a>
+    <a href="/contact"><i class="bi bi-envelope"></i> Contact Us</a>
+    <a href="/careers"><i class="bi bi-briefcase"></i> Careers</a>
+  </div>
+
+  <div class="mobile-cta px-2">
+    <a href="/book-demo" class="btn-vx-primary w-100 justify-content-center mb-3">
+      <i class="bi bi-calendar-check"></i> Book a Free Demo
+    </a>
+    <a href="/book-demo" class="btn-vx-outline w-100 justify-content-center">
+      Start Free Trial
+    </a>
+  </div>
+
+</div>
+
+
+
+  <main id="main-content" role="main" tabindex="-1">
+    
+
+<section class="vx-page-hero" style="padding:56px 0 48px;">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <a href="/blog">Blog</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>How to Integrate Attendance Software …</span>
+    </nav>
+    <span class="section-label" style="margin-bottom:14px;">Attendance Management</span>
+    <h1 style="font-size:clamp(1.5rem,3.5vw,2.25rem);max-width:800px;margin:0 auto 16px;">How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide</h1>
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;font-size:0.8125rem;color:rgba(255,255,255,0.50);">
+      <span><i class="bi bi-calendar3 me-1"></i>April 24, 2026</span>
+      <span><i class="bi bi-clock me-1"></i>6 min read read</span>
+      <span><i class="bi bi-person me-1"></i>Ventryx Team</span>
+    </div>
+  </div>
+</section>
+
+<section class="vx-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="vx-seo-content" style="font-size:1rem;line-height:1.8;">
+          <p>At the end of every month, something predictable happens in hundreds of Indian offices: someone in HR exports an attendance report, cleans it up in Excel, and emails it to payroll. Someone in payroll opens it, maps the columns to their payroll software format, and imports it. If everything goes right, payroll runs. If anything goes wrong - a column name changed, a formula carried forward an error, or the export was from the wrong date range - it goes wrong quietly, and the error shows up in salary slips that have already been communicated.</p>
+<p>This is not a niche problem. It is the dominant mode of operation for a large fraction of Indian companies under 500 employees. It is also the source of a disproportionate share of payroll errors, employee grievances, and PF/ESI compliance gaps.</p>
+<p>The solution is integration - making attendance data flow directly into payroll without manual intervention. This guide explains how to do it.</p>
+<hr>
+<h2 id="why-manual-data-export-is-riskier-than-it-looks">Why Manual Data Export Is Riskier Than It Looks</h2>
+<p>The spreadsheet handoff between attendance and payroll feels manageable when you have 30 employees. At 150, it starts to show cracks. At 300, it breaks regularly. Here is why:</p>
+<p><strong>Timing errors:</strong> Most payroll systems need attendance data locked by a specific date. If HR is still chasing down exceptions on the 1st and payroll needs to run on the 3rd, someone will import a partially corrected file. Late corrections - shift swaps approved after export, leave applications approved post-facto - never make it into that payroll cycle.</p>
+<p><strong>Version mismatch:</strong> When the attendance spreadsheet is updated after import (to fix an error), the payroll system is not told. The two systems are now out of sync, and no one may notice until an employee queries their salary.</p>
+<p><strong>PF and ESI calculation errors:</strong> Both PF and ESI contributions are calculated on the actual wages paid. Wages depend on present days, which depend on attendance. If the attendance data imported into payroll has even a one-day error per employee, the PF and ESI calculations for those employees are wrong. Aggregate this across 200 employees over 12 months and the liability can be significant.</p>
+<p><strong>No audit trail:</strong> When an employee disputes their salary deduction, HR and payroll must reconstruct what data was used. With manual exports, the trail disappears.</p>
+<hr>
+<h2 id="integration-methods-api-csv-and-direct-hrms-connector">Integration Methods: API, CSV, and Direct HRMS Connector</h2>
+<p>Not all integrations are created equal. There are three main approaches:</p>
+<p><strong>CSV Export/Import</strong>
+The most basic approach - the attendance system exports a structured CSV file, and the payroll system has an import template that maps to it. This is still manual but reduces formula errors if the column structure is locked. The weakness is that someone still has to trigger the export, validate the file, and run the import. Human steps mean human errors.</p>
+<p><strong>API Integration</strong>
+A modern attendance system can expose attendance summaries via a REST API. A modern payroll system can consume that API on a schedule - for example, at 11 PM on the last working day of the month, the payroll system pulls present days, late marks, OT hours, and leave balances directly. No one clicks anything. This is the gold standard for accuracy and auditability.</p>
+<p><strong>Direct HRMS Connector</strong>
+Some attendance and payroll vendors have built pre-certified integrations with each other. One system has a connector that knows the data format of the other. This is faster to set up than a custom API integration but may require both systems to be on compatible versions, and you depend on both vendors maintaining the connector over time.</p>
+<hr>
+<h2 id="data-points-that-need-to-sync">Data Points That Need to Sync</h2>
+<p>Not all attendance data is relevant to payroll. The fields that matter are:</p>
+<table>
+	<thead>
+			<tr>
+					<th>Data Point</th>
+					<th>Why It Matters for Payroll</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Present days</td>
+					<td>Determines base salary payable for the month</td>
+			</tr>
+			<tr>
+					<td>Absent days</td>
+					<td>Drives per-day deduction calculation</td>
+			</tr>
+			<tr>
+					<td>Late mark count</td>
+					<td>May trigger half-day or LOP deductions per policy</td>
+			</tr>
+			<tr>
+					<td>Overtime hours</td>
+					<td>Required for OT pay under Factories Act</td>
+			</tr>
+			<tr>
+					<td>Leave balance (type-wise)</td>
+					<td>Needed to confirm paid vs unpaid leave treatment</td>
+			</tr>
+			<tr>
+					<td>Holiday worked flag</td>
+					<td>Triggers double/triple pay if policy requires</td>
+			</tr>
+			<tr>
+					<td>Shift differential</td>
+					<td>Night shift or special shift allowance trigger</td>
+			</tr>
+			<tr>
+					<td>PF wage days</td>
+					<td>Separate from calendar days for PF calculation</td>
+			</tr>
+	</tbody>
+</table>
+<p>A well-designed integration passes all of these in one payload per employee per month, ideally with a checksum or confirmation from the attendance system that the data is final and approved.</p>
+<hr>
+<h2 id="popular-indian-payroll-systems-and-integration-readiness">Popular Indian Payroll Systems and Integration Readiness</h2>
+<p>Indian companies have several payroll platforms to choose from. Here is how they typically handle attendance integration:</p>
+<p><strong>Greytip (greytHR)</strong>
+One of the most widely used payroll-HRMS platforms in India. Supports CSV-based attendance import via a defined template and offers API access for enterprise customers. Has a reasonably well-documented integration approach for third-party attendance systems.</p>
+<p><strong>Keka HR</strong>
+A modern HRMS with built-in attendance modules, but also supports attendance data import for companies using a separate biometric or attendance system. REST API available for enterprise tier. Popular with mid-size IT and services companies in Bengaluru and Hyderabad.</p>
+<p><strong>HROne</strong>
+Used widely in manufacturing and logistics companies across North India. Has API capabilities and a CSV import template. Some third-party attendance vendors have pre-built connectors.</p>
+<p><strong>Razorpay Payroll</strong>
+A newer entrant focused on startups and fast-growing companies. Clean API design. Attendance data import is well-supported but the integration is typically initiated from the attendance side. Popular in the startup ecosystem in Bengaluru, Mumbai, and Delhi NCR.</p>
+<p>For all of these platforms, the integration quality depends as much on the attendance system as on the payroll platform. An attendance system that cannot export clean, validated data in a consistent format will create problems regardless of how good the payroll system is.</p>
+<hr>
+<h2 id="pre-launch-checklist-before-going-live">Pre-Launch Checklist Before Going Live</h2>
+<p>Before activating a live attendance-to-payroll integration, run through this checklist:</p>
+<ul>
+<li><input disabled="" type="checkbox"> <strong>Policy mapping verified:</strong> Every attendance rule (grace period, late deduction threshold, OT rate, leave types) is configured identically in both systems.</li>
+<li><input disabled="" type="checkbox"> <strong>Employee master synced:</strong> Employee IDs, names, department codes, and cost centres match exactly between systems. A mismatch breaks the linkage.</li>
+<li><input disabled="" type="checkbox"> <strong>Leave type mapping confirmed:</strong> If your attendance system calls it &ldquo;EL&rdquo; and your payroll system calls it &ldquo;Privilege Leave,&rdquo; the integration must map them explicitly.</li>
+<li><input disabled="" type="checkbox"> <strong>Month-end cutoff date defined:</strong> Both systems agree on when the attendance data for a given month is considered final.</li>
+<li><input disabled="" type="checkbox"> <strong>Exception handling workflow documented:</strong> What happens if an employee&rsquo;s data is missing or flagged as anomalous? Who is notified, and by when?</li>
+<li><input disabled="" type="checkbox"> <strong>Parallel run completed:</strong> Run the integration alongside the manual process for at least one full payroll cycle and compare outputs row by row.</li>
+<li><input disabled="" type="checkbox"> <strong>Reversal process defined:</strong> If the payroll system imports incorrect attendance data, how is it reversed before finalisation?</li>
+</ul>
+<p>Skipping the parallel run is the single most common mistake during implementation. One month of parallel running catches edge cases that no amount of testing in a staging environment will surface.</p>
+<hr>
+<h2 id="troubleshooting-common-sync-issues">Troubleshooting Common Sync Issues</h2>
+<p><strong>Employees appearing with zero days worked:</strong> Usually a mismatch in employee ID format between systems. Check whether one system uses numeric IDs and the other uses alphanumeric.</p>
+<p><strong>OT hours not syncing:</strong> Often because the attendance system records OT in minutes and the payroll system expects hours. Confirm the unit of measure in the API schema.</p>
+<p><strong>Leave balance discrepancy at month end:</strong> Likely caused by leaves approved after the attendance export cutoff. Define a hard cutoff and enforce it via workflow approval deadlines.</p>
+<p><strong>PF wage days different from present days:</strong> This is intentional in some configurations - PF is calculated on a different day count (e.g., including paid leaves but excluding LOP). Verify the PF wage day formula with your payroll consultant.</p>
+<p><strong>Integration running but payroll not updating:</strong> Check whether the payroll system is in a &ldquo;locked&rdquo; state for the current period. Many payroll platforms lock the current month once salary processing begins, and API writes will silently fail or queue until the lock is released.</p>
+<hr>
+<p>Ventryx is designed with payroll integration as a core capability, not an afterthought. Its API exposes all required attendance data points in a consistent, validated format, and it has pre-built connectors for several of the most commonly used payroll systems in India. Whether you are currently on a manual handoff or looking to upgrade a partially automated setup, Ventryx can significantly reduce the friction - and the error rate - at the attendance-to-payroll boundary.</p>
+
+        </div>
+
+        
+        
+        <div style="margin-top:36px;padding-top:24px;border-top:1px solid var(--vx-border);">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#attendance management</span>
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#payroll</span>
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#integration</span>
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#HR tech</span>
+            
+          </div>
+        </div>
+        
+
+        
+        <div style="margin-top:36px;background:var(--vx-light);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:52px;height:52px;background:var(--vx-gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.25rem;flex-shrink:0;"><i class="bi bi-building-check"></i></div>
+          <div>
+            <div style="font-size:0.9375rem;font-weight:700;color:var(--vx-dark);margin-bottom:4px;">Ventryx Team</div>
+            <p style="font-size:0.875rem;color:var(--vx-text);margin:0;">We build and share insights on visitor management, attendance tracking, and smart workplace operations for Indian businesses.</p>
+          </div>
+        </div>
+
+        
+        <div style="margin-top:28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <span style="font-size:0.875rem;font-weight:600;color:var(--vx-secondary);">Share this article:</span>
+          <a href="https://linkedin.com/sharing/share-offsite/?url=http%2f%2flocalhost39789%2fblog%2fpayroll-integration-attendance-how-to%2f" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-linkedin" style="color:#0A66C2;"></i> LinkedIn</a>
+          <a href="https://twitter.com/intent/tweet?text=how-to-integrate-attendance-software-with-your-payroll-system-a-step-by-step-guide&url=http%2f%2flocalhost39789%2fblog%2fpayroll-integration-attendance-how-to%2f" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-twitter-x"></i> Twitter</a>
+          <a href="https://wa.me/?text=how-to-integrate-attendance-software-with-your-payroll-system-a-step-by-step-guide%20http%2f%2flocalhost39789%2fblog%2fpayroll-integration-attendance-how-to%2f" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center" style="margin-bottom:40px;">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="vx-faq-list">
+          
+          <div class="vx-faq-item open">
+            <button class="vx-faq-question" aria-expanded="true">
+              <span>Why should attendance and payroll be integrated?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" >
+              <p>Manual data transfer between systems introduces errors in PF/ESI calculations, late deduction amounts, and overtime pay - integration eliminates all manual steps in the data chain.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>What data needs to flow from attendance to payroll?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Present days, absent days, late marks and deductions, overtime hours, leave taken by type, comp-off availed, and holiday working days.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>Does Ventryx integrate with Greytip and Keka?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Yes, Ventryx provides direct API integration with Greytip, Keka, HROne, and Razorpay Payroll, as well as a universal CSV export for other systems.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>How do you handle mid-month joining and resignation in integrated attendance?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Ventryx supports per-employee date-of-joining and last working day fields that automatically prorate attendance and leave calculations for partial months.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>What should HR check before running payroll after an integration?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Review the attendance exception report for anomalies (unexplained absences, unusual OT), confirm leave approvals are complete, and verify the payroll period lock date is set correctly.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>See Ventryx in Action</h2>
+    <p>Ready to replace paper registers with a smarter system? Book a free 30-minute demo with our team.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/blog" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">More Articles</a>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="vx-footer" role="contentinfo">
+  <div class="container">
+    <div class="vx-footer-grid">
+
+      
+      <div class="vx-footer-brand">
+        <a href="/" class="vx-logo" aria-label="Ventryx Home">
+          <div class="vx-logo-mark">
+            <i class="bi bi-building-check"></i>
+          </div>
+          <span class="vx-logo-text" style="color:white;">Ventr<span style="color:#60A5FA;">yx</span></span>
+        </a>
+        <p>India's most trusted platform for Visitor Management and Attendance Management - helping 500+ businesses run smarter workplaces.</p>
+        <div class="vx-footer-social">
+          <a href="https://linkedin.com/company/ventryx" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/ventryxhq" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://youtube.com/@ventryxhq" aria-label="YouTube" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://instagram.com/ventryxhq" aria-label="Instagram" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="vx-footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/visitor-management-system">Visitor Management System</a></li>
+          <li><a href="/attendance-management-system">Attendance Management</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/book-demo">Book a Demo</a></li>
+          <li><a href="/changelog">What's New</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="vx-footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="/solutions/corporate-offices">Corporate Offices</a></li>
+          <li><a href="/solutions/schools">Schools & Colleges</a></li>
+          <li><a href="/solutions/hospitals">Hospitals</a></li>
+          <li><a href="/solutions/manufacturing">Manufacturing</a></li>
+          <li><a href="/solutions/coworking">Coworking Spaces</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="vx-footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/partners">Partners</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="vx-footer-newsletter">
+        <h4>Stay in the Loop</h4>
+        <p>Workplace management tips, product updates, and industry news. No spam, unsubscribe anytime.</p>
+        <form class="vx-newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="you@company.com" aria-label="Email address" />
+          <button type="submit" aria-label="Subscribe">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </form>
+        <div style="margin-top:20px;">
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.35);margin-bottom:8px;">CERTIFIED & COMPLIANT</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:4px 10px;font-size:0.7rem;color:rgba(255,255,255,0.45);">ISO 27001</span>
+            <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:4px 10px;font-size:0.7rem;color:rgba(255,255,255,0.45);">GDPR Ready</span>
+            <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:4px 10px;font-size:0.7rem;color:rgba(255,255,255,0.45);">India Data Residency</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="vx-footer-bottom">
+      <p>© 2026 Ventryx Technologies Pvt. Ltd. · Made with ♥ in India</p>
+      <div class="vx-footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-and-conditions">Terms of Service</a>
+        <a href="/cookie-policy">Cookie Policy</a>
+        <a href="/security">Security</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+  
+  <button class="vx-scroll-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9Nc2+QxCEZq5Gqfhf/tGXM3glbJlTB7VGBLvMRR4FDf2VN0bZC4vK" crossorigin="anonymous"></script>
+
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  
+  
+  <script src="/js/main.js"></script>
+
+  
+</body>
+</html>

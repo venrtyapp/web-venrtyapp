@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>HR Tech on Ventryx – Visitor &amp; Attendance Management Software India</title>
+		<link>http://localhost:39789/tags/hr-tech/</link>
+		<description>Recent content in HR Tech on Ventryx – Visitor &amp; Attendance Management Software India</description>
+		<generator>Hugo</generator>
+		<language>en-IN</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:39789/tags/hr-tech/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Manual vs Digital Attendance Tracking: The Real Cost for Indian SMEs</title>
+				<link>http://localhost:39789/blog/manual-vs-digital-attendance-tracking/</link>
+				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:39789/blog/manual-vs-digital-attendance-tracking/</guid>
+				<description>&lt;p&gt;Walk into a mid-sized manufacturing unit in Pune or a growing IT services firm in Hyderabad, and you will likely find one of two scenes: a dog-eared register sitting near the front desk with ink smudges from a hundred different pens, or a biometric device mounted on the wall with a small queue of employees waiting to punch in at 9:01 AM. Both of these are attempts to solve the same problem - knowing who showed up, when, and for how long.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide</title>
+				<link>http://localhost:39789/blog/payroll-integration-attendance-how-to/</link>
+				<pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:39789/blog/payroll-integration-attendance-how-to/</guid>
+				<description>&lt;p&gt;At the end of every month, something predictable happens in hundreds of Indian offices: someone in HR exports an attendance report, cleans it up in Excel, and emails it to payroll. Someone in payroll opens it, maps the columns to their payroll software format, and imports it. If everything goes right, payroll runs. If anything goes wrong - a column name changed, a formula carried forward an error, or the export was from the wrong date range - it goes wrong quietly, and the error shows up in salary slips that have already been communicated.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

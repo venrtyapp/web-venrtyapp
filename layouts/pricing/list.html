@@ -1,0 +1,299 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does Ventryx cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx offers three plans: Starter at ₹999/month (up to 25 users), Professional at ₹2,999/month (unlimited users), and Enterprise with custom pricing. All plans include a 14-day free trial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a free trial?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all plans include a 14-day free trial with full feature access. No credit card required."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Ventryx Visitor & Attendance Management Software",
+  "description": "Cloud-based Visitor Management System and Attendance Management Software for Indian businesses. Automate check-ins, track attendance, and ensure compliance.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Ventryx"
+  },
+  "url": "https://ventryx.in/pricing",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Starter Plan",
+      "description": "For small offices and startups",
+      "price": "2999",
+      "priceCurrency": "INR",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock",
+      "url": "https://ventryx.in/pricing"
+    },
+    {
+      "@type": "Offer",
+      "name": "Growth Plan",
+      "description": "For growing businesses with multiple teams",
+      "price": "5999",
+      "priceCurrency": "INR",
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock",
+      "url": "https://ventryx.in/pricing"
+    },
+    {
+      "@type": "Offer",
+      "name": "Enterprise Plan",
+      "description": "For large organisations with multiple locations",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": "https://ventryx.in/pricing"
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Pricing</span>
+    </nav>
+    <h1>Simple, Transparent <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Pricing</span></h1>
+    <p class="subtitle">No hidden charges, no per-module pricing. One plan covers both Visitor Management and Attendance Management. Start free, scale as you grow.</p>
+  </div>
+</section>
+
+
+<section class="vx-section">
+  <div class="container">
+
+    <!-- Toggle -->
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:48px;" data-aos="fade-up">
+      <span style="font-size:0.9375rem;font-weight:500;color:var(--vx-secondary);">Monthly</span>
+      <div style="position:relative;">
+        <input type="checkbox" id="pricing-toggle" style="position:absolute;opacity:0;width:0;height:0;" />
+        <label for="pricing-toggle" style="display:flex;width:52px;height:28px;background:var(--vx-primary);border-radius:20px;cursor:pointer;align-items:center;padding:4px;transition:background 0.25s;">
+          <span style="width:20px;height:20px;background:white;border-radius:50%;transition:transform 0.25s;display:block;"></span>
+        </label>
+      </div>
+      <span style="font-size:0.9375rem;font-weight:500;color:var(--vx-secondary);">Annual</span>
+      <span id="annual-savings-badge" style="display:none;background:#ECFDF5;color:#059669;font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:20px;border:1px solid #BBF7D0;">Save 20%</span>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="vx-pricing-grid" data-aos="fade-up">
+
+      <!-- Starter -->
+      <div class="vx-pricing-card">
+        <div class="vx-pricing-tier">Starter</div>
+        <h3>For Small Teams</h3>
+        <p class="desc">Perfect for startups and small offices getting started with digital visitor management.</p>
+        <div class="vx-price">
+          <div>
+            <span class="price-currency">₹</span>
+            <span class="price-main" data-monthly="999"><span data-monthly="999">999</span></span>
+          </div>
+          <div class="price-period vx-price-period-text">per month (up to 25 employees)</div>
+        </div>
+        <ul class="vx-pricing-features">
+          <li><i class="bi bi-check-circle-fill"></i> 1 location / premises</li>
+          <li><i class="bi bi-check-circle-fill"></i> Up to 25 employees</li>
+          <li><i class="bi bi-check-circle-fill"></i> Unlimited visitor check-ins</li>
+          <li><i class="bi bi-check-circle-fill"></i> QR code self check-in</li>
+          <li><i class="bi bi-check-circle-fill"></i> Mobile attendance (Android &amp; iOS)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Basic leave management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Daily &amp; monthly reports</li>
+          <li><i class="bi bi-check-circle-fill"></i> Email &amp; SMS notifications</li>
+          <li class="disabled"><i class="bi bi-x-circle"></i> Badge printing</li>
+          <li class="disabled"><i class="bi bi-x-circle"></i> Watchlist screening</li>
+          <li class="disabled"><i class="bi bi-x-circle"></i> Multi-location</li>
+          <li class="disabled"><i class="bi bi-x-circle"></i> HRMS integration</li>
+        </ul>
+        <a href="/book-demo" class="btn-vx-outline" style="width:100%;justify-content:center;">Start Free Trial</a>
+      </div>
+
+      <!-- Professional -->
+      <div class="vx-pricing-card popular">
+        <div class="vx-popular-badge"><i class="bi bi-stars me-1"></i>Most Popular</div>
+        <div class="vx-pricing-tier">Professional</div>
+        <h3>For Growing Companies</h3>
+        <p class="desc">The complete solution for businesses that need full visitor management and team attendance tracking.</p>
+        <div class="vx-price">
+          <div>
+            <span class="price-currency">₹</span>
+            <span class="price-main"><span data-monthly="2999">2,999</span></span>
+          </div>
+          <div class="price-period vx-price-period-text">per month (unlimited employees)</div>
+        </div>
+        <ul class="vx-pricing-features">
+          <li><i class="bi bi-check-circle-fill"></i> Up to 5 locations</li>
+          <li><i class="bi bi-check-circle-fill"></i> Unlimited employees</li>
+          <li><i class="bi bi-check-circle-fill"></i> Unlimited visitor check-ins</li>
+          <li><i class="bi bi-check-circle-fill"></i> QR code + kiosk check-in</li>
+          <li><i class="bi bi-check-circle-fill"></i> Mobile + web attendance</li>
+          <li><i class="bi bi-check-circle-fill"></i> Full leave management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Shift &amp; roster management</li>
+          <li><i class="bi bi-check-circle-fill"></i> Badge printing support</li>
+          <li><i class="bi bi-check-circle-fill"></i> Watchlist &amp; security alerts</li>
+          <li><i class="bi bi-check-circle-fill"></i> WhatsApp notifications</li>
+          <li><i class="bi bi-check-circle-fill"></i> Payroll export (Excel/CSV)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Priority email &amp; chat support</li>
+        </ul>
+        <a href="/book-demo" class="btn-vx-primary" style="width:100%;justify-content:center;">Start Free Trial</a>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="vx-pricing-card">
+        <div class="vx-pricing-tier">Enterprise</div>
+        <h3>For Large Organisations</h3>
+        <p class="desc">Dedicated infrastructure, custom integrations, and SLA-backed support for enterprise requirements.</p>
+        <div class="vx-price">
+          <div>
+            <span class="price-main" style="font-size:1.875rem;">Custom</span>
+          </div>
+          <div class="price-period">Tailored to your team size and locations</div>
+        </div>
+        <ul class="vx-pricing-features">
+          <li><i class="bi bi-check-circle-fill"></i> Unlimited locations</li>
+          <li><i class="bi bi-check-circle-fill"></i> Unlimited employees</li>
+          <li><i class="bi bi-check-circle-fill"></i> Everything in Professional</li>
+          <li><i class="bi bi-check-circle-fill"></i> HRMS / SAP / Darwinbox integration</li>
+          <li><i class="bi bi-check-circle-fill"></i> Single Sign-On (SSO)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Custom branding &amp; white-labeling</li>
+          <li><i class="bi bi-check-circle-fill"></i> Dedicated account manager</li>
+          <li><i class="bi bi-check-circle-fill"></i> 99.9% SLA uptime guarantee</li>
+          <li><i class="bi bi-check-circle-fill"></i> On-premise deployment option</li>
+          <li><i class="bi bi-check-circle-fill"></i> Custom API integrations</li>
+          <li><i class="bi bi-check-circle-fill"></i> 24/7 phone &amp; email support</li>
+          <li><i class="bi bi-check-circle-fill"></i> Data processing agreement</li>
+        </ul>
+        <a href="/contact" class="btn-vx-outline" style="width:100%;justify-content:center;">Talk to Sales</a>
+      </div>
+
+    </div>
+
+    <!-- Guarantee -->
+    <div style="text-align:center;margin-top:48px;padding:36px;background:var(--vx-light);border-radius:20px;max-width:680px;margin-left:auto;margin-right:auto;" data-aos="fade-up">
+      <div style="font-size:2.5rem;margin-bottom:12px;">🛡️</div>
+      <h3 style="font-size:1.25rem;margin-bottom:10px;">14-Day Money-Back Guarantee</h3>
+      <p style="font-size:0.9375rem;max-width:480px;margin:0 auto;">Try Ventryx risk-free. If you're not completely satisfied within 14 days of your paid subscription, we'll refund 100% - no questions asked.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Comparison Table -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-table"></i> Compare Plans</span>
+      <h2 class="section-heading">Feature-by-Feature Comparison</h2>
+    </div>
+    <div style="overflow-x:auto;" data-aos="fade-up">
+      <table class="vx-compare-table">
+        <thead>
+          <tr>
+            <th style="width:40%;">Feature</th>
+            <th>Starter</th>
+            <th class="highlight-col">Professional</th>
+            <th>Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td colspan="4" style="background:var(--vx-light);font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--vx-text);padding:10px 20px;">Visitor Management</td></tr>
+          <tr><td>Visitor check-in &amp; check-out</td><td><i class="bi bi-check-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>QR code self check-in</td><td><i class="bi bi-check-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>Visitor pre-registration</td><td><i class="bi bi-check-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>Visitor badge printing</td><td><i class="bi bi-x-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>Watchlist &amp; security screening</td><td><i class="bi bi-x-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>Emergency evacuation list</td><td><i class="bi bi-check-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td colspan="4" style="background:var(--vx-light);font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--vx-text);padding:10px 20px;">Attendance Management</td></tr>
+          <tr><td>Mobile &amp; web attendance</td><td><i class="bi bi-check-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>GPS geofencing</td><td><i class="bi bi-x-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>Shift management</td><td><i class="bi bi-x-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>Leave management</td><td>Basic</td><td class="highlight-col">Full</td><td>Full</td></tr>
+          <tr><td>Payroll export</td><td><i class="bi bi-check-lg"></i></td><td class="highlight-col"><i class="bi bi-check-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td>HRMS integration</td><td><i class="bi bi-x-lg"></i></td><td class="highlight-col"><i class="bi bi-x-lg"></i></td><td><i class="bi bi-check-lg"></i></td></tr>
+          <tr><td colspan="4" style="background:var(--vx-light);font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--vx-text);padding:10px 20px;">Platform</td></tr>
+          <tr><td>Locations</td><td>1</td><td class="highlight-col">Up to 5</td><td>Unlimited</td></tr>
+          <tr><td>Support</td><td>Email</td><td class="highlight-col">Email + Chat</td><td>24/7 Phone + Email</td></tr>
+          <tr><td>SLA uptime guarantee</td><td><i class="bi bi-x-lg"></i></td><td class="highlight-col"><i class="bi bi-x-lg"></i></td><td>99.9%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ Pricing -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="section-heading">Pricing Questions Answered</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="vx-faq-section" data-aos="fade-up">
+          <div class="vx-faq-item open">
+            <div class="vx-faq-question"><h4>Is the pricing in Indian Rupees (INR)?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
+            <div class="vx-faq-answer"><p>Yes. All Ventryx plans are priced in INR. Payments are accepted via UPI, NEFT, credit/debit cards, and we raise GST invoices for all subscriptions.</p></div>
+          </div>
+          <div class="vx-faq-item">
+            <div class="vx-faq-question"><h4>Can I switch plans after I start?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
+            <div class="vx-faq-answer"><p>Yes. You can upgrade from Starter to Professional at any time - the price difference is prorated for the remaining billing period. Downgrades take effect at the next billing cycle.</p></div>
+          </div>
+          <div class="vx-faq-item">
+            <div class="vx-faq-question"><h4>Do I get a GST invoice?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
+            <div class="vx-faq-answer"><p>Yes. We issue a proper GST invoice for every payment. You can add your company GSTIN during checkout for input tax credit.</p></div>
+          </div>
+          <div class="vx-faq-item">
+            <div class="vx-faq-question"><h4>What happens after my free trial ends?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
+            <div class="vx-faq-answer"><p>After 14 days, your account moves to a read-only mode - you can still view your data but cannot add new entries. No charges are applied automatically. You choose a plan and pay only if you want to continue.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Start Your Free 14-Day Trial Today</h2>
+    <p>No credit card. No commitment. Just 30 minutes to set up and you're live.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Demo</a>
+      <a href="/contact" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">Talk to Sales</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

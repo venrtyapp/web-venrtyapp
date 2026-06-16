@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Integration on Ventryx – Visitor &amp; Attendance Management Software India</title>
+		<link>http://localhost:39789/tags/integration/</link>
+		<description>Recent content in Integration on Ventryx – Visitor &amp; Attendance Management Software India</description>
+		<generator>Hugo</generator>
+		<language>en-IN</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:39789/tags/integration/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>How to Integrate Attendance Software with Your Payroll System: A Step-by-Step Guide</title>
+				<link>http://localhost:39789/blog/payroll-integration-attendance-how-to/</link>
+				<pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:39789/blog/payroll-integration-attendance-how-to/</guid>
+				<description>&lt;p&gt;At the end of every month, something predictable happens in hundreds of Indian offices: someone in HR exports an attendance report, cleans it up in Excel, and emails it to payroll. Someone in payroll opens it, maps the columns to their payroll software format, and imports it. If everything goes right, payroll runs. If anything goes wrong - a column name changed, a formula carried forward an error, or the export was from the wrong date range - it goes wrong quietly, and the error shows up in salary slips that have already been communicated.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

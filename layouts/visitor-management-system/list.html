@@ -1,0 +1,404 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx Visitor Management System",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "description": "Visitor Management Software for Indian businesses. QR check-in, pre-registration, watchlist screening, badge printing and real-time visitor logs.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR",
+    "description": "Free 14-day trial"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a Visitor Management System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Visitor Management System (VMS) is a digital solution that replaces traditional paper visitor registers. It streamlines the entire visitor journey - from pre-registration and QR-code check-in to badge printing, host notifications, and compliance reporting - giving businesses real-time visibility of everyone on their premises."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Ventryx Visitor Management cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx Visitor Management starts with a free 14-day trial - no credit card required. Paid plans are available for businesses of all sizes. Visit our pricing page or book a free demo to get a personalised quote based on your number of locations and expected visitor volume."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx work without internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx is designed with intermittent connectivity in mind. The mobile and kiosk apps cache data locally and continue to function during brief outages. Visitor check-ins are queued and synced automatically once the connection is restored, so your front desk is never disrupted."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Ventryx print visitor badges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx automatically prints branded visitor badges upon check-in. Badges include the visitor's photo, name, host name, visit purpose, and an expiry time. The system is compatible with Zebra, Dymo, and standard A4/A5 printers - no special hardware lock-in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Ventryx compliant with India's DPDP Act?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx is built with India's Digital Personal Data Protection (DPDP) Act in mind. All visitor data is stored on servers located in India (Mumbai data centre). Visitors can request deletion of their data, consent is captured at check-in, and data is never shared with third parties. Enterprise customers can request a Data Processing Agreement."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Visitor Management System</span>
+    </nav>
+    <h1>Visitor Management <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Software</span> for Indian Workplaces</h1>
+    <p class="subtitle">Replace your paper visitor register with a smart, digital check-in system. Pre-register guests, print badges, screen watchlists, and generate compliance reports - all from one platform.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Feature Highlights -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-person-badge-fill"></i> Features</span>
+      <h2 class="section-heading">Everything Your Front Desk Needs</h2>
+      <p class="section-subheading centered">Ventryx VMS covers every touchpoint of the visitor journey - from the moment they receive an invite to the moment they leave your premises.</p>
+    </div>
+
+    <!-- Feature 1: Check-in Methods -->
+    <div class="row align-items-center g-5 mb-6" data-aos="fade-right" style="margin-bottom:80px;">
+      <div class="col-lg-6">
+        <span class="section-label"><i class="bi bi-1-circle-fill"></i> Check-in</span>
+        <h3>Multiple Ways to Check In - Your Way</h3>
+        <p class="section-subheading" style="margin-bottom:24px;">Whether you want a premium lobby kiosk or a simple reception desk setup, Ventryx adapts to your space.</p>
+        <div class="vx-benefits-grid">
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-qr-code-scan"></i></div>
+            <div><h4>QR Code Self Check-in</h4><p>Visitors scan a QR code with their phone. Zero touch, zero queues.</p></div>
+          </div>
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-tablet"></i></div>
+            <div><h4>Tablet Kiosk</h4><p>Mount an iPad or Android tablet at reception for a branded check-in experience.</p></div>
+          </div>
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-person-workspace"></i></div>
+            <div><h4>Reception Check-in</h4><p>Your receptionist can quickly log visitors from the web dashboard.</p></div>
+          </div>
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-envelope-check"></i></div>
+            <div><h4>Pre-Registration Link</h4><p>Visitors self-register before arriving via an emailed invite link.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#EFF6FF,#ECFEFF);border:1px solid #BFDBFE;border-radius:20px;padding:40px;text-align:center;">
+          <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:360px;" aria-label="Check-in flow illustration">
+            <rect x="120" y="20" width="160" height="260" rx="20" fill="#0F172A" stroke="#334155" stroke-width="1.5"/>
+            <rect x="132" y="40" width="136" height="220" rx="12" fill="#1E293B"/>
+            <!-- Screen content -->
+            <rect x="144" y="55" width="112" height="16" rx="6" fill="#2563EB" opacity="0.8"/>
+            <text x="200" y="67" fill="white" font-size="7" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">Welcome to Ventryx</text>
+            <!-- QR Code -->
+            <rect x="158" y="80" width="84" height="84" rx="8" fill="white"/>
+            <rect x="166" y="88" width="20" height="20" rx="2" fill="#0F172A"/>
+            <rect x="170" y="92" width="12" height="12" rx="1" fill="white"/>
+            <rect x="172" y="94" width="8" height="8" rx="1" fill="#0F172A"/>
+            <rect x="194" y="88" width="20" height="20" rx="2" fill="#0F172A"/>
+            <rect x="198" y="92" width="12" height="12" rx="1" fill="white"/>
+            <rect x="200" y="94" width="8" height="8" rx="1" fill="#0F172A"/>
+            <rect x="166" y="112" width="20" height="20" rx="2" fill="#0F172A"/>
+            <rect x="170" y="116" width="12" height="12" rx="1" fill="white"/>
+            <rect x="172" y="118" width="8" height="8" rx="1" fill="#0F172A"/>
+            <rect x="190" y="108" width="4" height="4" fill="#0F172A" rx="1"/>
+            <rect x="196" y="108" width="4" height="4" fill="#0F172A" rx="1"/>
+            <rect x="202" y="108" width="4" height="4" fill="#0F172A" rx="1"/>
+            <rect x="190" y="114" width="4" height="4" fill="#0F172A" rx="1"/>
+            <rect x="202" y="114" width="4" height="4" fill="#0F172A" rx="1"/>
+            <rect x="190" y="120" width="4" height="4" fill="#0F172A" rx="1"/>
+            <rect x="196" y="120" width="4" height="4" fill="#0F172A" rx="1"/>
+            <rect x="202" y="120" width="4" height="4" fill="#0F172A" rx="1"/>
+            <!-- Scan label -->
+            <rect x="158" y="172" width="84" height="20" rx="6" fill="#06B6D4" opacity="0.15"/>
+            <text x="200" y="186" fill="#06B6D4" font-size="7" text-anchor="middle" font-family="Inter,sans-serif">Scan to check in</text>
+            <!-- Input fields -->
+            <rect x="152" y="200" width="96" height="10" rx="3" fill="#334155"/>
+            <rect x="152" y="215" width="96" height="10" rx="3" fill="#334155"/>
+            <!-- Button -->
+            <rect x="160" y="232" width="80" height="18" rx="9" fill="#2563EB"/>
+            <text x="200" y="245" fill="white" font-size="7" text-anchor="middle" font-family="Inter,sans-serif" font-weight="600">Check In</text>
+            <!-- Home indicator -->
+            <rect x="185" y="270" width="30" height="4" rx="2" fill="#475569"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2: Pre-Registration -->
+    <div class="row align-items-center g-5 mb-6" style="margin-bottom:80px;flex-direction:row-reverse;">
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="section-label"><i class="bi bi-2-circle-fill"></i> Pre-Registration</span>
+        <h3>Invite Visitors Before They Arrive</h3>
+        <p class="section-subheading" style="margin-bottom:24px;">Your team sends a digital invite. Visitors fill in their details from home. On arrival, it's a 10-second check-in - no forms to fill, no waiting.</p>
+        <ul class="vx-check-list">
+          <li><i class="bi bi-check-circle-fill"></i> Employees send invite links directly from the dashboard or calendar</li>
+          <li><i class="bi bi-check-circle-fill"></i> Visitors receive email with QR code and gate entry instructions</li>
+          <li><i class="bi bi-check-circle-fill"></i> Custom forms for NDA signing, health declarations, or ID upload</li>
+          <li><i class="bi bi-check-circle-fill"></i> Automatic reminders sent 1 hour before scheduled visit</li>
+          <li><i class="bi bi-check-circle-fill"></i> Reception is notified the night before for planned visits</li>
+        </ul>
+      </div>
+      <div class="col-lg-6" data-aos="fade-right">
+        <div style="background:linear-gradient(135deg,#F0FDF4,#ECFEFF);border:1px solid #BBF7D0;border-radius:20px;padding:40px;">
+          <!-- Email mockup -->
+          <div style="background:white;border-radius:12px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+            <div style="font-size:0.75rem;color:#94A3B8;margin-bottom:4px;font-family:'Inter',sans-serif;">From: noreply@ventryx.in</div>
+            <div style="font-size:0.875rem;font-weight:600;color:#0F172A;margin-bottom:16px;font-family:'Poppins',sans-serif;">Your Visit to TechPark Solutions is Confirmed</div>
+            <div style="background:#EFF6FF;border-radius:8px;padding:16px;text-align:center;margin-bottom:16px;">
+              <div style="font-size:0.6875rem;color:#94A3B8;margin-bottom:4px;">YOUR ENTRY QR CODE</div>
+              <svg viewBox="0 0 80 80" width="80" height="80" style="margin:0 auto;">
+                <rect width="80" height="80" fill="white" rx="4"/>
+                <rect x="6" y="6" width="24" height="24" rx="2" fill="#0F172A"/>
+                <rect x="10" y="10" width="16" height="16" rx="1" fill="white"/>
+                <rect x="13" y="13" width="10" height="10" rx="1" fill="#0F172A"/>
+                <rect x="50" y="6" width="24" height="24" rx="2" fill="#0F172A"/>
+                <rect x="54" y="10" width="16" height="16" rx="1" fill="white"/>
+                <rect x="57" y="13" width="10" height="10" rx="1" fill="#0F172A"/>
+                <rect x="6" y="50" width="24" height="24" rx="2" fill="#0F172A"/>
+                <rect x="10" y="54" width="16" height="16" rx="1" fill="white"/>
+                <rect x="13" y="57" width="10" height="10" rx="1" fill="#0F172A"/>
+                <rect x="38" y="38" width="6" height="6" fill="#0F172A" rx="1"/>
+                <rect x="46" y="38" width="6" height="6" fill="#0F172A" rx="1"/>
+                <rect x="54" y="38" width="6" height="6" fill="#0F172A" rx="1"/>
+                <rect x="38" y="46" width="6" height="6" fill="#0F172A" rx="1"/>
+                <rect x="54" y="46" width="6" height="6" fill="#0F172A" rx="1"/>
+                <rect x="38" y="54" width="6" height="6" fill="#0F172A" rx="1"/>
+                <rect x="46" y="54" width="6" height="6" fill="#0F172A" rx="1"/>
+                <rect x="62" y="54" width="6" height="6" fill="#0F172A" rx="1"/>
+              </svg>
+            </div>
+            <div style="display:flex;gap:8px;margin-bottom:8px;">
+              <div style="background:#F8FAFC;border-radius:6px;padding:10px;flex:1;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="font-weight:600;color:#1E293B;display:block;margin-bottom:2px;">Date &amp; Time</span>June 20 · 10:30 AM</div>
+              <div style="background:#F8FAFC;border-radius:6px;padding:10px;flex:1;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="font-weight:600;color:#1E293B;display:block;margin-bottom:2px;">Host</span>Rohan Sinha</div>
+            </div>
+            <div style="background:#EFF6FF;border-radius:6px;padding:10px;font-size:0.6875rem;color:#2563EB;font-family:'Inter',sans-serif;text-align:center;font-weight:500;">
+              <i class="bi bi-shield-check me-1"></i>Pre-approved entry - show this QR at gate
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3: Security & Watchlist -->
+    <div class="row align-items-center g-5" data-aos="fade-right">
+      <div class="col-lg-6">
+        <span class="section-label"><i class="bi bi-3-circle-fill"></i> Security</span>
+        <h3>Built-in Security Without the Complexity</h3>
+        <p class="section-subheading" style="margin-bottom:24px;">From watchlist screening to emergency evacuation, Ventryx gives your security team the tools they need - without requiring technical training.</p>
+        <ul class="vx-check-list">
+          <li><i class="bi bi-check-circle-fill"></i> Custom watchlist - ban specific individuals permanently</li>
+          <li><i class="bi bi-check-circle-fill"></i> Real-time alerts to security when a flagged visitor attempts entry</li>
+          <li><i class="bi bi-check-circle-fill"></i> Emergency evacuation: one-tap export of all visitors currently on premises</li>
+          <li><i class="bi bi-check-circle-fill"></i> Photo capture at check-in for visual verification</li>
+          <li><i class="bi bi-check-circle-fill"></i> Aadhar / ID document scan (optional, India-compliant)</li>
+          <li><i class="bi bi-check-circle-fill"></i> Visitor history - searchable by name, company, or date</li>
+        </ul>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#FFF1F2,#FFF5F5);border:1px solid #FECDD3;border-radius:20px;padding:32px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+            <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:#FFF1F2;border-radius:8px;margin-bottom:12px;border:1px solid #FECDD3;">
+              <div style="width:36px;height:36px;background:#EF4444;border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-size:1rem;"><i class="bi bi-exclamation-triangle-fill"></i></div>
+              <div>
+                <div style="font-size:0.8125rem;font-weight:700;color:#DC2626;font-family:'Poppins',sans-serif;">Security Alert</div>
+                <div style="font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">Visitor matched watchlist - 2 minutes ago</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;margin-bottom:12px;">
+              <div style="width:48px;height:48px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:'Poppins',sans-serif;">VK</div>
+              <div style="flex:1;">
+                <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Vijay Kumar</div>
+                <div style="font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">Entry attempted: Gate 1 · 10:42 AM</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:8px;">
+              <button style="flex:1;padding:8px;background:#EF4444;color:white;border:none;border-radius:8px;font-size:0.8125rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Deny Entry</button>
+              <button style="flex:1;padding:8px;background:#F8FAFC;color:#374151;border:1.5px solid #E2E8F0;border-radius:8px;font-size:0.8125rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Contact Security</button>
+            </div>
+          </div>
+          <div style="margin-top:12px;background:white;border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
+            <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:#94A3B8;margin-bottom:10px;font-family:'Inter',sans-serif;">Currently on Premises - 14 visitors</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                <span style="color:#1E293B;font-weight:500;">Rahul Sharma</span>
+                <span style="background:#ECFDF5;color:#10B981;font-size:0.7rem;padding:2px 8px;border-radius:20px;font-weight:600;">Checked In</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                <span style="color:#1E293B;font-weight:500;">Sneha Patel</span>
+                <span style="background:#ECFDF5;color:#10B981;font-size:0.7rem;padding:2px 8px;border-radius:20px;font-weight:600;">Checked In</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                <span style="color:#1E293B;font-weight:500;">+ 12 more</span>
+                <a href="#" style="font-size:0.75rem;color:#2563EB;font-weight:500;">View all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Features Grid -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-grid-fill"></i> Full Feature Set</span>
+      <h2 class="section-heading">Everything in Ventryx VMS</h2>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-person-plus"></i></div>
+        <h4>Visitor Registration</h4>
+        <p>Capture name, photo, ID, company, purpose, and any custom fields you define.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-qr-code"></i></div>
+        <h4>QR Code Invitations</h4>
+        <p>Generate unique QR codes for each pre-registered visitor that expire after use.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-printer"></i></div>
+        <h4>Badge Printing</h4>
+        <p>Auto-print branded visitor badges with photo, name, host, and expiry - works with Zebra, Dymo, and standard printers.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-bell"></i></div>
+        <h4>SMS &amp; WhatsApp Alerts</h4>
+        <p>Hosts get an instant notification the moment their visitor checks in - via SMS, email, or WhatsApp.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-file-earmark-text"></i></div>
+        <h4>Digital NDA / Forms</h4>
+        <p>Visitors can sign NDAs, health declarations, or safety agreements at check-in - stored securely.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-clock-history"></i></div>
+        <h4>Visit History &amp; Logs</h4>
+        <p>Every visit is logged with timestamps, photos, and status. Searchable and exportable for audits.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-fire"></i></div>
+        <h4>Emergency Evacuation</h4>
+        <p>One-click evacuation list showing every person on your premises - share instantly with emergency services.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-bar-chart-line"></i></div>
+        <h4>Reports &amp; Analytics</h4>
+        <p>Daily, weekly, and monthly visitor reports. Peak hour analysis, repeat visitors, and compliance exports.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ (VMS) -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Visitor Management Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What hardware is required to run the Ventryx visitor kiosk?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Ventryx works on any Android or iOS tablet (6" screen or larger). We recommend a 10-inch tablet mounted on a stand at reception. For badge printing, you need a compatible label printer (Zebra or Dymo). That's it - no special hardware or servers required.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can Ventryx capture visitor ID documents like Aadhar or PAN?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes, optionally. Ventryx can prompt visitors to take a photo of their ID document during check-in. This is stored securely and only accessible to authorised staff. We follow India's PDPB data protection guidelines - visitor data is not used for any purpose other than access control.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How does the watchlist screening work?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>You maintain a custom watchlist of names or ID numbers you want to block. When a visitor checks in, their name is automatically compared against the watchlist. If there's a match, the check-in is blocked and a real-time alert is sent to your security team. The visitor does not see the alert - the kiosk simply says "Please contact the front desk."</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Is Ventryx VMS compliant with India's data protection laws?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. All visitor data is stored on servers in India (Mumbai data centre). We are aligned with the Personal Data Protection Bill (PDPB) - visitors can request deletion of their data, and we never share data with third parties. A data processing agreement is available for enterprise customers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Ready to Modernise Your Reception?</h2>
+    <p>See how Ventryx VMS can transform your visitor experience in 30 minutes. No commitment, no credit card.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Setup in 30 minutes &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Cancel anytime</p>
+  </div>
+</section>
+
+{{ end }}

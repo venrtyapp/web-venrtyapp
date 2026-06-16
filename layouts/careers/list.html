@@ -1,0 +1,177 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Where is Ventryx's office located?", "acceptedAnswer": { "@type": "Answer", "text": "Ventryx is headquartered in Bengaluru, Karnataka, with hybrid work options available for most roles." } },
+    { "@type": "Question", "name": "Does Ventryx hire freshers?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Ventryx hires freshers for engineering and customer success roles with structured onboarding." } },
+    { "@type": "Question", "name": "What is the interview process at Ventryx?", "acceptedAnswer": { "@type": "Answer", "text": "The interview process consists of two technical rounds and one culture-fit discussion, typically completed within 2 weeks." } },
+    { "@type": "Question", "name": "Does Ventryx offer stock options?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, ESOPs are part of the compensation package for all full-time employees at Ventryx." } },
+    { "@type": "Question", "name": "How do I apply for a job at Ventryx?", "acceptedAnswer": { "@type": "Answer", "text": "You can send your resume to careers@ventryx.in or apply directly through the form on this page." } }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Careers</span>
+    </nav>
+    <h1>Help Us Build the Future of <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Indian Workplaces</span></h1>
+    <p class="subtitle">We're a small, ambitious team solving real problems for India's fastest-growing businesses. If you love building products people actually use - you'll love it here.</p>
+  </div>
+</section>
+
+<section class="vx-section">
+  <div class="container">
+
+    <!-- Culture -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-heart-fill"></i> Life at Ventryx</span>
+      <h2 class="section-heading">What Makes Us Different</h2>
+    </div>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="vx-feature-card h-100">
+          <div class="vx-feature-icon"><i class="bi bi-rocket-takeoff"></i></div>
+          <h4>Move Fast, Build Real Things</h4>
+          <p>No red tape. No 6-month roadmap reviews. We ship features weekly and talk to customers daily.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="vx-feature-card h-100">
+          <div class="vx-feature-icon"><i class="bi bi-people"></i></div>
+          <h4>Small Team, Big Impact</h4>
+          <p>25 people. 500+ customers. Every engineer owns a product area end-to-end - from design to deployment.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="160">
+        <div class="vx-feature-card h-100">
+          <div class="vx-feature-icon"><i class="bi bi-graph-up-arrow"></i></div>
+          <h4>Grow as the Company Grows</h4>
+          <p>We're early. The people joining now will shape how Ventryx is built over the next decade.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Perks -->
+    <div style="background:var(--vx-light);border-radius:20px;padding:40px;margin-bottom:60px;" data-aos="fade-up">
+      <h3 class="text-center mb-4">What We Offer</h3>
+      <div class="row g-3">
+        {{ $perks := slice "Competitive salary + ESOP" "Flexible remote-friendly work" "Annual learning budget ₹30,000" "Health insurance for family" "New MacBook or equivalent" "Company retreats twice a year" "Direct access to founders" "No pointless meetings policy" }}
+        {{ range $perks }}
+        <div class="col-sm-6 col-md-3">
+          <div style="display:flex;align-items:center;gap:8px;font-size:0.9rem;color:var(--vx-secondary);">
+            <i class="bi bi-check-circle-fill" style="color:var(--vx-primary);flex-shrink:0;"></i>
+            {{ . }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Open Roles -->
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-briefcase-fill"></i> Open Positions</span>
+      <h2 class="section-heading">Join Our Team</h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px;" data-aos="fade-up">
+      {{ $roles := slice
+        (dict "title" "Senior Full-Stack Engineer (React + Node.js)" "dept" "Engineering" "type" "Full-time · Bengaluru / Remote")
+        (dict "title" "Product Designer (Mobile + Web)" "dept" "Design" "type" "Full-time · Bengaluru")
+        (dict "title" "Customer Success Manager" "dept" "Customer Success" "type" "Full-time · Bengaluru / Delhi")
+        (dict "title" "Inside Sales Executive" "dept" "Sales" "type" "Full-time · Bengaluru")
+        (dict "title" "DevOps / Cloud Engineer" "dept" "Engineering" "type" "Full-time · Bengaluru / Remote")
+      }}
+      {{ range $roles }}
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;background:white;border:1px solid var(--vx-border);border-radius:12px;transition:all 0.25s;" onmouseover="this.style.boxShadow='0 4px 20px rgba(37,99,235,0.10)';this.style.borderColor='rgba(37,99,235,0.20)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--vx-border)'">
+        <div>
+          <div style="font-size:1rem;font-weight:600;color:var(--vx-dark);font-family:'Poppins',sans-serif;margin-bottom:4px;">{{ .title }}</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <span style="background:var(--vx-primary-light);color:var(--vx-primary);font-size:0.75rem;font-weight:600;padding:3px 10px;border-radius:20px;">{{ .dept }}</span>
+            <span style="font-size:0.8125rem;color:var(--vx-text);display:flex;align-items:center;gap:4px;"><i class="bi bi-geo-alt" style="font-size:0.75rem;"></i>{{ .type }}</span>
+          </div>
+        </div>
+        <a href="mailto:careers@ventryx.in?subject=Application: {{ .title }}" class="btn-vx-outline" style="white-space:nowrap;flex-shrink:0;">
+          Apply <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+
+    <div style="text-align:center;margin-top:32px;padding:24px;background:var(--vx-light);border-radius:12px;" data-aos="fade-up">
+      <p style="font-size:0.9375rem;margin-bottom:12px;">Don't see a role that fits? We're always looking for great people.</p>
+      <a href="mailto:careers@ventryx.in" class="btn-vx-primary"><i class="bi bi-envelope"></i> Send Your CV</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center" style="margin-bottom:40px;">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="vx-faq-list">
+          <div class="vx-faq-item open">
+            <button class="vx-faq-question" aria-expanded="true">
+              <span>Where is Ventryx's office located?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer">
+              <p>Ventryx is headquartered in Bengaluru, Karnataka, with hybrid work options available for most roles.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>Does Ventryx hire freshers?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Yes, Ventryx hires freshers for engineering and customer success roles with structured onboarding.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>What is the interview process at Ventryx?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>The interview process consists of two technical rounds and one culture-fit discussion, typically completed within 2 weeks.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>Does Ventryx offer stock options?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Yes, ESOPs are part of the compensation package for all full-time employees at Ventryx.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>How do I apply for a job at Ventryx?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>You can send your resume to careers@ventryx.in or apply directly through the form on this page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

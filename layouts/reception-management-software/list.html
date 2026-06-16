@@ -1,0 +1,323 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is reception management software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reception management software automates the visitor-related tasks handled by your front desk - logging visitors, notifying hosts, printing badges, managing pre-registered visitors, and maintaining security. It frees up your receptionist from manual tasks so they can focus on providing a great welcome experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Ventryx work alongside a human receptionist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx is designed to complement your receptionist, not replace them. The receptionist can check in visitors from their desktop dashboard, see all expected visitors for the day, send pre-registration invites, and generate reports - all within Ventryx. Visitors can also self-check-in on a kiosk if they prefer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does reception management software work for multi-reception offices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Ventryx, each reception or entry point has its own kiosk setup, but all visitor data is centralised in a single dashboard. A security manager can see activity from all receptions simultaneously, and reports aggregate data across all entry points."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when the receptionist is away or at lunch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "During unattended periods, visitors self-check-in on the kiosk tablet. Hosts are notified automatically. No visitor is left waiting at an empty reception desk - the system handles the initial interaction and the host is alerted to come to reception."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does reception management software handle expected vs walk-in visitors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Expected visitors are pre-registered by their host with a digital invite. Their details are already in the system - check-in on arrival takes 10 seconds. Walk-in visitors check in on the kiosk by entering their name, purpose, and host. The receptionist dashboard shows both types clearly each morning."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Reception Management Software</span>
+    </nav>
+    <h1>Give Your Reception Team a <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Better Tool</span> to Work With</h1>
+    <p class="subtitle">Automate visitor check-in, instant host notifications, badge printing, and visitor tracking - all from one elegant dashboard. Your receptionist handles 3x the volume with zero extra workload.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-lightning-charge text-primary me-2"></i>3x Visitor Throughput</div>
+      <div class="vx-logo-item"><i class="bi bi-whatsapp text-primary me-2"></i>Auto WhatsApp Alerts</div>
+      <div class="vx-logo-item"><i class="bi bi-printer text-primary me-2"></i>Auto Badge Printing</div>
+      <div class="vx-logo-item"><i class="bi bi-calendar-check text-primary me-2"></i>Expected Visitor View</div>
+      <div class="vx-logo-item"><i class="bi bi-graph-up text-primary me-2"></i>Auto Daily Reports</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-person-workspace"></i> Front Desk Features</span>
+      <h2 class="section-heading">Everything Your Front Desk Needs, Automated</h2>
+      <p class="section-subheading centered">Ventryx replaces every manual reception task with intelligent automation - so your team focuses on welcoming, not paperwork.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-person-plus"></i></div>
+        <h4>Visitor Check-in &amp; Logging</h4>
+        <p>Visitors check in at the kiosk or with receptionist assistance. All details auto-logged - name, company, purpose, photo, and exact time.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-calendar3"></i></div>
+        <h4>Expected Visitor Dashboard</h4>
+        <p>Each morning your receptionist sees all pre-registered visitors for the day - names, expected arrival times, and hosts. No surprises.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-whatsapp"></i></div>
+        <h4>Instant Host Notifications</h4>
+        <p>The moment a visitor arrives, their host gets an instant WhatsApp, SMS, or email alert. No manual calls, no waiting in the lobby.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-printer-fill"></i></div>
+        <h4>Auto Visitor Badge Printing</h4>
+        <p>Branded badges with photo, name, host, and validity auto-print on check-in. No manual badge filling - ever again.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-display"></i></div>
+        <h4>Live Visitor Tracking</h4>
+        <p>Real-time dashboard shows every person currently in the building, when they arrived, and who they're visiting - invaluable for security.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-file-earmark-bar-graph"></i></div>
+        <h4>Automated Daily Reports</h4>
+        <p>End-of-day visitor summaries generated automatically - total visitors, average dwell time, repeat visitors, and security events. Zero manual compilation.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-building-up"></i></div>
+        <h4>Multi-Reception Support</h4>
+        <p>Each reception has its own kiosk. Security sees all receptions from one screen. Reports consolidate across all entry points.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-moon-stars"></i></div>
+        <h4>Unmanned Reception Mode</h4>
+        <p>When reception is unattended, the kiosk handles self check-in automatically - hosts notified instantly, no visitor left waiting.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:64px 0;">
+  <div class="container">
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">500+</div>
+        <div class="vx-stat-label">Indian Companies</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">12L+</div>
+        <div class="vx-stat-label">Visitors Managed</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">4.8★</div>
+        <div class="vx-stat-label">Customer Rating</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">80%</div>
+        <div class="vx-stat-label">Faster Check-in</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-arrow-left-right"></i> Before &amp; After</span>
+        <h2 class="section-heading">Your Receptionist's Day - Before and After Ventryx</h2>
+        <p class="section-subheading">The same receptionist can handle 3x the visitor volume - with zero increase in workload. Here's the difference Ventryx makes.</p>
+        <div style="margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div style="background:#FFF1F2;border-radius:12px;padding:16px;">
+            <div style="font-size:0.75rem;font-weight:700;color:#DC2626;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;font-family:'Inter',sans-serif;">Before</div>
+            <ul style="list-style:none;padding:0;margin:0;font-size:0.8125rem;color:#374151;font-family:'Inter',sans-serif;display:flex;flex-direction:column;gap:6px;">
+              <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Paper register writing</li>
+              <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Manual host calls</li>
+              <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Searching old pages</li>
+              <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Filling badges by hand</li>
+              <li><i class="bi bi-x-circle-fill text-danger me-2"></i>Month-end report prep</li>
+            </ul>
+          </div>
+          <div style="background:#F0FDF4;border-radius:12px;padding:16px;">
+            <div style="font-size:0.75rem;font-weight:700;color:#16A34A;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:10px;font-family:'Inter',sans-serif;">After Ventryx</div>
+            <ul style="list-style:none;padding:0;margin:0;font-size:0.8125rem;color:#374151;font-family:'Inter',sans-serif;display:flex;flex-direction:column;gap:6px;">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Elegant dashboard</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Auto WhatsApp alerts</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Instant search</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Auto badge printing</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Auto daily reports</li>
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:28px;">
+          <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Demo</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#EFF6FF,#F5F3FF);border:1px solid #BFDBFE;border-radius:20px;padding:36px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.07);">
+            <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#94A3B8;margin-bottom:14px;font-family:'Inter',sans-serif;">Today's Expected Visitors - 14 June</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;align-items:center;gap:10px;padding:10px;background:#F8FAFC;border-radius:8px;">
+                <div style="width:36px;height:36px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.875rem;font-family:'Poppins',sans-serif;flex-shrink:0;">AS</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Amit Sharma</div>
+                  <div style="font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">10:30 AM · Meeting Priya Mehta</div>
+                </div>
+                <span style="background:#ECFDF5;color:#10B981;font-size:0.7rem;padding:3px 8px;border-radius:20px;font-weight:600;white-space:nowrap;font-family:'Inter',sans-serif;">Checked In</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:10px;background:#F8FAFC;border-radius:8px;">
+                <div style="width:36px;height:36px;background:linear-gradient(135deg,#7C3AED,#EC4899);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.875rem;font-family:'Poppins',sans-serif;flex-shrink:0;">RK</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Rekha Krishnan</div>
+                  <div style="font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">11:00 AM · Interview with HR</div>
+                </div>
+                <span style="background:#FFF7ED;color:#F97316;font-size:0.7rem;padding:3px 8px;border-radius:20px;font-weight:600;white-space:nowrap;font-family:'Inter',sans-serif;">Expected</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:10px;background:#F8FAFC;border-radius:8px;">
+                <div style="width:36px;height:36px;background:linear-gradient(135deg,#059669,#0EA5E9);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:0.875rem;font-family:'Poppins',sans-serif;flex-shrink:0;">VP</div>
+                <div style="flex:1;min-width:0;">
+                  <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Vikram Patel</div>
+                  <div style="font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">2:00 PM · Vendor Demo</div>
+                </div>
+                <span style="background:#FFF7ED;color:#F97316;font-size:0.7rem;padding:3px 8px;border-radius:20px;font-weight:600;white-space:nowrap;font-family:'Inter',sans-serif;">Expected</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Reception Management Software - Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What is reception management software?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Reception management software automates the visitor-related tasks handled by your front desk - logging visitors, notifying hosts, printing badges, managing pre-registered visitors, and maintaining security. It frees up your receptionist to focus on providing a great welcome experience.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can Ventryx work alongside a human receptionist?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx complements your receptionist, not replaces them. The receptionist checks in visitors from their desktop dashboard, sees all expected visitors, sends invites, and generates reports - all within Ventryx. Visitors can also self-check-in on the kiosk.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does reception management software work for multi-reception offices?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Each reception or entry point has its own kiosk, but all visitor data is centralised in a single dashboard. Security managers see activity from all receptions simultaneously, and reports aggregate data across all entry points.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>What happens when the receptionist is away or at lunch?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>During unattended periods, visitors self-check-in on the kiosk tablet. Hosts are notified automatically. No visitor waits at an empty desk - the system handles the initial interaction and the host is alerted to come to reception.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How does reception management software handle expected vs walk-in visitors?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Expected visitors are pre-registered with a digital invite - check-in on arrival takes 10 seconds. Walk-in visitors check in on the kiosk by entering their name, purpose, and host. The receptionist dashboard shows both types clearly each morning.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Modernise Your Front Desk with Ventryx</h2>
+    <p>Automate check-ins, instant notifications, and visitor tracking - all from one screen. Setup in 30 minutes.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Setup in 30 minutes &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Works with your existing tablet</p>
+  </div>
+</section>
+
+{{ end }}

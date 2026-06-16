@@ -1,0 +1,112 @@
+<!-- Announcement Bar -->
+<div class="vx-announcement-bar d-none d-md-block">
+  <i class="bi bi-stars me-1"></i>
+  Trusted by 500+ Indian businesses - <strong>Free 14-day trial</strong>, no credit card required.
+  <a href="{{ .Site.Params.freeTrialUrl }}">Start for free →</a>
+</div>
+
+<!-- Main Navbar -->
+<nav class="vx-navbar" role="navigation" aria-label="Main navigation">
+  <div class="vx-navbar-inner nav-inner">
+
+    <!-- Logo -->
+    <a href="/" class="vx-logo" aria-label="Ventryx Home">
+      <div class="vx-logo-mark" aria-hidden="true">
+        <i class="bi bi-building-check"></i>
+      </div>
+      <span class="vx-logo-text">Ventr<span>yx</span></span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <ul class="vx-nav-links" role="list">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              {{ .Name }}
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              {{ range .Children }}
+                <a href="{{ .URL }}" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  {{ .Name }}
+                </a>
+              {{ end }}
+            </div>
+          </li>
+        {{ else }}
+          <li>
+            <a href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}class="active" aria-current="page"{{ end }}>
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+
+    <!-- CTA Buttons -->
+    <div class="vx-nav-cta">
+      <a href="/contact" class="btn-vx-outline d-none d-lg-inline-flex">
+        Contact Sales
+      </a>
+      <a href="{{ .Site.Params.demoUrl }}" class="btn-vx-primary">
+        <i class="bi bi-calendar-check"></i>
+        Book Demo
+      </a>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button class="vx-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+
+  </div><!-- /nav-inner -->
+</nav>
+
+<!-- Mobile Nav Drawer -->
+<div class="vx-mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Product</div>
+    <a href="/visitor-management-system">
+      <i class="bi bi-person-badge"></i> Visitor Management System
+    </a>
+    <a href="/attendance-management-system">
+      <i class="bi bi-calendar-check"></i> Attendance Management System
+    </a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Solutions</div>
+    <a href="/solutions/corporate-offices"><i class="bi bi-building"></i> Corporate Offices</a>
+    <a href="/solutions/schools"><i class="bi bi-mortarboard"></i> Schools & Colleges</a>
+    <a href="/solutions/hospitals"><i class="bi bi-hospital"></i> Hospitals</a>
+    <a href="/solutions/manufacturing"><i class="bi bi-gear"></i> Manufacturing</a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Resources</div>
+    <a href="/pricing"><i class="bi bi-tag"></i> Pricing</a>
+    <a href="/blog"><i class="bi bi-journal-text"></i> Blog</a>
+    <a href="/help-center"><i class="bi bi-question-circle"></i> Help Center</a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Company</div>
+    <a href="/about"><i class="bi bi-info-circle"></i> About Us</a>
+    <a href="/contact"><i class="bi bi-envelope"></i> Contact Us</a>
+    <a href="/careers"><i class="bi bi-briefcase"></i> Careers</a>
+  </div>
+
+  <div class="mobile-cta px-2">
+    <a href="{{ .Site.Params.demoUrl }}" class="btn-vx-primary w-100 justify-content-center mb-3">
+      <i class="bi bi-calendar-check"></i> Book a Free Demo
+    </a>
+    <a href="{{ .Site.Params.freeTrialUrl }}" class="btn-vx-outline w-100 justify-content-center">
+      Start Free Trial
+    </a>
+  </div>
+
+</div>
+<!-- /mobile nav -->

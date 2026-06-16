@@ -1,0 +1,322 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a leave management system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A leave management system is software that automates employee leave requests, manager approvals, and leave balance tracking. Instead of WhatsApp messages or paper forms, employees apply for leave from an app, managers approve with one tap, and HR sees all leave records in one place."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx support different types of leaves?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx supports all standard Indian leave types: Earned Leave (EL), Sick Leave (SL), Casual Leave (CL), Compensatory Off (Comp-Off), Maternity Leave, Paternity Leave, and any custom leave types your company policy requires."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does leave carry-forward work in Ventryx?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You configure carry-forward rules in Ventryx - how many days can be carried forward at year-end, maximum accumulation, and encashment policies. The system automatically applies these rules at the configured period end date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can employees check their leave balance on mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Employees see their current leave balance for each leave type in the Ventryx mobile app. They can also see the status of pending leave requests and their approved leave history."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Ventryx leave management compliant with Indian labour law?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx's leave management is built to comply with India's Shops and Establishments Acts and the Factories Act. Earned leave accrual rules are configurable per state, maternity leave follows the Maternity Benefit Act 1961, and all approvals have a full audit trail."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Leave Management System</span>
+    </nav>
+    <h1>Leave Management <span style="background:linear-gradient(135deg,#34D399,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">System</span> for Indian Businesses</h1>
+    <p class="subtitle">Replace WhatsApp leave requests and Excel trackers with a fully automated leave management system. Employees apply, managers approve, HR tracks - all in one place.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-check2-all"></i> All Indian Leave Types</div>
+      <div class="vx-logo-item"><i class="bi bi-phone"></i> Mobile Apply &amp; Approve</div>
+      <div class="vx-logo-item"><i class="bi bi-shield-check"></i> Labour Law Compliant</div>
+      <div class="vx-logo-item"><i class="bi bi-graph-up"></i> Auto Balance Tracking</div>
+      <div class="vx-logo-item"><i class="bi bi-file-earmark-check"></i> Payroll Integration</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-calendar2-heart-fill"></i> Leave Features</span>
+      <h2 class="section-heading">Everything Your HR Team Needs to Manage Leaves</h2>
+      <p class="section-subheading centered">From leave application to payroll deduction - Ventryx automates the entire leave lifecycle for Indian businesses.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-send-fill"></i></div>
+        <h4>One-Tap Leave Application</h4>
+        <p>Employees apply for any leave type from the mobile app in under 30 seconds. Select type, dates, reason - done. No forms, no email.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-check2-circle"></i></div>
+        <h4>Instant Manager Approval</h4>
+        <p>Managers get push notifications for every leave request. View team calendar for conflicts, then approve or decline with one tap.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-wallet2"></i></div>
+        <h4>Automatic Balance Tracking</h4>
+        <p>Leave balances update automatically on approval. Employees always see accurate balances - no HR queries about remaining leaves.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-calendar3"></i></div>
+        <h4>Team Calendar View</h4>
+        <p>Managers see a consolidated calendar of team leaves and work days. Plan projects and ensure coverage before approving requests.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-list-check"></i></div>
+        <h4>All Indian Leave Types</h4>
+        <p>Earned Leave, Sick Leave, Casual Leave, Comp Off, Maternity, Paternity, Optional Holiday, Loss of Pay - all supported out of the box.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-arrow-clockwise"></i></div>
+        <h4>Carry-Forward Rules</h4>
+        <p>Configure carry-forward limits, maximum accumulation, and encashment policies. The system applies rules automatically at year-end.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-file-earmark-text"></i></div>
+        <h4>Leave Reports for HR</h4>
+        <p>Department-wise leave utilisation, individual leave history, LOP reports for payroll - all downloadable with one click.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-patch-check-fill"></i></div>
+        <h4>Labour Law Compliance</h4>
+        <p>Built-in compliance with Shops &amp; Establishments Act, Factories Act, and Maternity Benefit Act 1961 with state-level configurability.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:80px 0;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:#E2E8F0;"><i class="bi bi-bar-chart-line-fill"></i> Impact</span>
+      <h2 class="section-heading" style="color:white;">Why Indian Businesses Switch to Automated Leave Management</h2>
+    </div>
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="90">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Reduction in time HR spends tracking and compiling leave records</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="100">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Elimination of leave disputes with full approval audit trail</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="500">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label">Indian businesses managing leaves on Ventryx today</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="30">0</div>
+        <div class="stat-suffix">sec</div>
+        <div class="stat-label">Average time for an employee to apply for leave on mobile</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight Row -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-whatsapp"></i> Replace WhatsApp Chaos</span>
+        <h2 class="section-heading" style="text-align:left;">Stop Managing Leaves on WhatsApp. Start Managing Them Properly.</h2>
+        <p class="section-subheading">Most Indian companies manage leaves informally - WhatsApp messages, email chains, Excel trackers. This creates disputes, compliance gaps, and hours of wasted HR effort every month.</p>
+        <ul class="vx-check-list" style="margin-top:20px;">
+          <li><i class="bi bi-check-circle-fill"></i> Every leave request, approval, and rejection is permanently logged</li>
+          <li><i class="bi bi-check-circle-fill"></i> Employees always know exactly how many leaves they have left</li>
+          <li><i class="bi bi-check-circle-fill"></i> Managers see team availability before approving any leave</li>
+          <li><i class="bi bi-check-circle-fill"></i> HR gets month-end LOP reports ready for payroll in one click</li>
+          <li><i class="bi bi-check-circle-fill"></i> Full audit trail for any labour inspection or internal audit</li>
+          <li><i class="bi bi-check-circle-fill"></i> Multi-level approval workflows for senior employee leaves</li>
+        </ul>
+        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Demo</a>
+          <a href="/pricing" class="btn-vx-outline">See Pricing</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#F0FDF4,#EFF6FF);border:1px solid #BBF7D0;border-radius:20px;padding:32px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+              <div style="font-size:0.9375rem;font-weight:700;color:#0F172A;font-family:'Poppins',sans-serif;">Leave Request</div>
+              <span style="background:#FEF9C3;color:#854D0E;font-size:0.75rem;font-weight:600;padding:3px 10px;border-radius:20px;">Pending Approval</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+              <div style="width:40px;height:40px;background:linear-gradient(135deg,#8B5CF6,#2563EB);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:'Poppins',sans-serif;">NR</div>
+              <div>
+                <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Neha Reddy</div>
+                <div style="font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">Marketing · EL Balance: 8 days</div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px;">
+              <div style="background:#F8FAFC;border-radius:8px;padding:10px;text-align:center;">
+                <div style="font-size:0.6rem;color:#94A3B8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:2px;font-family:'Inter',sans-serif;">From</div>
+                <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Jun 18</div>
+              </div>
+              <div style="background:#F8FAFC;border-radius:8px;padding:10px;text-align:center;">
+                <div style="font-size:0.6rem;color:#94A3B8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:2px;font-family:'Inter',sans-serif;">To</div>
+                <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Jun 20</div>
+              </div>
+              <div style="background:#EFF6FF;border-radius:8px;padding:10px;text-align:center;">
+                <div style="font-size:0.6rem;color:#94A3B8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:2px;font-family:'Inter',sans-serif;">Days</div>
+                <div style="font-size:0.875rem;font-weight:600;color:#2563EB;font-family:'Poppins',sans-serif;">3</div>
+              </div>
+            </div>
+            <div style="background:#F8FAFC;border-radius:8px;padding:10px;margin-bottom:4px;font-size:0.8125rem;color:#64748B;font-family:'Inter',sans-serif;">Earned Leave - Personal work</div>
+            <div style="background:#FEF9C3;border-radius:8px;padding:8px;margin-bottom:12px;font-size:0.75rem;color:#854D0E;font-family:'Inter',sans-serif;display:flex;align-items:center;gap:6px;"><i class="bi bi-info-circle"></i> 1 other team member on leave on Jun 19</div>
+            <div style="display:flex;gap:8px;">
+              <button style="flex:1;padding:10px;background:#10B981;color:white;border:none;border-radius:8px;font-size:0.875rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Approve</button>
+              <button style="flex:1;padding:10px;background:#F8FAFC;color:#374151;border:1.5px solid #E2E8F0;border-radius:8px;font-size:0.875rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Decline</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Leave Management Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What is a leave management system?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>A leave management system is software that automates employee leave requests, manager approvals, and leave balance tracking. Instead of WhatsApp messages or paper forms, employees apply for leave from an app, managers approve with one tap, and HR sees all leave records in one centralised platform with complete audit trails.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does Ventryx support different types of leaves?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx supports all standard Indian leave types: Earned Leave (EL), Sick Leave (SL), Casual Leave (CL), Compensatory Off (Comp-Off), Maternity Leave, Paternity Leave, Optional Holiday, and Loss of Pay (LOP). You can also create any custom leave types your company policy requires, with specific accrual and carry-forward rules for each.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How does leave carry-forward work in Ventryx?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>You configure carry-forward rules in Ventryx - how many days can be carried forward at year-end, maximum accumulation limits, and encashment policies. The system automatically applies these rules at the configured period end date. No manual HR intervention required.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can employees check their leave balance on mobile?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Employees see their current leave balance for each leave type in the Ventryx mobile app. They can also see the status of pending leave requests, their approved leave history, and upcoming approved leaves. This eliminates the common HR query: "How many leaves do I have left?"</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Is Ventryx leave management compliant with Indian labour law?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx's leave management is built to comply with India's Shops and Establishments Acts (which vary by state) and the Factories Act. Earned leave accrual rules are configurable per state, maternity leave follows the Maternity Benefit Act 1961 (26 weeks), and all approvals and rejections have a permanent audit trail for inspections.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>End Leave Management Chaos. Start Today.</h2>
+    <p>See how Ventryx replaces WhatsApp leave requests with a proper leave management system. Book a personalised demo for your team.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>All Indian leave types pre-configured &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Cancel anytime</p>
+  </div>
+</section>
+
+{{ end }}

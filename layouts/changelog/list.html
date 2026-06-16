@@ -1,0 +1,252 @@
+{{ define "main" }}
+
+<style>
+.vx-timeline { position:relative; padding-left:0; }
+.vx-timeline::before { content:''; position:absolute; left:120px; top:0; bottom:0; width:2px; background:var(--vx-border); }
+.vx-timeline-entry { display:flex; gap:0; margin-bottom:48px; position:relative; }
+.vx-timeline-date { width:120px; flex-shrink:0; text-align:right; padding-right:32px; padding-top:4px; }
+.vx-timeline-date .tl-version { display:block; font-size:0.75rem; font-weight:700; color:var(--vx-primary); letter-spacing:0.05em; text-transform:uppercase; }
+.vx-timeline-date .tl-month { display:block; font-size:0.9375rem; font-weight:600; color:var(--vx-heading); margin-top:2px; }
+.vx-timeline-date .tl-year { display:block; font-size:0.8125rem; color:var(--vx-text); }
+.vx-timeline-dot { width:14px; height:14px; background:var(--vx-primary); border:3px solid white; border-radius:50%; flex-shrink:0; margin-top:6px; box-shadow:0 0 0 3px var(--vx-primary-light); position:relative; z-index:1; }
+.vx-timeline-content { flex:1; background:white; border:1px solid var(--vx-border); border-radius:16px; padding:28px 32px; margin-left:24px; box-shadow:0 2px 12px rgba(0,0,0,0.04); }
+.vx-timeline-content h3 { font-size:1.125rem; color:var(--vx-heading); margin-bottom:16px; }
+.vx-tl-tag { display:inline-flex; align-items:center; gap:5px; font-size:0.75rem; font-weight:600; padding:3px 10px; border-radius:100px; margin-right:6px; margin-bottom:10px; }
+.tl-tag-new { background:#DCFCE7; color:#15803D; }
+.tl-tag-improved { background:#DBEAFE; color:#1D4ED8; }
+.tl-tag-fixed { background:#FEF3C7; color:#B45309; }
+.tl-tag-enterprise { background:#F3E8FF; color:#7C3AED; }
+.vx-timeline-content ul { margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px; }
+.vx-timeline-content ul li { display:flex; align-items:flex-start; gap:10px; font-size:0.9375rem; color:var(--vx-text); line-height:1.6; }
+.vx-timeline-content ul li i { color:var(--vx-primary); margin-top:3px; flex-shrink:0; }
+@media(max-width:768px) {
+  .vx-timeline::before { left:0; }
+  .vx-timeline-date { display:none; }
+  .vx-timeline-content { margin-left:16px; }
+}
+</style>
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Changelog</span>
+    </nav>
+    <h1>What's <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">New</span> in Ventryx</h1>
+    <p class="subtitle">Every feature we ship, every bug we fix, every improvement we make - documented here. We update this page with every release.</p>
+    <div style="margin-top:24px;display:flex;gap:10px;flex-wrap:wrap;">
+      <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:100px;padding:5px 14px;font-size:0.8125rem;color:rgba(255,255,255,0.85);display:flex;align-items:center;gap:6px;"><i class="bi bi-circle-fill" style="font-size:0.5rem;color:#4ADE80;"></i> All systems operational</span>
+      <span style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:100px;padding:5px 14px;font-size:0.8125rem;color:rgba(255,255,255,0.85);"><i class="bi bi-bell"></i> Subscribe to release notes</span>
+    </div>
+  </div>
+</section>
+
+<!-- Changelog Timeline -->
+<section class="vx-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <div class="vx-timeline">
+
+          <!-- June 2026 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.8.0</span>
+              <span class="tl-month">June</span>
+              <span class="tl-year">2026</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>AI-Powered Visitor Insights &amp; DPDP Act Compliance Tools</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+                <span class="vx-tl-tag tl-tag-enterprise"><i class="bi bi-building"></i> Enterprise</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>AI Visit Analytics:</strong> Automatically detect peak visitor hours, busiest hosts, and recurring visitor patterns. Available on Professional and Enterprise plans.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>DPDP Act Compliance Dashboard:</strong> New privacy management panel - track visitor data requests, manage consent records, and handle right-to-erasure requests as required by India's Digital Personal Data Protection Act 2023.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Bulk Visitor Pre-Registration:</strong> Upload a CSV to pre-register hundreds of visitors for large events or conference days in one go.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>WhatsApp Check-In Notifications:</strong> Hosts now receive WhatsApp messages (in addition to SMS/email) when their visitor arrives - using our verified business number.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Attendance: Compensatory Leave (Comp-Off) Module:</strong> Employees who work on holidays can now apply for comp-off directly from the mobile app. Manager approval workflow included.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- May 2026 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.7.0</span>
+              <span class="tl-month">May</span>
+              <span class="tl-year">2026</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>Kiosk 2.0, Face Recognition &amp; Payroll Integrations</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+                <span class="vx-tl-tag tl-tag-improved"><i class="bi bi-arrow-up-circle"></i> Improved</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Kiosk App 2.0:</strong> Rebuilt visitor kiosk with faster QR scan (under 1 second), support for Android 14, and a new accessible design for reduced-vision users.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Face Recognition Check-In (Beta):</strong> Employees can now check in using face recognition on supported Android kiosks - no card or phone needed. Beta available on request.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Keka HR Integration:</strong> Native two-way sync with Keka - employee master data syncs from Keka, and attendance data flows back for payroll processing.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Multi-Language Kiosk:</strong> Visitor kiosk now supports Hindi, Tamil, Telugu, Marathi, and Bengali in addition to English - configurable per location.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Fixed:</strong> Late mark calculation was incorrect for employees with custom shift grace periods. This is now resolved.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- April 2026 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.6.0</span>
+              <span class="tl-month">April</span>
+              <span class="tl-year">2026</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>Coworking Module, Desk Booking &amp; Guest WiFi</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Coworking & Hot-Desk Module:</strong> Full hot-desk booking, real-time occupancy view, and multi-tenant visitor management for coworking spaces. Available as an add-on.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Guest WiFi Auto-Provisioning:</strong> On visitor check-in, a time-limited WiFi access code is automatically generated and sent to the visitor's phone via SMS.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Visitor Satisfaction Survey:</strong> Optionally send a one-question satisfaction survey to visitors via SMS after check-out. View ratings in the dashboard.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Improved Badge Designer:</strong> Drag-and-drop badge template editor - add your logo, choose fonts, and arrange fields without any coding.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- March 2026 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.5.0</span>
+              <span class="tl-month">March</span>
+              <span class="tl-year">2026</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>Vehicle Log, Manufacturing Module &amp; Overtime Rules</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+                <span class="vx-tl-tag tl-tag-improved"><i class="bi bi-arrow-up-circle"></i> Improved</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Vehicle Entry Log:</strong> Log vehicle numbers, material details, and driver credentials at manufacturing plant gates. Searchable and exportable.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Digital Safety Briefing:</strong> Contractors must acknowledge safety rules on the kiosk before check-in is completed. Digital signature stored per visit.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Overtime Calculation Engine:</strong> Configurable overtime rules per shift - daily overtime, weekly overtime, and holiday premium rates. Factories Act compliant.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Attendance Regularisation Workflow:</strong> Employees submit missed attendance requests from the app - manager approval with full audit trail.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Fixed:</strong> Dashboard visitor count was not refreshing in real time on Safari browsers. Resolved.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- February 2026 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.4.0</span>
+              <span class="tl-month">February</span>
+              <span class="tl-year">2026</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>School Safety Module, Watchlist Enhancements</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+                <span class="vx-tl-tag tl-tag-fixed"><i class="bi bi-wrench"></i> Fixed</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Authorised Pickup List:</strong> Schools can configure an authorised guardian list per student. Only approved guardians can check out a student.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Emergency Headcount Report:</strong> One-tap report showing all visitors and staff currently on campus - designed for fire drills and emergency evacuations.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Watchlist - Photo Matching:</strong> Upload a photo to the watchlist. The system compares visitor check-in photos against the watchlist using visual similarity - flagging potential matches for security review.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Fixed:</strong> Visitor check-in email notifications were delayed by up to 4 minutes in some cases. Reduced to under 10 seconds.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- January 2026 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.3.0</span>
+              <span class="tl-month">January</span>
+              <span class="tl-year">2026</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>Hospital Visitor Scheduling, NABH Report Templates</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+                <span class="vx-tl-tag tl-tag-enterprise"><i class="bi bi-building"></i> Enterprise</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Patient Visitor Scheduling:</strong> Hospitals can configure visiting hours and maximum visitor slots per patient per day. Families book slots in advance to avoid ward overcrowding.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>NABH Compliance Report Templates:</strong> Pre-built report formats for NABH accreditation - visitor log summary, staff attendance with department breakdown, and infection screening log.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Infection Control Screening at Kiosk:</strong> Configurable health screening questionnaire at visitor check-in. Risk flags are sent to the infection control officer in real time.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>GreytHR Payroll Integration:</strong> Native integration with GreytHR - attendance data syncs daily for payroll processing without manual exports.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- December 2025 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.2.0</span>
+              <span class="tl-month">December</span>
+              <span class="tl-year">2025</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>Mobile App 2.0, Leave Module, Razorpay Payroll Sync</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+                <span class="vx-tl-tag tl-tag-improved"><i class="bi bi-arrow-up-circle"></i> Improved</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Mobile App 2.0 (Android &amp; iOS):</strong> Completely redesigned app - faster, more intuitive, with a new home screen showing today's attendance status, pending approvals, and upcoming visitors at a glance.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Leave Management Module:</strong> Employees apply for leave from the app, managers approve on mobile, and HR sees leave balances and reports - all within Ventryx.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Razorpay Payroll Integration:</strong> Attendance and leave data syncs with Razorpay Payroll for automated payroll computation.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Dark Mode:</strong> The Ventryx dashboard now supports dark mode - toggle it from your profile settings.</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- November 2025 -->
+          <div class="vx-timeline-entry" data-aos="fade-up">
+            <div class="vx-timeline-date">
+              <span class="tl-version">v2.1.0</span>
+              <span class="tl-month">November</span>
+              <span class="tl-year">2025</span>
+            </div>
+            <div class="vx-timeline-dot"></div>
+            <div class="vx-timeline-content">
+              <h3>Multi-Location Support, API v2, ZKTeco Integration</h3>
+              <div>
+                <span class="vx-tl-tag tl-tag-new"><i class="bi bi-stars"></i> New</span>
+                <span class="vx-tl-tag tl-tag-enterprise"><i class="bi bi-building"></i> Enterprise</span>
+              </div>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Multi-Location Dashboard:</strong> Enterprise customers managing multiple offices, plants, or campuses can now see a consolidated real-time view across all locations.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>REST API v2:</strong> Completely revamped API with webhook support, improved rate limits, and new endpoints for visitor management, attendance, and user management.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>ZKTeco Biometric Integration:</strong> Pull attendance punches from ZKTeco devices automatically into Ventryx every 15 minutes.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span><strong>Geofenced Attendance:</strong> Define a geofence radius around your office. Employee check-ins outside the boundary are flagged or blocked - configurable per location.</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:16px;padding:32px;background:var(--vx-light);border-radius:16px;border:1px solid var(--vx-border);" data-aos="fade-up">
+          <p style="margin-bottom:16px;color:var(--vx-text);">Want early access to upcoming features?</p>
+          <a href="/book-demo/" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Join Our Beta Program</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

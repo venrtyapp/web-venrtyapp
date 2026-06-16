@@ -1,0 +1,343 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is shift management software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shift management software helps businesses create, assign, and track employee work shifts. It automates scheduling, calculates overtime based on shift rules, sends shift reminders to employees, and tracks compliance with shift assignments. Ventryx shift management works for any type of schedule - fixed, flexible, or rotational."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Ventryx handle rotational shift schedules?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx supports automated rotational shift scheduling. You define the rotation pattern (e.g., Week A on Morning shift, Week B on Afternoon, Week C on Night), and the system automatically assigns the correct shift to each employee for each week. Managers just review and approve the generated roster."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Ventryx handle overtime in shift management?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Overtime is calculated automatically based on the rules you define for each shift. If a Morning shift is 8 hours and an employee works 10 hours, Ventryx records 2 hours overtime. You can set overtime thresholds, approval requirements, and maximum overtime limits per week or month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can employees see their own shift schedules?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Employees see their upcoming shift schedule in the Ventryx mobile app. They receive notifications when their schedule is published or changed. They can also request shift swaps, which go through a manager approval workflow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Ventryx shift management compliant with the Factories Act?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx helps ensure compliance with the Factories Act - maximum 9 hours per shift, 48 hours per week, and minimum 12-hour rest between shifts. The system flags schedule violations before they are published and generates compliance reports for factory inspectors."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Shift Management Software</span>
+    </nav>
+    <h1>Shift Management <span style="background:linear-gradient(135deg,#FDE68A,#F87171);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Software</span> That Handles India's Complex Rosters</h1>
+    <p class="subtitle">From 9-to-5 fixed shifts to 24/7 three-shift operations - automate shift scheduling, eliminate roster conflicts, track overtime, and stay compliant with Indian labour law.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-arrow-repeat"></i> Rotational Shift Automation</div>
+      <div class="vx-logo-item"><i class="bi bi-clock-history"></i> Auto Overtime Calculation</div>
+      <div class="vx-logo-item"><i class="bi bi-bell"></i> Employee Shift Reminders</div>
+      <div class="vx-logo-item"><i class="bi bi-shield-check"></i> Factories Act Compliant</div>
+      <div class="vx-logo-item"><i class="bi bi-buildings"></i> Multi-Location Support</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-calendar3-week-fill"></i> Shift Features</span>
+      <h2 class="section-heading">Complete Shift Management for Any Operation</h2>
+      <p class="section-subheading centered">Whether you run a single-shift office or a 24/7 manufacturing plant - Ventryx handles shift scheduling with precision and automation.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-sliders"></i></div>
+        <h4>Unlimited Shift Types</h4>
+        <p>Create fixed, rotating, split, flexible, and night shifts. Configure start time, end time, grace period, breaks, and overtime rules for each.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+        <h4>Automated Roster Generation</h4>
+        <p>Define your rotation pattern once - Ventryx generates the complete monthly roster automatically. Review, adjust, and publish in minutes.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+        <h4>Overtime Auto-Calculation</h4>
+        <p>Overtime calculated against each shift's rules in real time. Set thresholds, approval requirements, and weekly/monthly limits per shift type.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-shuffle"></i></div>
+        <h4>Shift Swap Workflow</h4>
+        <p>Employees request shift swaps from the app. The request goes to the manager for approval - both schedules update automatically if approved.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-bell-fill"></i></div>
+        <h4>Shift Reminders</h4>
+        <p>Employees receive automatic notifications before their shift starts - configurable to 1, 4, or 24 hours before. Dramatically reduces no-shows.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-moon-stars-fill"></i></div>
+        <h4>Night Shift Differentials</h4>
+        <p>Configure night shift allowances, overnight overtime rules, and minimum rest periods between shifts. Fully compliant with S&amp;E Act requirements.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-people-fill"></i></div>
+        <h4>Bulk Shift Assignment</h4>
+        <p>Assign shifts to individuals, teams, or entire departments at once. Import large rosters via Excel for quick onboarding of existing schedules.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-clipboard2-check-fill"></i></div>
+        <h4>Compliance Reporting</h4>
+        <p>Factories Act compliance reports - max hours, rest periods, weekly overtime limits. Ready for factory inspector visits and labour audits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:80px 0;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:#E2E8F0;"><i class="bi bi-graph-up-arrow"></i> Results</span>
+      <h2 class="section-heading" style="color:white;">The Impact of Automated Shift Management</h2>
+    </div>
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="80">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Reduction in time spent creating monthly shift rosters manually</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="95">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Fewer scheduling conflicts with automated roster generation</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="40">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Reduction in no-shows after enabling automated shift reminders</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="100">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Overtime calculation accuracy - zero manual recalculation needed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight Row -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-buildings-fill"></i> Industry Solutions</span>
+        <h2 class="section-heading" style="text-align:left;">Built for Industries That Never Stop Running</h2>
+        <p class="section-subheading">India's most shift-intensive industries - manufacturing, healthcare, BPO, retail - trust Ventryx to manage complex scheduling at scale.</p>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:14px;">
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-gear-fill" style="font-size:1.25rem;color:#2563EB;flex-shrink:0;margin-top:2px;"></i>
+            <div><strong>Manufacturing &amp; Factory</strong><p style="margin:4px 0 0;color:#64748B;font-size:0.875rem;">A/B/C shift rotation, minimum staffing enforcement, contractor labour separation, Factories Act compliance reports.</p></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-hospital" style="font-size:1.25rem;color:#059669;flex-shrink:0;margin-top:2px;"></i>
+            <div><strong>Healthcare &amp; Hospitals</strong><p style="margin:4px 0 0;color:#64748B;font-size:0.875rem;">Doctor rosters, nurse shift rotations, on-call duty tracking, minimum rest enforcement between shifts.</p></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-headset" style="font-size:1.25rem;color:#D97706;flex-shrink:0;margin-top:2px;"></i>
+            <div><strong>BPO &amp; Call Centres</strong><p style="margin:4px 0 0;color:#64748B;font-size:0.875rem;">Global time zone shifts, 24/7 coverage planning, shift-wise productivity tracking, night shift allowances.</p></div>
+          </div>
+          <div style="display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+            <i class="bi bi-shop" style="font-size:1.25rem;color:#DC2626;flex-shrink:0;margin-top:2px;"></i>
+            <div><strong>Retail &amp; Hospitality</strong><p style="margin:4px 0 0;color:#64748B;font-size:0.875rem;">Part-time and full-time mix, weekend premium shifts, seasonal staffing spikes, multiple branch management.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#FFFBEB,#FFF7ED);border:1px solid #FDE68A;border-radius:20px;padding:32px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+            <div style="font-size:0.875rem;font-weight:700;color:#0F172A;font-family:'Poppins',sans-serif;margin-bottom:14px;">June 2026 - Shift Roster</div>
+            <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;gap:4px;font-size:0.6875rem;font-family:'Inter',sans-serif;margin-bottom:8px;">
+              <div style="color:#94A3B8;padding:4px;">Employee</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Mon</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Tue</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Wed</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Thu</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Fri</div>
+
+              <div style="color:#1E293B;padding:4px;font-weight:500;">Ravi Kumar</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+
+              <div style="color:#1E293B;padding:4px;font-weight:500;">Meena S.</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#FFF1F2;color:#E11D48;text-align:center;padding:4px;border-radius:4px;font-weight:600;">L</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+
+              <div style="color:#1E293B;padding:4px;font-weight:500;">Ajay T.</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+
+              <div style="color:#1E293B;padding:4px;font-weight:500;">Sunita P.</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+            </div>
+            <div style="display:flex;gap:10px;margin-top:8px;flex-wrap:wrap;">
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:10px;height:10px;background:#EFF6FF;border-radius:2px;border:1px solid #BFDBFE;"></span>Morning (A)</span>
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:10px;height:10px;background:#F0FDF4;border-radius:2px;border:1px solid #BBF7D0;"></span>Afternoon (B)</span>
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:10px;height:10px;background:#F5F3FF;border-radius:2px;border:1px solid #DDD6FE;"></span>Night (C)</span>
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:10px;height:10px;background:#FFF1F2;border-radius:2px;border:1px solid #FECDD3;"></span>Leave (L)</span>
+            </div>
+            <div style="margin-top:12px;padding:10px;background:#F8FAFC;border-radius:8px;font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">
+              <i class="bi bi-robot me-1"></i> Auto-generated by Ventryx - 0 scheduling conflicts detected
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Shift Management Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What is shift management software?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Shift management software helps businesses create, assign, and track employee work shifts. It automates scheduling, calculates overtime based on shift rules, sends shift reminders to employees, and tracks compliance with shift assignments. Ventryx shift management works for any type of schedule - fixed, flexible, or rotational.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can Ventryx handle rotational shift schedules?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx supports automated rotational shift scheduling. You define the rotation pattern - for example, Week A on Morning shift, Week B on Afternoon, Week C on Night - and the system automatically assigns the correct shift to each employee for each week. Managers just review and approve the generated roster.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How does Ventryx handle overtime in shift management?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Overtime is calculated automatically based on the rules you define for each shift. If a Morning shift is 8 hours and an employee works 10 hours, Ventryx records 2 hours overtime. You can set overtime thresholds, approval requirements, and maximum overtime limits per week or month - all configurable per shift type.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can employees see their own shift schedules?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Employees see their upcoming shift schedule in the Ventryx mobile app. They receive push notifications when their schedule is published or changed. They can also request shift swaps with colleagues, which go through the manager approval workflow and update both schedules automatically on approval.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Is Ventryx shift management compliant with the Factories Act?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx helps ensure compliance with the Factories Act - maximum 9 hours per shift, 48 hours per week, and minimum 12-hour rest between shifts. The system flags schedule violations before they are published and generates compliance reports ready for factory inspectors and labour auditors.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>End Manual Shift Scheduling Forever</h2>
+    <p>From simple 9-to-5 to complex 24/7 rotational shifts - see how Ventryx automates shift management for your operation. Book a personalised demo.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Works for any shift pattern &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Cancel anytime</p>
+  </div>
+</section>
+
+{{ end }}

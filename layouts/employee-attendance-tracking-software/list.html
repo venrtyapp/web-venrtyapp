@@ -1,0 +1,330 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does employee attendance tracking software work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Employee attendance tracking software records check-in and check-out times for each employee. With Ventryx, employees mark attendance via mobile app, web, or kiosk. The system captures GPS location, timestamps, and optionally a selfie - creating a verifiable attendance record that feeds directly into payroll and HR reports."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I track field employees with attendance software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx's mobile app captures GPS location at check-in, allowing you to verify that field employees are at the correct site when they mark attendance. You can set up multiple geofenced locations for teams working at different sites."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the benefits of employee attendance tracking software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The main benefits are: eliminating manual attendance registers, preventing time theft and buddy punching, accurate payroll calculations, identifying patterns like chronic late arrivals, and providing data for HR decisions. Ventryx customers report saving 6–8 hours of HR admin work per month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is employee attendance tracking software legal in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, tracking employee attendance during work hours is legal in India as part of normal employment practice. Ventryx stores all data in India and allows employees to view their own attendance records, consistent with data protection best practices."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Ventryx prevent buddy punching?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx uses selfie capture with liveness detection at check-in, combined with GPS location verification. This two-factor approach ensures only the actual employee can mark their own attendance - buddy punching becomes impossible."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Employee Attendance Tracking Software</span>
+    </nav>
+    <h1>Employee Attendance <span style="background:linear-gradient(135deg,#FDE68A,#FB923C);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Tracking Software</span> for Modern Indian Businesses</h1>
+    <p class="subtitle">See who's present, who's late, and who's absent - in real time. GPS-verified check-ins, automated alerts, and payroll-ready reports for every type of workforce.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-shield-check"></i> Tamper-Proof Records</div>
+      <div class="vx-logo-item"><i class="bi bi-geo-alt"></i> GPS-Verified Check-ins</div>
+      <div class="vx-logo-item"><i class="bi bi-people"></i> 500+ Businesses Trust Us</div>
+      <div class="vx-logo-item"><i class="bi bi-bell"></i> Real-Time Alerts</div>
+      <div class="vx-logo-item"><i class="bi bi-lock"></i> Data Stored in India</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-person-check-fill"></i> Tracking Features</span>
+      <h2 class="section-heading">Real-Time Visibility Into Your Entire Workforce</h2>
+      <p class="section-subheading centered">Whether your team is in the office, on the factory floor, or working remotely - Ventryx gives you instant, verifiable attendance data.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-speedometer2"></i></div>
+        <h4>Real-Time Dashboard</h4>
+        <p>Live view of who is present, absent, late, or on leave - updated the moment employees check in. No more end-of-day reports.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <h4>GPS Location Proof</h4>
+        <p>Every check-in captures GPS coordinates. Verify field employees are at the right site. Set multiple geofenced locations for distributed teams.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-camera-fill"></i></div>
+        <h4>Selfie Verification</h4>
+        <p>Optional selfie capture with liveness detection prevents buddy punching. Visual proof of who marked attendance, stored permanently.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-alarm-fill"></i></div>
+        <h4>Late Arrival Detection</h4>
+        <p>Configurable grace periods per shift. Automatic flagging of late arrivals with manager alerts. Track habitual patterns with trend reports.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-bell-fill"></i></div>
+        <h4>Absence Alerts</h4>
+        <p>Manager gets notified automatically when an employee hasn't checked in by a configured time. Never miss an unexplained absence again.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-clock-history"></i></div>
+        <h4>Full Attendance History</h4>
+        <p>Every record stored with timestamps, GPS coordinates, and selfie proof. Retrieve any employee's complete attendance history in seconds.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-graph-up-arrow"></i></div>
+        <h4>Attendance Analytics</h4>
+        <p>Department-wise trends, individual performance, overtime patterns - visual analytics that turn raw data into actionable HR insights.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-download"></i></div>
+        <h4>Payroll Export</h4>
+        <p>One-click export of attendance data ready for GreytHR, Keka, Razorpay Payroll, or any payroll system. Eliminates manual data entry.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:80px 0;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:#E2E8F0;"><i class="bi bi-trophy-fill"></i> Impact</span>
+      <h2 class="section-heading" style="color:white;">The Business Impact of Better Attendance Tracking</h2>
+    </div>
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="70">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Reduction in HR time spent compiling monthly attendance registers</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="100">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Elimination of attendance disputes with GPS and selfie verification</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="30">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Improvement in employee punctuality within 60 days of deployment</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="8">0</div>
+        <div class="stat-suffix">hrs</div>
+        <div class="stat-label">Monthly HR hours saved per 100 employees on attendance admin work</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight Row -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-people-fill"></i> All Workforce Types</span>
+        <h2 class="section-heading" style="text-align:left;">Attendance Tracking That Works for Every Employee Type</h2>
+        <p class="section-subheading">Ventryx handles the full spectrum of Indian workforce configurations - from factory floor workers to remote knowledge workers, all in one platform.</p>
+        <div style="margin-top:24px;display:flex;flex-direction:column;gap:16px;">
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <div style="width:40px;height:40px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;flex-shrink:0;"><i class="bi bi-building"></i></div>
+            <div><strong style="color:#0F172A;">Office Employees</strong><p style="color:#64748B;margin:4px 0 0;font-size:0.9rem;">Web or kiosk check-in. IP address restriction ensures the check-in is from within the office network.</p></div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <div style="width:40px;height:40px;background:linear-gradient(135deg,#7C3AED,#2563EB);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;flex-shrink:0;"><i class="bi bi-house"></i></div>
+            <div><strong style="color:#0F172A;">Remote &amp; Hybrid</strong><p style="color:#64748B;margin:4px 0 0;font-size:0.9rem;">Mobile app with GPS proof. Restrict check-in to approved home or remote co-working locations.</p></div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <div style="width:40px;height:40px;background:linear-gradient(135deg,#059669,#0891B2);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;flex-shrink:0;"><i class="bi bi-car-front"></i></div>
+            <div><strong style="color:#0F172A;">Field Teams</strong><p style="color:#64748B;margin:4px 0 0;font-size:0.9rem;">GPS-tracked mobile check-in from any field site. Managers see check-in locations on a live map.</p></div>
+          </div>
+          <div style="display:flex;gap:14px;align-items:flex-start;">
+            <div style="width:40px;height:40px;background:linear-gradient(135deg,#D97706,#DC2626);border-radius:10px;display:flex;align-items:center;justify-content:center;color:white;flex-shrink:0;"><i class="bi bi-gear"></i></div>
+            <div><strong style="color:#0F172A;">Factory Floor Workers</strong><p style="color:#64748B;margin:4px 0 0;font-size:0.9rem;">Tablet kiosk at gate with PIN check-in. No personal device required, no hygiene concerns.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#EFF6FF,#F5F3FF);border:1px solid #BFDBFE;border-radius:20px;padding:32px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+            <div style="font-size:0.9375rem;font-weight:700;color:#0F172A;font-family:'Poppins',sans-serif;margin-bottom:16px;">Today's Attendance - 9:30 AM</div>
+            <div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap;">
+              <span style="background:#F0FDF4;color:#10B981;font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid #BBF7D0;">Present: 142</span>
+              <span style="background:#FEF9C3;color:#854D0E;font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid #FDE68A;">Late: 8</span>
+              <span style="background:#FFF1F2;color:#E11D48;font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid #FECDD3;">Absent: 5</span>
+              <span style="background:#EFF6FF;color:#2563EB;font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;border:1px solid #BFDBFE;">On Leave: 7</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:flex;align-items:center;gap:10px;padding:10px;background:#F8FAFC;border-radius:8px;">
+                <div style="width:34px;height:34px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:0.7rem;font-weight:700;">RK</div>
+                <div style="flex:1;">
+                  <div style="font-size:0.8125rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Ramesh Kumar</div>
+                  <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;">Checked in 8:58 AM · Koramangala ✓</div>
+                </div>
+                <span style="background:#F0FDF4;color:#10B981;font-size:0.6875rem;font-weight:600;padding:2px 8px;border-radius:12px;">Present</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:10px;background:#F8FAFC;border-radius:8px;">
+                <div style="width:34px;height:34px;background:linear-gradient(135deg,#8B5CF6,#EC4899);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:0.7rem;font-weight:700;">PS</div>
+                <div style="flex:1;">
+                  <div style="font-size:0.8125rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Priya Sharma</div>
+                  <div style="font-size:0.7rem;color:#D97706;font-family:'Inter',sans-serif;">Checked in 9:18 AM · 18 min late</div>
+                </div>
+                <span style="background:#FEF9C3;color:#854D0E;font-size:0.6875rem;font-weight:600;padding:2px 8px;border-radius:12px;">Late</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;padding:10px;background:#F8FAFC;border-radius:8px;">
+                <div style="width:34px;height:34px;background:linear-gradient(135deg,#0891B2,#059669);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:0.7rem;font-weight:700;">AT</div>
+                <div style="flex:1;">
+                  <div style="font-size:0.8125rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Arjun Tiwari</div>
+                  <div style="font-size:0.7rem;color:#64748B;font-family:'Inter',sans-serif;">Field check-in · Pune Site B ✓</div>
+                </div>
+                <span style="background:#F0FDF4;color:#10B981;font-size:0.6875rem;font-weight:600;padding:2px 8px;border-radius:12px;">Present</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Employee Attendance Tracking Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>How does employee attendance tracking software work?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Employee attendance tracking software records check-in and check-out times for each employee. With Ventryx, employees mark attendance via mobile app, web, or kiosk. The system captures GPS location, timestamps, and optionally a selfie - creating a verifiable attendance record that feeds directly into payroll and HR reports.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can I track field employees with attendance software?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx's mobile app captures GPS location at check-in, allowing you to verify that field employees are at the correct site when they mark attendance. You can set up multiple geofenced locations for teams working at different sites across India.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>What are the benefits of employee attendance tracking software?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>The main benefits are: eliminating manual attendance registers, preventing time theft and buddy punching, accurate payroll calculations, identifying patterns like chronic late arrivals, and providing data for HR decisions. Ventryx customers report saving 6–8 hours of HR admin work per 100 employees per month.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Is employee attendance tracking software legal in India?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes, tracking employee attendance during work hours is legal in India as part of normal employment practice. Ventryx stores all data in India and allows employees to view their own attendance records, consistent with data protection best practices.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How does Ventryx prevent buddy punching?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Ventryx uses selfie capture with liveness detection at check-in, combined with GPS location verification. This two-factor approach ensures only the actual employee can mark their own attendance - making buddy punching impossible without creating a verifiable audit trail.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Know Who's Present, Who's Late, Who's Absent - Right Now</h2>
+    <p>Get real-time visibility into your workforce attendance with a personalised Ventryx demo. Set up in under an hour.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>No credit card required &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Cancel anytime</p>
+  </div>
+</section>
+
+{{ end }}

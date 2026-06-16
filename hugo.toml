@@ -1,0 +1,164 @@
+baseURL = 'https://ventryx.in/'
+locale = 'en-IN'
+title = 'Ventryx – Visitor & Attendance Management Software India'
+enableRobotsTXT = true
+enableGitInfo = false
+paginate = 9
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  style = 'dracula'
+
+[params]
+  description = "Ventryx is India's most trusted Visitor Management System and Attendance Management Software. Automate check-ins, secure premises, and track attendance in real time."
+  keywords = "visitor management system India, attendance management software, employee attendance tracking, visitor check-in software, digital visitor logbook"
+  author = "Ventryx"
+  siteName = "Ventryx"
+  logo = "/images/ventryx-logo.svg"
+  ogImage = "/images/og-ventryx.png"
+  email = "hello@ventryx.in"
+  phone = "+91 98765 43210"
+  address = "Bengaluru, Karnataka, India"
+  twitterHandle = "@ventryxhq"
+  linkedinUrl = "https://linkedin.com/company/ventryx"
+  gtmId = ""
+  supportEmail = "support@ventryx.in"
+  demoUrl = "/book-demo"
+  freeTrialUrl = "/book-demo"
+
+  primaryColor = "#2563EB"
+  darkColor = "#0F172A"
+  accentColor = "#06B6D4"
+
+[menu]
+  [[menu.main]]
+    identifier = "product"
+    name = "Product"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "vms"
+    name = "Visitor Management"
+    url = "/visitor-management-system"
+    parent = "product"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "ams"
+    name = "Attendance Management"
+    url = "/attendance-management-system"
+    parent = "product"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "solutions"
+    name = "Solutions"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "corporate"
+    name = "Corporate Offices"
+    url = "/solutions/corporate-offices"
+    parent = "solutions"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "schools"
+    name = "Schools & Colleges"
+    url = "/solutions/schools"
+    parent = "solutions"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "hospitals"
+    name = "Hospitals"
+    url = "/solutions/hospitals"
+    parent = "solutions"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "manufacturing"
+    name = "Manufacturing"
+    url = "/solutions/manufacturing"
+    parent = "solutions"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "pricing"
+    name = "Pricing"
+    url = "/pricing"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    parent = "resources"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "helpcenter"
+    name = "Help Center"
+    url = "/help-center"
+    parent = "resources"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "company"
+    name = "Company"
+    weight = 50
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
+    url = "/about"
+    parent = "company"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact Us"
+    url = "/contact"
+    parent = "company"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "careers"
+    name = "Careers"
+    url = "/careers"
+    parent = "company"
+    weight = 3
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "ROBOTS"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["txt"]
+
+[outputFormats]
+  [outputFormats.ROBOTS]
+    baseName = "robots"
+    isPlainText = true
+    mediaType = "text/plain"
+    notAlternative = true

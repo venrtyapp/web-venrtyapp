@@ -1,0 +1,255 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Ventryx",
+  "url": "{{ .Permalink }}",
+  "description": "Get in touch with the Ventryx team for sales, support, or partnership enquiries.",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+91-98765-43210",
+    "contactType": "sales",
+    "email": "hello@ventryx.in",
+    "availableLanguage": ["English", "Hindi"]
+  }]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What are Ventryx's support hours?", "acceptedAnswer": { "@type": "Answer", "text": "Ventryx support is available Monday to Saturday, 9 AM to 7 PM IST. Email support is available 24/7." } },
+    { "@type": "Question", "name": "How quickly does Ventryx respond to queries?", "acceptedAnswer": { "@type": "Answer", "text": "Ventryx typically responds to email queries within 4 business hours. Live chat support is instant during business hours." } },
+    { "@type": "Question", "name": "Does Ventryx offer phone support?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, phone support is available for Pro and Enterprise plan customers." } },
+    { "@type": "Question", "name": "Can I schedule a product demo through this page?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can use the Book Demo button or fill the contact form with a demo request to schedule a personalised product demo." } },
+    { "@type": "Question", "name": "Is there a WhatsApp support option?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, WhatsApp support is available for Indian customers during business hours." } }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Ventryx",
+  "description": "India's leading Visitor Management System and Attendance Management Software for smart workplaces.",
+  "url": "https://ventryx.in",
+  "telephone": "+919876543210",
+  "email": "hello@ventryx.in",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "postalCode": "560001",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 12.9716,
+    "longitude": 77.5946
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  ],
+  "sameAs": ["https://linkedin.com/company/ventryx"]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Contact Us</span>
+    </nav>
+    <h1>Let's Start a <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Conversation</span></h1>
+    <p class="subtitle">Whether you have questions about features, pricing, or need a personalised demo - our team is here to help. We typically respond within 2 business hours.</p>
+  </div>
+</section>
+
+
+<section class="vx-section">
+  <div class="container">
+    <div class="vx-contact-grid">
+
+      <!-- Contact Info -->
+      <div class="vx-contact-info" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-chat-dots-fill"></i> Get in Touch</span>
+        <h2 class="section-heading">We're a Message Away</h2>
+        <p>Our team is based in Bengaluru and available Monday to Friday, 9 AM to 7 PM IST. For urgent issues, call us directly.</p>
+
+        <div class="vx-contact-items mt-4">
+          <div class="vx-contact-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <h5>Email Us</h5>
+              <p><a href="mailto:hello@ventryx.in">hello@ventryx.in</a> - Sales &amp; General Enquiries</p>
+              <p><a href="mailto:support@ventryx.in">support@ventryx.in</a> - Technical Support</p>
+            </div>
+          </div>
+          <div class="vx-contact-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h5>Call Us</h5>
+              <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+              <p style="font-size:0.8125rem;color:var(--vx-text);">Mon–Fri · 9 AM – 7 PM IST</p>
+            </div>
+          </div>
+          <div class="vx-contact-item">
+            <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+            <div>
+              <h5>WhatsApp</h5>
+              <p><a href="https://wa.me/919876543210" target="_blank" rel="noopener">+91 98765 43210</a></p>
+              <p style="font-size:0.8125rem;color:var(--vx-text);">Quickest way to reach us</p>
+            </div>
+          </div>
+          <div class="vx-contact-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h5>Office Address</h5>
+              <p>Ventryx Technologies Pvt. Ltd.<br>Bengaluru, Karnataka 560001<br>India</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:32px;padding:20px;background:var(--vx-light);border-radius:12px;border:1px solid var(--vx-border-light);">
+          <div style="font-size:0.875rem;font-weight:600;color:var(--vx-dark);margin-bottom:8px;"><i class="bi bi-clock me-2" style="color:var(--vx-primary);"></i>Response Time Guarantee</div>
+          <p style="font-size:0.875rem;">Sales enquiries: within 2 business hours<br>Support tickets: within 4 business hours<br>Enterprise: within 1 business hour</p>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="vx-form-card" data-aos="fade-left">
+        <h3>Send Us a Message</h3>
+        <p>Fill out the form and we'll get back to you shortly.</p>
+        <form class="vx-contact-form" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="vx-input-group">
+                <label for="contact-name">Full Name *</label>
+                <input type="text" id="contact-name" name="name" placeholder="Rahul Sharma" required />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="vx-input-group">
+                <label for="contact-company">Company Name</label>
+                <input type="text" id="contact-company" name="company" placeholder="Acme Technologies" />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="vx-input-group">
+                <label for="contact-email">Work Email *</label>
+                <input type="email" id="contact-email" name="email" placeholder="rahul@company.com" required />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="vx-input-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="+91 98765 43210" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="vx-input-group">
+                <label for="contact-enquiry">Enquiry Type</label>
+                <select id="contact-enquiry" name="enquiry">
+                  <option value="">Select an option</option>
+                  <option>Book a Demo</option>
+                  <option>Pricing / Quote</option>
+                  <option>Technical Support</option>
+                  <option>Partnership / Reseller</option>
+                  <option>General Question</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="vx-input-group">
+                <label for="contact-message">Message *</label>
+                <textarea id="contact-message" name="message" placeholder="Tell us about your organisation and what you're looking for..." required></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-vx-primary w-100 justify-content-center" style="padding:14px;">
+                <i class="bi bi-send-fill"></i> Send Message
+              </button>
+            </div>
+          </div>
+          <div class="vx-form-success" style="display:none;margin-top:16px;padding:14px;background:#ECFDF5;border:1px solid #BBF7D0;border-radius:8px;font-size:0.9rem;color:#065F46;">
+            <i class="bi bi-check-circle-fill me-2"></i>Thank you! We've received your message and will respond within 2 business hours.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center" style="margin-bottom:40px;">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="vx-faq-list">
+          <div class="vx-faq-item open">
+            <button class="vx-faq-question" aria-expanded="true">
+              <span>What are Ventryx's support hours?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer">
+              <p>Ventryx support is available Monday to Saturday, 9 AM to 7 PM IST. Email support is available 24/7.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>How quickly does Ventryx respond to queries?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Ventryx typically responds to email queries within 4 business hours. Live chat support is instant during business hours.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>Does Ventryx offer phone support?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Yes, phone support is available for Pro and Enterprise plan customers.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>Can I schedule a product demo through this page?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Yes, you can use the Book Demo button or fill the contact form with a demo request to schedule a personalised product demo.</p>
+            </div>
+          </div>
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>Is there a WhatsApp support option?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Yes, WhatsApp support is available for Indian customers during business hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

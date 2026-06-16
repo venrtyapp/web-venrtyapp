@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="no-js">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=39789&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+<title>ISO 27001 and Visitor Management: What Auditors Actually Look For - Ventryx</title>
+<meta name="description" content="A practical breakdown of ISO 27001 physical security controls related to visitor management, what auditors check, common non-conformities, and how Indian IT companies can build audit-ready evidence." />
+<meta name="keywords" content="ISO 27001 visitor management, information security visitor policy, ISO 27001 physical security India, ISMS visitor access control" />
+<meta name="author" content="Ventryx" />
+<meta name="robots" content="index, follow" />
+
+
+<link rel="canonical" href="http://localhost:39789/blog/iso27001-visitor-management-compliance/" />
+
+
+<meta property="og:type" content="article" />
+<meta property="og:title" content="ISO 27001 and Visitor Management: What Auditors Actually Look For - Ventryx" />
+<meta property="og:description" content="A practical breakdown of ISO 27001 physical security controls related to visitor management, what auditors check, common non-conformities, and how Indian IT companies can build audit-ready evidence." />
+<meta property="og:url" content="http://localhost:39789/blog/iso27001-visitor-management-compliance/" />
+<meta property="og:site_name" content="Ventryx" />
+<meta property="og:image" content="http://localhost:39789//images/og-ventryx.png" />
+<meta property="og:locale" content="en_IN" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@ventryxhq" />
+<meta name="twitter:title" content="ISO 27001 and Visitor Management: What Auditors Actually Look For - Ventryx" />
+<meta name="twitter:description" content="A practical breakdown of ISO 27001 physical security controls related to visitor management, what auditors check, common non-conformities, and how Indian IT companies can build audit-ready evidence." />
+<meta name="twitter:image" content="http://localhost:39789//images/og-ventryx.png" />
+
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#2563EB" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7dHcYxKFO1JRvDZsmMIf3wNjZNe7q6OFhtdgCUWCHlkTH9bC1R7A8HRZ+hJq" crossorigin="anonymous" />
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ventryx",
+  "url": "http:\/\/localhost:39789\/",
+  "logo": "http:\/\/localhost:39789\/images/ventryx-logo.svg",
+  "description": "Ventryx is India\u0027s most trusted Visitor Management System and Attendance Management Software. Automate check-ins, secure premises, and track attendance in real time.",
+  "email": "hello@ventryx.in",
+  "telephone": "\u002b91 98765 43210",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bengaluru",
+    "addressRegion": "Karnataka",
+    "addressCountry": "IN"
+  },
+  "sameAs": [
+    "https:\/\/linkedin.com\/company\/ventryx"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@ventryx.in",
+    "availableLanguage": ["English", "Hindi"]
+  }
+}
+</script>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "http:\/\/localhost:39789\/"}
+    
+    ,{"@type": "ListItem", "position": 2, "name": "\"Blog – Workplace Management Insights for Indian Businesses\"", "item": "http:\/\/localhost:39789\/blog\/"}
+    ,{"@type": "ListItem", "position": 3, "name": "\"ISO 27001 and Visitor Management: What Auditors Actually Look For\"", "item": "http:\/\/localhost:39789\/blog\/iso27001-visitor-management-compliance\/"}
+    
+  ]
+}
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body>
+  
+  
+
+  
+<div class="vx-announcement-bar d-none d-md-block">
+  <i class="bi bi-stars me-1"></i>
+  Trusted by 500+ Indian businesses - <strong>Free 14-day trial</strong>, no credit card required.
+  <a href="/book-demo">Start for free →</a>
+</div>
+
+
+<nav class="vx-navbar" role="navigation" aria-label="Main navigation">
+  <div class="vx-navbar-inner nav-inner">
+
+    
+    <a href="/" class="vx-logo" aria-label="Ventryx Home">
+      <div class="vx-logo-mark" aria-hidden="true">
+        <i class="bi bi-building-check"></i>
+      </div>
+      <span class="vx-logo-text">Ventr<span>yx</span></span>
+    </a>
+
+    
+    <ul class="vx-nav-links" role="list">
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Product
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/visitor-management-system" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Visitor Management
+                </a>
+              
+                <a href="/attendance-management-system" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Attendance Management
+                </a>
+              
+            </div>
+          </li>
+        
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Solutions
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/solutions/corporate-offices" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Corporate Offices
+                </a>
+              
+                <a href="/solutions/schools" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Schools &amp; Colleges
+                </a>
+              
+                <a href="/solutions/hospitals" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Hospitals
+                </a>
+              
+                <a href="/solutions/manufacturing" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Manufacturing
+                </a>
+              
+            </div>
+          </li>
+        
+      
+        
+          <li>
+            <a href="/pricing" >
+              Pricing
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Resources
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/blog" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Blog
+                </a>
+              
+                <a href="/help-center" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Help Center
+                </a>
+              
+            </div>
+          </li>
+        
+      
+        
+          <li>
+            <a href="#" aria-haspopup="true" aria-expanded="false">
+              Company
+              <i class="bi bi-chevron-down" style="font-size:0.7rem;"></i>
+            </a>
+            <div class="vx-dropdown" role="menu">
+              
+                <a href="/about" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  About Us
+                </a>
+              
+                <a href="/contact" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Contact Us
+                </a>
+              
+                <a href="/careers" role="menuitem">
+                  <i class="bi bi-arrow-right-short"></i>
+                  Careers
+                </a>
+              
+            </div>
+          </li>
+        
+      
+    </ul>
+
+    
+    <div class="vx-nav-cta">
+      <a href="/contact" class="btn-vx-outline d-none d-lg-inline-flex">
+        Contact Sales
+      </a>
+      <a href="/book-demo" class="btn-vx-primary">
+        <i class="bi bi-calendar-check"></i>
+        Book Demo
+      </a>
+    </div>
+
+    
+    <button class="vx-mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <i class="bi bi-list"></i>
+    </button>
+
+  </div>
+</nav>
+
+
+<div class="vx-mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Product</div>
+    <a href="/visitor-management-system">
+      <i class="bi bi-person-badge"></i> Visitor Management System
+    </a>
+    <a href="/attendance-management-system">
+      <i class="bi bi-calendar-check"></i> Attendance Management System
+    </a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Solutions</div>
+    <a href="/solutions/corporate-offices"><i class="bi bi-building"></i> Corporate Offices</a>
+    <a href="/solutions/schools"><i class="bi bi-mortarboard"></i> Schools & Colleges</a>
+    <a href="/solutions/hospitals"><i class="bi bi-hospital"></i> Hospitals</a>
+    <a href="/solutions/manufacturing"><i class="bi bi-gear"></i> Manufacturing</a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Resources</div>
+    <a href="/pricing"><i class="bi bi-tag"></i> Pricing</a>
+    <a href="/blog"><i class="bi bi-journal-text"></i> Blog</a>
+    <a href="/help-center"><i class="bi bi-question-circle"></i> Help Center</a>
+  </div>
+
+  <div class="mobile-section">
+    <div class="mobile-section-title">Company</div>
+    <a href="/about"><i class="bi bi-info-circle"></i> About Us</a>
+    <a href="/contact"><i class="bi bi-envelope"></i> Contact Us</a>
+    <a href="/careers"><i class="bi bi-briefcase"></i> Careers</a>
+  </div>
+
+  <div class="mobile-cta px-2">
+    <a href="/book-demo" class="btn-vx-primary w-100 justify-content-center mb-3">
+      <i class="bi bi-calendar-check"></i> Book a Free Demo
+    </a>
+    <a href="/book-demo" class="btn-vx-outline w-100 justify-content-center">
+      Start Free Trial
+    </a>
+  </div>
+
+</div>
+
+
+
+  <main id="main-content" role="main" tabindex="-1">
+    
+
+<section class="vx-page-hero" style="padding:56px 0 48px;">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <a href="/blog">Blog</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>ISO 27001 and Visitor Management: What …</span>
+    </nav>
+    <span class="section-label" style="margin-bottom:14px;">Security</span>
+    <h1 style="font-size:clamp(1.5rem,3.5vw,2.25rem);max-width:800px;margin:0 auto 16px;">ISO 27001 and Visitor Management: What Auditors Actually Look For</h1>
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;font-size:0.8125rem;color:rgba(255,255,255,0.50);">
+      <span><i class="bi bi-calendar3 me-1"></i>April 14, 2026</span>
+      <span><i class="bi bi-clock me-1"></i>6 min read read</span>
+      <span><i class="bi bi-person me-1"></i>Ventryx Team</span>
+    </div>
+  </div>
+</section>
+
+<section class="vx-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="vx-seo-content" style="font-size:1rem;line-height:1.8;">
+          <p>ISO 27001 certification has become a commercial necessity for a large segment of Indian IT. Software product companies, BPOs, KPOs, IT services firms, and data analytics houses are all expected by enterprise clients and government procurement to hold or be working toward this certification. What many organisations discover mid-implementation is that physical security controls - specifically visitor management - are more rigorously assessed than they anticipated.</p>
+<p>The assumption that information security is primarily a network and software problem dies quickly in the first surveillance walk by an auditor. Paper visitor registers left open on the reception desk. Badge issuance with no photo capture. Visitors walking unescorted in server corridors. These are exactly the findings that generate non-conformities and delay certification.</p>
+<p>This guide explains what ISO 27001 requires for visitor management, what auditors actually look for, and how to build a process that holds up under scrutiny.</p>
+<hr>
+<h2 id="iso-27001-physical-security-controls-annex-a7">ISO 27001 Physical Security Controls: Annex A.7</h2>
+<p>The 2022 revision of ISO 27001 reorganised the Annex A controls. Physical security is now addressed primarily under Annex A.7 (Physical Controls), with A.7.2 covering Physical Entry and A.7.4 covering Physical Security Monitoring.</p>
+<p>Under the earlier 2013 version, which many Indian organisations were certified against, the relevant controls were under A.11 (Physical and Environmental Security). Both versions share the same substantive requirements for visitor management - the control numbering differs but the audit expectations are identical.</p>
+<p>The key visitor-related controls include:</p>
+<p><strong>A.7.2 / A.11.1.2 - Physical Entry Controls.</strong> Secure areas shall be protected by appropriate entry controls to ensure that only authorised personnel are allowed access. This control directly governs how visitors are managed at facility entry points.</p>
+<p><strong>A.7.4 / A.11.1.3 - Securing Offices, Rooms, and Facilities.</strong> The standard requires that physical security for offices and areas handling sensitive information shall be designed and applied. This is read by auditors to require that visitor access to such areas is controlled and logged.</p>
+<p><strong>A.7.2 requirements for visitor management specifically include:</strong> Registration of all visitors, issuance of visitor badges that are visually distinguishable from employee badges, escort requirements for visitors in sensitive areas, and retrieval of visitor badges at exit.</p>
+<hr>
+<h2 id="visitor-specific-requirements-auditors-will-check">Visitor-Specific Requirements Auditors Will Check</h2>
+<p>ISO 27001 auditors examining visitor management will typically look for evidence across these five areas:</p>
+<p><strong>1. Visitor registration.</strong> Does the organisation maintain a record of every visitor - name, organisation, purpose, host employee, time of arrival, and time of departure? A paper register that captures only name and signature does not satisfy this requirement. The record must be complete and retained for the period defined in the ISMS retention policy.</p>
+<p><strong>2. Identity verification.</strong> Did the organisation verify who the visitor actually is before granting access? This typically means capturing a photo ID. An auditor may ask: how do you know the person who signed in as &ldquo;Rajesh Kumar from TCS&rdquo; was actually that person?</p>
+<p><strong>3. Badge issuance and retrieval.</strong> Were visitors issued a badge that distinguishes them from employees? Were badges retrieved at exit? This is a common area of non-conformity - badges are issued but the return process is not enforced or recorded.</p>
+<p><strong>4. Escort in sensitive areas.</strong> For areas containing servers, network infrastructure, development environments, or paper records with personal data, are visitors escorted? Is there a record of who escorted them?</p>
+<p><strong>5. NDA or confidentiality agreement.</strong> For visitors who may be exposed to sensitive information - client meetings where project details are shared, vendor discussions involving proprietary processes - is a confidentiality acknowledgement captured?</p>
+<hr>
+<h2 id="common-non-conformities-in-visitor-management">Common Non-Conformities in Visitor Management</h2>
+<p>Based on the patterns most frequently surfaced in ISO 27001 surveillance audits and re-certification assessments, these are the non-conformities that appear most often in Indian IT organisations:</p>
+<p><strong>No checkout record.</strong> The register captures arrival but not departure. The organisation cannot confirm that any visitor is no longer on the premises. Auditors flag this as a control failure - you cannot claim to manage visitor access if you do not know when visitors left.</p>
+<p><strong>Paper register visible to all visitors.</strong> A paper register on a reception desk allows each visitor to read the names, organisations, and visit purposes of every previous visitor. This is itself an information disclosure risk. An auditor who spots this will raise a finding.</p>
+<p><strong>No photo ID capture.</strong> Self-reported names with no identity verification mean the visitor record is unverifiable. An auditor will ask how the organisation ensures the person who entered the data is the person who actually visited.</p>
+<p><strong>Badge not retrieved.</strong> Interviews with reception staff reveal that visitors are asked to return their badge &ldquo;if they remember&rdquo; or the request is made but not enforced. An unretained badge is an uncontrolled physical credential.</p>
+<p><strong>No escort log for sensitive areas.</strong> The organisation has an escort policy on paper but no record of who escorted which visitor to the server room or development floor on any given date. The policy exists; the evidence does not.</p>
+<p><strong>Visitor policy not reviewed.</strong> The ISMS requires periodic review of policies. The visitor management policy has not been reviewed or updated since the initial certification. An auditor will note this during document review.</p>
+<hr>
+<h2 id="how-software-creates-audit-ready-evidence">How Software Creates Audit-Ready Evidence</h2>
+<p>The fundamental advantage of digital visitor management for ISO 27001 compliance is the automatic creation of audit evidence that is complete, structured, and immediately accessible.</p>
+<p>Each visitor check-in creates a timestamped record. The record is immutable - it cannot be edited after the fact without an audit trail of the edit. It captures the fields that ISO 27001 requires. And it is searchable: an auditor who asks to see all visitors who accessed the server room corridor in the past three months can receive that report in two minutes rather than requiring a manual search through a paper register.</p>
+<p>The escort workflow is logged: when the host employee confirms the visitor&rsquo;s arrival through the notification system, that confirmation is recorded as evidence that the host was aware and responsible for the visitor&rsquo;s presence. If the organisation&rsquo;s policy requires a formal escort log for sensitive areas, the system can enforce a secondary check-in at the sensitive area entry point.</p>
+<p>Automated checkout reminders sent to hosts - &ldquo;Your visitor Priya Sharma from KPMG has not been checked out. Please confirm departure.&rdquo; - address the most common non-conformity before the auditor sees it.</p>
+<hr>
+<h2 id="iso-27001-visitor-management-controls-checklist">ISO 27001 Visitor Management Controls Checklist</h2>
+<table>
+	<thead>
+			<tr>
+					<th>Control Area</th>
+					<th>Requirement</th>
+					<th>Audit Evidence Required</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Visitor registration</td>
+					<td>All visitors registered with full details</td>
+					<td>Complete digital log, name/org/purpose/host/times</td>
+			</tr>
+			<tr>
+					<td>Identity verification</td>
+					<td>Photo ID captured at entry</td>
+					<td>ID document photo stored in visit record</td>
+			</tr>
+			<tr>
+					<td>Badge issuance</td>
+					<td>Visitor badge distinguishable from employee</td>
+					<td>Badge design documentation, issuance log</td>
+			</tr>
+			<tr>
+					<td>Badge retrieval</td>
+					<td>Badge collected at exit</td>
+					<td>Exit log with badge return confirmation</td>
+			</tr>
+			<tr>
+					<td>Escort in sensitive areas</td>
+					<td>Visitor escorted beyond reception</td>
+					<td>Escort log or host confirmation record</td>
+			</tr>
+			<tr>
+					<td>Confidentiality agreement</td>
+					<td>NDA/acknowledgement for exposed visitors</td>
+					<td>Digital signature with timestamp</td>
+			</tr>
+			<tr>
+					<td>Visitor log retention</td>
+					<td>Records retained per ISMS retention schedule</td>
+					<td>Log retention settings, export capability</td>
+			</tr>
+			<tr>
+					<td>Policy review</td>
+					<td>Visitor policy reviewed periodically</td>
+					<td>Policy document with review history</td>
+			</tr>
+	</tbody>
+</table>
+<hr>
+<h2 id="indian-it-context-getting-certified-vs-maintaining-it">Indian IT Context: Getting Certified vs Maintaining It</h2>
+<p>There is a meaningful difference between the effort required to get ISO 27001 certified and the ongoing discipline required to maintain it through annual surveillance audits and triennial re-certification.</p>
+<p>Many Indian IT companies invest heavily in the initial certification - policies are written, controls are implemented, staff are trained - and then allow the visitor management process to drift over time. The paper register creeps back. The badge return process relaxes. The escort requirement is observed for audits and ignored otherwise.</p>
+<p>Digital visitor management addresses the maintenance challenge directly because the process does not depend on staff discipline - it is enforced by the system. The register is always complete because visitors cannot check in without completing all required fields. The badge return is always logged because exit check-in requires badge scanning. The checkout record is always present because the system automatically flags unresolved visits at end of day.</p>
+<p>For Indian IT companies between 200 and 2000 employees - the typical mid-market segment pursuing ISO 27001 - this is the practical argument for digital visitor management: it converts a control that requires constant management attention into one that runs itself.</p>
+<hr>
+<p>ISO 27001 physical security controls are not the most glamorous part of an ISMS implementation, but they are among the most observable - and among the easiest for auditors to test. Ventryx provides the visitor management infrastructure that Indian IT companies need to build and maintain audit-ready evidence: complete records, immutable logs, escort workflows, and on-demand reporting designed for the certification environment.</p>
+
+        </div>
+
+        
+        
+        <div style="margin-top:36px;padding-top:24px;border-top:1px solid var(--vx-border);">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#security</span>
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#ISO 27001</span>
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#compliance</span>
+            
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#audit</span>
+            
+          </div>
+        </div>
+        
+
+        
+        <div style="margin-top:36px;background:var(--vx-light);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:52px;height:52px;background:var(--vx-gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.25rem;flex-shrink:0;"><i class="bi bi-building-check"></i></div>
+          <div>
+            <div style="font-size:0.9375rem;font-weight:700;color:var(--vx-dark);margin-bottom:4px;">Ventryx Team</div>
+            <p style="font-size:0.875rem;color:var(--vx-text);margin:0;">We build and share insights on visitor management, attendance tracking, and smart workplace operations for Indian businesses.</p>
+          </div>
+        </div>
+
+        
+        <div style="margin-top:28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <span style="font-size:0.875rem;font-weight:600;color:var(--vx-secondary);">Share this article:</span>
+          <a href="https://linkedin.com/sharing/share-offsite/?url=http%2f%2flocalhost39789%2fblog%2fiso27001-visitor-management-compliance%2f" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-linkedin" style="color:#0A66C2;"></i> LinkedIn</a>
+          <a href="https://twitter.com/intent/tweet?text=iso-27001-and-visitor-management-what-auditors-actually-look-for&url=http%2f%2flocalhost39789%2fblog%2fiso27001-visitor-management-compliance%2f" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-twitter-x"></i> Twitter</a>
+          <a href="https://wa.me/?text=iso-27001-and-visitor-management-what-auditors-actually-look-for%20http%2f%2flocalhost39789%2fblog%2fiso27001-visitor-management-compliance%2f" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center" style="margin-bottom:40px;">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="vx-faq-list">
+          
+          <div class="vx-faq-item open">
+            <button class="vx-faq-question" aria-expanded="true">
+              <span>Which ISO 27001 control covers visitor management?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" >
+              <p>ISO 27001:2022 Annex A Control 7.2 (Physical Entry) and A.7.4 (Physical Security Monitoring) directly address visitor access control and monitoring.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>What visitor records does an ISO 27001 auditor typically review?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Auditors check for visitor ID capture, purpose of visit, host name, badge issuance, area access restrictions, checkout time, and log retention period.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>What are the most common ISO 27001 non-conformities for visitor management?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>No checkout records, paper registers visible to subsequent visitors, no photo ID capture, and no process for revoking lost visitor badges.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>How long should visitor logs be retained for ISO 27001?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>ISO 27001 does not specify a retention period, but best practice and most auditors expect at least 12 months of searchable visitor logs.</p>
+            </div>
+          </div>
+          
+          <div class="vx-faq-item">
+            <button class="vx-faq-question" aria-expanded="false">
+              <span>Does Ventryx help organisations pass their ISO 27001 audit?</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" style="display:none;">
+              <p>Yes, Ventryx generates audit-ready reports covering all visitor control requirements, exportable as PDF or CSV for auditor review.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>See Ventryx in Action</h2>
+    <p>Ready to replace paper registers with a smarter system? Book a free 30-minute demo with our team.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/blog" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">More Articles</a>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="vx-footer" role="contentinfo">
+  <div class="container">
+    <div class="vx-footer-grid">
+
+      
+      <div class="vx-footer-brand">
+        <a href="/" class="vx-logo" aria-label="Ventryx Home">
+          <div class="vx-logo-mark">
+            <i class="bi bi-building-check"></i>
+          </div>
+          <span class="vx-logo-text" style="color:white;">Ventr<span style="color:#60A5FA;">yx</span></span>
+        </a>
+        <p>India's most trusted platform for Visitor Management and Attendance Management - helping 500+ businesses run smarter workplaces.</p>
+        <div class="vx-footer-social">
+          <a href="https://linkedin.com/company/ventryx" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/ventryxhq" aria-label="Twitter" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <a href="https://youtube.com/@ventryxhq" aria-label="YouTube" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://instagram.com/ventryxhq" aria-label="Instagram" rel="noopener noreferrer" target="_blank">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      
+      <div class="vx-footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="/visitor-management-system">Visitor Management System</a></li>
+          <li><a href="/attendance-management-system">Attendance Management</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/book-demo">Book a Demo</a></li>
+          <li><a href="/changelog">What's New</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="vx-footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="/solutions/corporate-offices">Corporate Offices</a></li>
+          <li><a href="/solutions/schools">Schools & Colleges</a></li>
+          <li><a href="/solutions/hospitals">Hospitals</a></li>
+          <li><a href="/solutions/manufacturing">Manufacturing</a></li>
+          <li><a href="/solutions/coworking">Coworking Spaces</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="vx-footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/partners">Partners</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="vx-footer-newsletter">
+        <h4>Stay in the Loop</h4>
+        <p>Workplace management tips, product updates, and industry news. No spam, unsubscribe anytime.</p>
+        <form class="vx-newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="you@company.com" aria-label="Email address" />
+          <button type="submit" aria-label="Subscribe">
+            <i class="bi bi-send-fill"></i>
+          </button>
+        </form>
+        <div style="margin-top:20px;">
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.35);margin-bottom:8px;">CERTIFIED & COMPLIANT</p>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:4px 10px;font-size:0.7rem;color:rgba(255,255,255,0.45);">ISO 27001</span>
+            <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:4px 10px;font-size:0.7rem;color:rgba(255,255,255,0.45);">GDPR Ready</span>
+            <span style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:6px;padding:4px 10px;font-size:0.7rem;color:rgba(255,255,255,0.45);">India Data Residency</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="vx-footer-bottom">
+      <p>© 2026 Ventryx Technologies Pvt. Ltd. · Made with ♥ in India</p>
+      <div class="vx-footer-links">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-and-conditions">Terms of Service</a>
+        <a href="/cookie-policy">Cookie Policy</a>
+        <a href="/security">Security</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+  
+  <button class="vx-scroll-top" aria-label="Scroll to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", function(user) {
+        if (!user) {
+          window.netlifyIdentity.on("login", function() {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9Nc2+QxCEZq5Gqfhf/tGXM3glbJlTB7VGBLvMRR4FDf2VN0bZC4vK" crossorigin="anonymous"></script>
+
+  
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  
+  
+  <script src="/js/main.js"></script>
+
+  
+</body>
+</html>

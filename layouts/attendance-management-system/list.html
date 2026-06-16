@@ -1,0 +1,378 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx Attendance Management System",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "description": "Attendance Management Software for Indian businesses. Mobile check-in, GPS tracking, shift management, leave management and payroll-ready reports.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR",
+    "description": "Free 14-day trial"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an Attendance Management System?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Attendance Management System (AMS) is a digital platform that automates employee attendance tracking, replacing manual registers and biometric punch machines. It records check-in and check-out times, manages leaves, tracks shifts, calculates overtime, and generates payroll-ready reports - all in one place."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx support biometric attendance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx integrates with leading biometric hardware brands including ZKTeco, eSSL, and Matrix. Punch data from biometric devices syncs automatically into Ventryx for centralised reporting. Ventryx also supports biometric-free attendance via mobile app with selfie capture and GPS verification."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Ventryx integrate with payroll software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx has native integrations with Razorpay Payroll, GreytHR, and Keka. For all other payroll systems, payroll-ready reports can be exported in Excel or CSV format. A REST API is also available for custom integrations with any HRMS or payroll platform."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Ventryx handle shift-based attendance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx supports unlimited custom shifts with configurable timings, grace periods, and overtime rules. Employees can be assigned to fixed or rotational shifts individually or by department. The system automatically calculates late arrivals, early departures, overtime, and night-shift allowances based on the assigned shift schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is attendance data stored in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All attendance data processed by Ventryx is stored on servers located in India (Mumbai data centre). We do not transfer employee data outside India. This ensures compliance with India's Digital Personal Data Protection (DPDP) Act and internal data residency policies of Indian enterprises."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Attendance Management System</span>
+    </nav>
+    <h1>Attendance Management <span style="background:linear-gradient(135deg,#6EE7B7,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Software</span> for Indian Teams</h1>
+    <p class="subtitle">Replace biometric punching and paper registers with a mobile-first attendance system. Track check-ins, manage shifts, handle leaves, and generate payroll reports - without manual effort.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Feature Highlights -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-calendar-check-fill"></i> Features</span>
+      <h2 class="section-heading">Attendance Tracking That Actually Works</h2>
+      <p class="section-subheading centered">From the factory floor to the remote home office - Ventryx AMS handles attendance for every kind of workforce in India.</p>
+    </div>
+
+    <!-- Feature 1: Attendance Tracking -->
+    <div class="row align-items-center g-5 mb-5" data-aos="fade-right" style="margin-bottom:80px;">
+      <div class="col-lg-6">
+        <span class="section-label"><i class="bi bi-1-circle-fill"></i> Tracking</span>
+        <h3>Every Check-in Method, One Platform</h3>
+        <p class="section-subheading" style="margin-bottom:24px;">Whether your team is in-office, remote, or on-field - they mark attendance from wherever they are, with proof you can verify.</p>
+        <div class="vx-benefits-grid">
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-phone"></i></div>
+            <div><h4>Mobile App</h4><p>One-tap check-in from Android/iOS with selfie and GPS proof.</p></div>
+          </div>
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-globe"></i></div>
+            <div><h4>Web Portal</h4><p>Mark attendance from any browser - perfect for remote and hybrid employees.</p></div>
+          </div>
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-geo-alt"></i></div>
+            <div><h4>GPS Geofencing</h4><p>Restrict check-in to within a defined radius of your office or site.</p></div>
+          </div>
+          <div class="vx-benefit-item">
+            <div class="vx-benefit-icon"><i class="bi bi-tablet"></i></div>
+            <div><h4>Kiosk Mode</h4><p>Face recognition or PIN-based check-in on a shared tablet at reception.</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#F0FDF4,#ECFEFF);border:1px solid #BBF7D0;border-radius:20px;padding:32px;">
+          <!-- Mobile attendance UI mockup -->
+          <div style="max-width:220px;margin:0 auto;background:#0F172A;border-radius:24px;padding:16px 12px;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <div style="background:#1E293B;border-radius:16px;padding:16px;">
+              <div style="text-align:center;margin-bottom:16px;">
+                <div style="font-size:0.65rem;color:#94A3B8;font-family:'Inter',sans-serif;">Monday, June 10, 2026</div>
+                <div style="font-size:1.5rem;font-weight:800;color:white;font-family:'Poppins',sans-serif;">09:02 AM</div>
+              </div>
+              <div style="background:#0F172A;border-radius:12px;padding:12px;margin-bottom:12px;">
+                <div style="display:flex;gap:8px;align-items:center;">
+                  <div style="width:32px;height:32px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:0.75rem;font-weight:700;font-family:'Poppins',sans-serif;">SK</div>
+                  <div>
+                    <div style="font-size:0.75rem;font-weight:600;color:white;font-family:'Poppins',sans-serif;">Suresh Kumar</div>
+                    <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;">Engineering · Floor 3</div>
+                  </div>
+                </div>
+              </div>
+              <div style="background:#0F172A;border-radius:10px;padding:10px;margin-bottom:8px;">
+                <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;margin-bottom:2px;">LOCATION</div>
+                <div style="font-size:0.7rem;color:#34D399;font-family:'Inter',sans-serif;display:flex;align-items:center;gap:4px;"><i class="bi bi-geo-alt-fill" style="font-size:0.6rem;"></i>Whitefield, Bengaluru ✓</div>
+              </div>
+              <button style="width:100%;padding:12px;background:linear-gradient(135deg,#2563EB,#06B6D4);border:none;border-radius:12px;color:white;font-size:0.8125rem;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;">
+                <i class="bi bi-check2-circle me-1"></i>Mark Attendance
+              </button>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px;">
+                <div style="background:#0F172A;border-radius:8px;padding:8px;text-align:center;">
+                  <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;">Check-in</div>
+                  <div style="font-size:0.75rem;font-weight:600;color:#34D399;font-family:'Poppins',sans-serif;">09:02</div>
+                </div>
+                <div style="background:#0F172A;border-radius:8px;padding:8px;text-align:center;">
+                  <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;">Check-out</div>
+                  <div style="font-size:0.75rem;font-weight:600;color:#475569;font-family:'Poppins',sans-serif;">-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2: Leave Management -->
+    <div class="row align-items-center g-5" style="margin-bottom:80px;flex-direction:row-reverse;">
+      <div class="col-lg-6" data-aos="fade-left">
+        <span class="section-label"><i class="bi bi-2-circle-fill"></i> Leave Management</span>
+        <h3>Paperless Leave Requests and Approvals</h3>
+        <p class="section-subheading" style="margin-bottom:24px;">Employees apply, managers approve, HR tracks - all within Ventryx. No more WhatsApp messages or email chains for simple leave requests.</p>
+        <ul class="vx-check-list">
+          <li><i class="bi bi-check-circle-fill"></i> Employees apply for leaves from mobile or web with one tap</li>
+          <li><i class="bi bi-check-circle-fill"></i> Managers receive instant notification and can approve with one tap</li>
+          <li><i class="bi bi-check-circle-fill"></i> Custom leave policies - Earned Leave, Sick Leave, Casual Leave, Comp Off</li>
+          <li><i class="bi bi-check-circle-fill"></i> Leave balance automatically tracked and updated</li>
+          <li><i class="bi bi-check-circle-fill"></i> Calendar view showing team availability for planning</li>
+          <li><i class="bi bi-check-circle-fill"></i> Leave encashment and carry-forward rules configurable</li>
+        </ul>
+      </div>
+      <div class="col-lg-6" data-aos="fade-right">
+        <div style="background:linear-gradient(135deg,#EFF6FF,#F5F3FF);border:1px solid #BFDBFE;border-radius:20px;padding:32px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+              <div style="font-size:0.9375rem;font-weight:700;color:#0F172A;font-family:'Poppins',sans-serif;">Leave Request</div>
+              <span style="background:#FEF9C3;color:#854D0E;font-size:0.75rem;font-weight:600;padding:3px 10px;border-radius:20px;">Pending</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+              <div style="width:40px;height:40px;background:linear-gradient(135deg,#8B5CF6,#2563EB);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:'Poppins',sans-serif;">NR</div>
+              <div>
+                <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Neha Reddy</div>
+                <div style="font-size:0.75rem;color:#64748B;font-family:'Inter',sans-serif;">Marketing · 3 leaves remaining</div>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px;">
+              <div style="background:#F8FAFC;border-radius:8px;padding:10px;">
+                <div style="font-size:0.625rem;color:#94A3B8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-family:'Inter',sans-serif;margin-bottom:2px;">From</div>
+                <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Jun 15</div>
+              </div>
+              <div style="background:#F8FAFC;border-radius:8px;padding:10px;">
+                <div style="font-size:0.625rem;color:#94A3B8;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-family:'Inter',sans-serif;margin-bottom:2px;">To</div>
+                <div style="font-size:0.875rem;font-weight:600;color:#0F172A;font-family:'Poppins',sans-serif;">Jun 17</div>
+              </div>
+            </div>
+            <div style="background:#F8FAFC;border-radius:8px;padding:10px;margin-bottom:12px;font-size:0.8125rem;color:#64748B;font-family:'Inter',sans-serif;">Sick Leave - Family function</div>
+            <div style="display:flex;gap:8px;">
+              <button style="flex:1;padding:10px;background:#10B981;color:white;border:none;border-radius:8px;font-size:0.875rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Approve</button>
+              <button style="flex:1;padding:10px;background:#F8FAFC;color:#374151;border:1.5px solid #E2E8F0;border-radius:8px;font-size:0.875rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;">Decline</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3: Shift Management -->
+    <div class="row align-items-center g-5" data-aos="fade-right">
+      <div class="col-lg-6">
+        <span class="section-label"><i class="bi bi-3-circle-fill"></i> Shift Management</span>
+        <h3>Flexible Shift Scheduling for Any Workforce</h3>
+        <p class="section-subheading" style="margin-bottom:24px;">Whether you run 9-to-5, 24/7 three shifts, or rotational rosters - Ventryx handles the scheduling and tracks compliance automatically.</p>
+        <ul class="vx-check-list">
+          <li><i class="bi bi-check-circle-fill"></i> Define unlimited shifts with custom timings and grace periods</li>
+          <li><i class="bi bi-check-circle-fill"></i> Assign employees to shifts individually or by department</li>
+          <li><i class="bi bi-check-circle-fill"></i> Automated weekly/monthly rotational shift schedules</li>
+          <li><i class="bi bi-check-circle-fill"></i> Overtime calculated automatically based on shift rules</li>
+          <li><i class="bi bi-check-circle-fill"></i> Late arrival and early departure flags with manager alerts</li>
+          <li><i class="bi bi-check-circle-fill"></i> Night shift allowance and differential pay tracking</li>
+        </ul>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#FFFBEB,#FFF7ED);border:1px solid #FDE68A;border-radius:20px;padding:32px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.06);">
+            <div style="font-size:0.875rem;font-weight:700;color:#0F172A;font-family:'Poppins',sans-serif;margin-bottom:14px;">June 2026 - Shift Roster</div>
+            <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr;gap:4px;font-size:0.6875rem;font-family:'Inter',sans-serif;">
+              <div style="color:#94A3B8;padding:4px;">Employee</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Mon</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Tue</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Wed</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Thu</div>
+              <div style="color:#94A3B8;text-align:center;padding:4px;">Fri</div>
+
+              <div style="color:#1E293B;padding:4px;font-weight:500;">Ravi Kumar</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+
+              <div style="color:#1E293B;padding:4px;font-weight:500;">Meena S.</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#FFF1F2;color:#E11D48;text-align:center;padding:4px;border-radius:4px;font-weight:600;">L</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+              <div style="background:#F5F3FF;color:#7C3AED;text-align:center;padding:4px;border-radius:4px;font-weight:600;">C</div>
+
+              <div style="color:#1E293B;padding:4px;font-weight:500;">Ajay T.</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#EFF6FF;color:#2563EB;text-align:center;padding:4px;border-radius:4px;font-weight:600;">A</div>
+              <div style="background:#F0FDF4;color:#10B981;text-align:center;padding:4px;border-radius:4px;font-weight:600;">B</div>
+            </div>
+            <div style="display:flex;gap:12px;margin-top:12px;">
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:12px;height:12px;background:#EFF6FF;border-radius:2px;border:1px solid #BFDBFE;"></span>Morning (A)</span>
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:12px;height:12px;background:#F0FDF4;border-radius:2px;border:1px solid #BBF7D0;"></span>Afternoon (B)</span>
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:12px;height:12px;background:#F5F3FF;border-radius:2px;border:1px solid #DDD6FE;"></span>Night (C)</span>
+              <span style="display:flex;align-items:center;gap:4px;font-size:0.6875rem;color:#64748B;font-family:'Inter',sans-serif;"><span style="width:12px;height:12px;background:#FFF1F2;border-radius:2px;border:1px solid #FECDD3;"></span>Leave (L)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Reports Section -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-bar-chart-fill"></i> Reports</span>
+      <h2 class="section-heading">Payroll-Ready Reports, Zero Manual Work</h2>
+      <p class="section-subheading centered">Ventryx automatically builds every report your HR and payroll team needs - with no data entry.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-calendar2-week"></i></div>
+        <h4>Daily Attendance Report</h4>
+        <p>Real-time view of who is present, absent, late, or on leave - updated automatically throughout the day.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-alarm"></i></div>
+        <h4>Late Arrival Report</h4>
+        <p>Track employees who arrive late consistently. Configurable thresholds and automated escalation alerts.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-clock-fill"></i></div>
+        <h4>Overtime Report</h4>
+        <p>Automatic overtime calculation based on shift rules. Ready for payroll integration.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+        <h4>Monthly MIS Report</h4>
+        <p>Complete monthly summary with working days, leaves, overtime - export to Excel with one click.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ (AMS) -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Attendance Management Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>Do I need to replace my existing biometric device to use Ventryx?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Not necessarily. Ventryx AMS works standalone without any hardware. If you want to continue using biometric devices, we have integration APIs for popular brands like ZKTeco, eSSL, and Matrix. Data from the biometric device syncs into Ventryx for centralised reporting.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can employees regularise missed attendance entries?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Employees can raise a regularisation request for missed check-ins or check-outs, with a reason. The request goes through the manager approval workflow. All regularisations are flagged separately in reports so HR has full visibility.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does Ventryx work for remote and hybrid teams?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes, it's designed for modern hybrid work. Remote employees mark attendance from the web or mobile app. You can require GPS location proof, selfie verification, or IP address restrictions - whatever your company policy requires. On-field teams can also use the app.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Which payroll software does Ventryx integrate with?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>We have native integrations with Razorpay Payroll, GreytHR, and Keka. For all other payroll systems, you can export payroll-ready Excel/CSV reports in any format. We also offer a REST API for custom integrations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Say Goodbye to Manual Attendance Forever</h2>
+    <p>See Ventryx AMS in action with a personalised demo for your team. No commitment required.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Works for teams of 10 to 10,000 &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Cancel anytime</p>
+  </div>
+</section>
+
+{{ end }}

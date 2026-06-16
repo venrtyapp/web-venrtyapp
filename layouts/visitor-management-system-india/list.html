@@ -1,0 +1,313 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best visitor management system for Indian offices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx is the leading visitor management system built specifically for Indian offices. It includes WhatsApp notifications (preferred in India), offline mode for intermittent internet, India data residency (Mumbai servers), PDPB compliance, and GST invoicing. Pricing starts at ₹999/month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx store data in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All visitor and employee data is stored exclusively on AWS servers in Mumbai, India. We never transfer data outside India. This makes Ventryx compliant with India's data localisation requirements and the Personal Data Protection Bill (PDPB)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which industries use visitor management systems in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visitor management systems are widely used in India across IT companies and tech parks, manufacturing plants and factories, hospitals and healthcare facilities, schools and colleges, banks and financial services, government offices, and coworking spaces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the cost of visitor management system in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx starts at ₹999/month for small teams. Mid-size companies pay ₹2,999/month for the Professional plan with unlimited users. Enterprise pricing is custom. All plans include a 14-day free trial with no credit card required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx support WhatsApp notifications in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx offers native WhatsApp notifications for host alerts - the most preferred communication channel in India. When a visitor checks in, their host receives an instant WhatsApp message with the visitor's name and photo. This is in addition to SMS and email notifications."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Visitor Management System India</span>
+    </nav>
+    <h1>Visitor Management System for <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Indian Offices</span>, Schools &amp; Factories</h1>
+    <p class="subtitle">India's most trusted VMS - built from scratch for how Indian businesses actually work. WhatsApp alerts, offline mode, India data residency, PDPB compliance, and GST invoicing. Trusted by 500+ Indian companies.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-geo-alt-fill text-primary me-2"></i>Mumbai AWS Servers</div>
+      <div class="vx-logo-item"><i class="bi bi-whatsapp text-primary me-2"></i>WhatsApp Native</div>
+      <div class="vx-logo-item"><i class="bi bi-wifi-off text-primary me-2"></i>Offline Mode</div>
+      <div class="vx-logo-item"><i class="bi bi-receipt text-primary me-2"></i>GST Invoice</div>
+      <div class="vx-logo-item"><i class="bi bi-shield-check text-primary me-2"></i>PDPB Compliant</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-india"></i> Built for India</span>
+      <h2 class="section-heading">Why Ventryx Is India's Purpose-Built VMS</h2>
+      <p class="section-subheading centered">Western VMS products fail Indian offices. Ventryx was designed from day one for the Indian market - addressing every gap that global products leave open.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-whatsapp"></i></div>
+        <h4>Native WhatsApp Notifications</h4>
+        <p>Indian professionals check WhatsApp more than email. Ventryx sends instant WhatsApp alerts to hosts - not just email - so no visitor waits in the lobby.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-wifi-off"></i></div>
+        <h4>Full Offline Mode</h4>
+        <p>Many Indian offices face intermittent connectivity. Ventryx kiosk works offline - visitor data syncs automatically when internet returns.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-database-check"></i></div>
+        <h4>India Data Residency</h4>
+        <p>All data stored exclusively on AWS Mumbai servers. No data ever leaves India - compliant with PDPB and sector-specific data localisation rules.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-receipt-cutoff"></i></div>
+        <h4>Proper GST Invoicing</h4>
+        <p>Ventryx issues proper GST tax invoices for every payment - essential for Indian businesses to claim input tax credit and expense reimbursement.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-translate"></i></div>
+        <h4>Hindi Language Support</h4>
+        <p>The visitor kiosk interface is available in Hindi and English - making it accessible to receptionists and visitors across India.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-cash-coin"></i></div>
+        <h4>INR Pricing from ₹999/mo</h4>
+        <p>Priced in Indian Rupees - not USD. Starting at ₹999/month, Ventryx is accessible to Indian SMEs without painful currency conversion.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-building-gear"></i></div>
+        <h4>Multi-Industry Support</h4>
+        <p>Preconfigured templates for IT companies, factories, hospitals, schools, and banks - each with the right compliance fields out of the box.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-headset"></i></div>
+        <h4>India-Based Support</h4>
+        <p>Support team in India - IST timezone, phone and WhatsApp support available. No tickets into a US timezone support queue.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:64px 0;">
+  <div class="container">
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">500+</div>
+        <div class="vx-stat-label">Indian Companies</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">12L+</div>
+        <div class="vx-stat-label">Visitors Processed</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">4.8★</div>
+        <div class="vx-stat-label">Customer Rating</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">80%</div>
+        <div class="vx-stat-label">Faster Check-in</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight: India Industries -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-buildings"></i> Industries</span>
+        <h2 class="section-heading">Built for Every Indian Industry</h2>
+        <p class="section-subheading">From IT parks in Bengaluru to factories in Pune and hospitals in Mumbai - Ventryx serves the full breadth of Indian businesses.</p>
+        <ul class="vx-check-list" style="margin-top:24px;">
+          <li><i class="bi bi-check-circle-fill"></i> IT companies &amp; tech parks - ISO 27001 visitor logs</li>
+          <li><i class="bi bi-check-circle-fill"></i> Manufacturing plants - multi-gate, contractor tracking</li>
+          <li><i class="bi bi-check-circle-fill"></i> Hospitals - visiting hour control, ward-level access</li>
+          <li><i class="bi bi-check-circle-fill"></i> Schools &amp; colleges - NAAC compliance, parent verification</li>
+          <li><i class="bi bi-check-circle-fill"></i> Banks &amp; NBFC - SEBI audit trail, ID capture</li>
+          <li><i class="bi bi-check-circle-fill"></i> Coworking spaces - member vs. visitor tracking</li>
+        </ul>
+        <div style="margin-top:28px;">
+          <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Industry Demo</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#EFF6FF,#F0FDF4);border:1px solid #BFDBFE;border-radius:20px;padding:36px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.07);">
+            <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#94A3B8;margin-bottom:14px;font-family:'Inter',sans-serif;">Ventryx vs. Global VMS Products</div>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.75rem;font-weight:600;color:#64748B;font-family:'Inter',sans-serif;padding-bottom:6px;border-bottom:1px solid #F1F5F9;">
+                <span>Feature</span><span style="text-align:center;">Global</span><span style="text-align:center;color:#2563EB;">Ventryx</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;">
+                <span style="color:#374151;">WhatsApp alerts</span>
+                <span style="text-align:center;color:#EF4444;">No</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">Yes</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;background:#F8FAFC;border-radius:6px;padding:6px 4px;">
+                <span style="color:#374151;">Offline mode</span>
+                <span style="text-align:center;color:#EF4444;">No</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">Yes</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;">
+                <span style="color:#374151;">India servers</span>
+                <span style="text-align:center;color:#EF4444;">No</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">Yes</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;background:#F8FAFC;border-radius:6px;padding:6px 4px;">
+                <span style="color:#374151;">GST invoice</span>
+                <span style="text-align:center;color:#EF4444;">No</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">Yes</span>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;font-size:0.8125rem;font-family:'Inter',sans-serif;align-items:center;">
+                <span style="color:#374151;">Pricing</span>
+                <span style="text-align:center;color:#EF4444;">$50–200</span>
+                <span style="text-align:center;color:#10B981;font-weight:600;">₹999/mo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">VMS India - Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What is the best visitor management system for Indian offices?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Ventryx is the leading visitor management system built specifically for Indian offices. It includes WhatsApp notifications, offline mode, India data residency on Mumbai AWS servers, PDPB compliance, and GST invoicing. Pricing starts at ₹999/month - no USD conversion needed.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does Ventryx store data in India?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. All visitor and employee data is stored exclusively on AWS servers in Mumbai, India. We never transfer data outside India - making Ventryx compliant with India's data localisation requirements and the Personal Data Protection Bill (PDPB).</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Which industries use visitor management systems in India?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Visitor management systems are widely used across IT companies and tech parks, manufacturing plants, hospitals, schools and colleges, banks, government offices, and coworking spaces in India.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>What is the cost of visitor management system in India?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Ventryx starts at ₹999/month for small teams. Mid-size companies pay ₹2,999/month for the Professional plan. Enterprise pricing is custom. All plans include a 14-day free trial with no credit card required.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does Ventryx support WhatsApp notifications?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx offers native WhatsApp notifications for host alerts - the most preferred communication channel in India. When a visitor checks in, their host receives an instant WhatsApp message. This is in addition to SMS and email notifications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>India's Most Trusted Visitor Management System</h2>
+    <p>500+ Indian companies from Mumbai to Chennai trust Ventryx. Join them today with a free 14-day trial.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>India data residency &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>GST invoice provided</p>
+  </div>
+</section>
+
+{{ end }}

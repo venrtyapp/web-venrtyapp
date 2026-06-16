@@ -1,0 +1,182 @@
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Cookie Policy</span>
+    </nav>
+    <h1>Cookie <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Policy</span></h1>
+    <p class="subtitle">Last updated: {{ .Params.lastUpdated | default "June 2026" }}. This policy explains how Ventryx uses cookies and similar technologies, and how you can control them.</p>
+  </div>
+</section>
+
+<!-- Content -->
+<section class="vx-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <!-- TOC -->
+        <div style="background:var(--vx-light);border:1px solid var(--vx-border);border-radius:16px;padding:28px 32px;margin-bottom:48px;" data-aos="fade-up">
+          <h3 style="font-size:1rem;font-weight:700;color:var(--vx-heading);margin-bottom:16px;display:flex;align-items:center;gap:8px;"><i class="bi bi-list-ul" style="color:var(--vx-primary);"></i> Contents</h3>
+          <ol style="margin:0;padding-left:20px;display:flex;flex-direction:column;gap:8px;">
+            <li><a href="#what-are-cookies" style="color:var(--vx-primary);text-decoration:none;">What Are Cookies?</a></li>
+            <li><a href="#how-we-use" style="color:var(--vx-primary);text-decoration:none;">How Ventryx Uses Cookies</a></li>
+            <li><a href="#types-of-cookies" style="color:var(--vx-primary);text-decoration:none;">Types of Cookies We Use</a></li>
+            <li><a href="#third-party" style="color:var(--vx-primary);text-decoration:none;">Third-Party Cookies</a></li>
+            <li><a href="#india-pdpb" style="color:var(--vx-primary);text-decoration:none;">India DPDP Act & Cookie Consent</a></li>
+            <li><a href="#manage" style="color:var(--vx-primary);text-decoration:none;">How to Manage Cookies</a></li>
+            <li><a href="#contact" style="color:var(--vx-primary);text-decoration:none;">Contact Us</a></li>
+          </ol>
+        </div>
+
+        <!-- Section 1 -->
+        <div style="margin-bottom:48px;" data-aos="fade-up" id="what-are-cookies">
+          <h2 style="font-size:1.375rem;color:var(--vx-heading);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--vx-border);">1. What Are Cookies?</h2>
+          <p style="color:var(--vx-text);line-height:1.8;margin-bottom:16px;">Cookies are small text files that are placed on your device (computer, tablet, or mobile) when you visit a website. They are widely used to make websites work more efficiently, to remember your preferences, and to provide website owners with analytics information.</p>
+          <p style="color:var(--vx-text);line-height:1.8;">Cookies are not harmful - they do not contain viruses or malware. They cannot execute code or access files on your device. They can only be read by the website that placed them.</p>
+        </div>
+
+        <!-- Section 2 -->
+        <div style="margin-bottom:48px;" data-aos="fade-up" id="how-we-use">
+          <h2 style="font-size:1.375rem;color:var(--vx-heading);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--vx-border);">2. How Ventryx Uses Cookies</h2>
+          <p style="color:var(--vx-text);line-height:1.8;margin-bottom:16px;">Ventryx uses cookies on two surfaces:</p>
+          <ul style="color:var(--vx-text);line-height:1.8;display:flex;flex-direction:column;gap:12px;padding-left:20px;">
+            <li><strong>Marketing website (ventryx.com):</strong> We use cookies to understand how visitors find and use our website, to personalise content where relevant, and to measure the effectiveness of our marketing campaigns.</li>
+            <li><strong>Ventryx application (app.ventryx.com):</strong> We use cookies to keep you logged in, to remember your dashboard preferences, and to ensure the application functions securely. These are strictly necessary and cannot be turned off without breaking the application.</li>
+          </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div style="margin-bottom:48px;" data-aos="fade-up" id="types-of-cookies">
+          <h2 style="font-size:1.375rem;color:var(--vx-heading);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--vx-border);">3. Types of Cookies We Use</h2>
+
+          <!-- Essential -->
+          <div style="background:white;border:1px solid var(--vx-border);border-radius:14px;padding:24px;margin-bottom:20px;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+              <div style="width:40px;height:40px;background:#DCFCE7;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-shield-check" style="color:#16A34A;"></i></div>
+              <div>
+                <h3 style="font-size:1.0625rem;color:var(--vx-heading);margin:0;">Essential Cookies</h3>
+                <span style="font-size:0.8125rem;background:#DCFCE7;color:#15803D;padding:2px 10px;border-radius:100px;font-weight:600;">Always Active</span>
+              </div>
+            </div>
+            <p style="color:var(--vx-text);line-height:1.75;margin-bottom:14px;">These cookies are necessary for the website and application to function. They cannot be switched off. They are usually set in response to your actions such as logging in, setting your preferences, or filling in forms.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:0.875rem;">
+              <thead><tr style="background:var(--vx-light);"><th style="padding:10px 12px;text-align:left;border-radius:8px 0 0 8px;">Cookie Name</th><th style="padding:10px 12px;text-align:left;">Purpose</th><th style="padding:10px 12px;text-align:left;border-radius:0 8px 8px 0;">Duration</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid var(--vx-border);"><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">vx_session</td><td style="padding:10px 12px;color:var(--vx-text);">Maintains your login session</td><td style="padding:10px 12px;color:var(--vx-text);">Session</td></tr>
+                <tr style="border-bottom:1px solid var(--vx-border);"><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">vx_csrf</td><td style="padding:10px 12px;color:var(--vx-text);">CSRF protection token</td><td style="padding:10px 12px;color:var(--vx-text);">Session</td></tr>
+                <tr><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">vx_prefs</td><td style="padding:10px 12px;color:var(--vx-text);">Stores your UI preferences (theme, language)</td><td style="padding:10px 12px;color:var(--vx-text);">1 year</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Analytics -->
+          <div style="background:white;border:1px solid var(--vx-border);border-radius:14px;padding:24px;margin-bottom:20px;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+              <div style="width:40px;height:40px;background:#DBEAFE;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-bar-chart" style="color:#2563EB;"></i></div>
+              <div>
+                <h3 style="font-size:1.0625rem;color:var(--vx-heading);margin:0;">Analytics Cookies</h3>
+                <span style="font-size:0.8125rem;background:#DBEAFE;color:#1D4ED8;padding:2px 10px;border-radius:100px;font-weight:600;">Optional</span>
+              </div>
+            </div>
+            <p style="color:var(--vx-text);line-height:1.75;margin-bottom:14px;">These cookies help us understand how visitors use our website. All data is aggregated and anonymised. We use this data to improve our website and product experience.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:0.875rem;">
+              <thead><tr style="background:var(--vx-light);"><th style="padding:10px 12px;text-align:left;border-radius:8px 0 0 8px;">Cookie Name</th><th style="padding:10px 12px;text-align:left;">Provider</th><th style="padding:10px 12px;text-align:left;border-radius:0 8px 8px 0;">Duration</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid var(--vx-border);"><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">_ga, _ga_*</td><td style="padding:10px 12px;color:var(--vx-text);">Google Analytics 4</td><td style="padding:10px 12px;color:var(--vx-text);">2 years</td></tr>
+                <tr style="border-bottom:1px solid var(--vx-border);"><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">_gid</td><td style="padding:10px 12px;color:var(--vx-text);">Google Analytics</td><td style="padding:10px 12px;color:var(--vx-text);">24 hours</td></tr>
+                <tr><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">_hjSessionUser_*</td><td style="padding:10px 12px;color:var(--vx-text);">Hotjar (heatmaps)</td><td style="padding:10px 12px;color:var(--vx-text);">1 year</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Marketing -->
+          <div style="background:white;border:1px solid var(--vx-border);border-radius:14px;padding:24px;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+              <div style="width:40px;height:40px;background:#FEF3C7;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><i class="bi bi-megaphone" style="color:#B45309;"></i></div>
+              <div>
+                <h3 style="font-size:1.0625rem;color:var(--vx-heading);margin:0;">Marketing Cookies</h3>
+                <span style="font-size:0.8125rem;background:#FEF3C7;color:#B45309;padding:2px 10px;border-radius:100px;font-weight:600;">Optional</span>
+              </div>
+            </div>
+            <p style="color:var(--vx-text);line-height:1.75;margin-bottom:14px;">These cookies are set by our advertising partners to build a profile of your interests and show relevant ads on other sites. You can opt out at any time.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:0.875rem;">
+              <thead><tr style="background:var(--vx-light);"><th style="padding:10px 12px;text-align:left;border-radius:8px 0 0 8px;">Cookie Name</th><th style="padding:10px 12px;text-align:left;">Provider</th><th style="padding:10px 12px;text-align:left;border-radius:0 8px 8px 0;">Duration</th></tr></thead>
+              <tbody>
+                <tr style="border-bottom:1px solid var(--vx-border);"><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">_gcl_au</td><td style="padding:10px 12px;color:var(--vx-text);">Google Ads</td><td style="padding:10px 12px;color:var(--vx-text);">3 months</td></tr>
+                <tr><td style="padding:10px 12px;font-family:monospace;color:var(--vx-primary);">_fbp</td><td style="padding:10px 12px;color:var(--vx-text);">Meta / Facebook Pixel</td><td style="padding:10px 12px;color:var(--vx-text);">3 months</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div style="margin-bottom:48px;" data-aos="fade-up" id="third-party">
+          <h2 style="font-size:1.375rem;color:var(--vx-heading);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--vx-border);">4. Third-Party Cookies</h2>
+          <p style="color:var(--vx-text);line-height:1.8;margin-bottom:16px;">Some cookies on our website are placed by third parties - Google, Meta, Hotjar, and similar. We do not control these cookies and they are subject to the privacy policies of those providers. Their policies are linked below:</p>
+          <ul style="color:var(--vx-text);line-height:1.8;display:flex;flex-direction:column;gap:10px;padding-left:20px;">
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--vx-primary);">Google Privacy Policy</a></li>
+            <li><a href="https://www.facebook.com/policy.php" target="_blank" rel="noopener" style="color:var(--vx-primary);">Meta Privacy Policy</a></li>
+            <li><a href="https://www.hotjar.com/legal/policies/privacy/" target="_blank" rel="noopener" style="color:var(--vx-primary);">Hotjar Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Section 5 - India PDPB -->
+        <div style="margin-bottom:48px;" data-aos="fade-up" id="india-pdpb">
+          <h2 style="font-size:1.375rem;color:var(--vx-heading);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--vx-border);">5. India DPDP Act &amp; Cookie Consent</h2>
+          <div style="background:#EFF6FF;border-left:4px solid var(--vx-primary);border-radius:0 12px 12px 0;padding:20px 24px;margin-bottom:20px;">
+            <p style="color:var(--vx-heading);font-weight:600;margin-bottom:8px;"><i class="bi bi-info-circle-fill" style="color:var(--vx-primary);margin-right:6px;"></i> India Data Protection</p>
+            <p style="color:var(--vx-text);margin:0;line-height:1.75;">India's Digital Personal Data Protection (DPDP) Act 2023 governs how we handle personal data of Indian residents. Cookies that collect personal data (such as analytics cookies tied to identifiable users) require your consent. We obtain this through our cookie banner when you first visit our website.</p>
+          </div>
+          <p style="color:var(--vx-text);line-height:1.8;margin-bottom:16px;">Under the DPDP Act and the earlier PDPB framework, you have the right to:</p>
+          <ul style="color:var(--vx-text);line-height:1.8;display:flex;flex-direction:column;gap:10px;padding-left:20px;">
+            <li>Withdraw consent for optional cookies at any time</li>
+            <li>Request erasure of personal data associated with your cookie identifiers</li>
+            <li>Obtain a copy of data collected about your website visits</li>
+          </ul>
+          <p style="color:var(--vx-text);line-height:1.8;margin-top:16px;">To exercise these rights, email us at <a href="mailto:privacy@ventryx.com" style="color:var(--vx-primary);">privacy@ventryx.com</a>.</p>
+        </div>
+
+        <!-- Section 6 -->
+        <div style="margin-bottom:48px;" data-aos="fade-up" id="manage">
+          <h2 style="font-size:1.375rem;color:var(--vx-heading);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--vx-border);">6. How to Manage Cookies</h2>
+          <p style="color:var(--vx-text);line-height:1.8;margin-bottom:16px;">You have several options for managing cookies:</p>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="background:var(--vx-light);border-radius:12px;padding:20px 24px;">
+              <h4 style="font-size:1rem;color:var(--vx-heading);margin-bottom:8px;"><i class="bi bi-toggles" style="color:var(--vx-primary);margin-right:8px;"></i> Cookie Preference Centre</h4>
+              <p style="color:var(--vx-text);margin-bottom:12px;line-height:1.75;">Use our cookie banner (shown on first visit) to accept or decline optional cookies. You can change your preferences at any time.</p>
+              <button onclick="window.location.reload()" style="background:var(--vx-primary);color:white;border:none;padding:10px 20px;border-radius:8px;font-size:0.875rem;font-weight:600;cursor:pointer;">Manage Cookie Preferences</button>
+            </div>
+            <div style="background:var(--vx-light);border-radius:12px;padding:20px 24px;">
+              <h4 style="font-size:1rem;color:var(--vx-heading);margin-bottom:8px;"><i class="bi bi-browser-chrome" style="color:var(--vx-primary);margin-right:8px;"></i> Browser Settings</h4>
+              <p style="color:var(--vx-text);margin:0;line-height:1.75;">You can block or delete cookies via your browser settings. Note that blocking essential cookies will prevent you from logging in to the Ventryx application. Browser guides: <a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener" style="color:var(--vx-primary);">Chrome</a>, <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener" style="color:var(--vx-primary);">Firefox</a>, <a href="https://support.apple.com/en-in/guide/safari/sfri11471/mac" target="_blank" rel="noopener" style="color:var(--vx-primary);">Safari</a>.</p>
+            </div>
+            <div style="background:var(--vx-light);border-radius:12px;padding:20px 24px;">
+              <h4 style="font-size:1rem;color:var(--vx-heading);margin-bottom:8px;"><i class="bi bi-google" style="color:var(--vx-primary);margin-right:8px;"></i> Google Analytics Opt-Out</h4>
+              <p style="color:var(--vx-text);margin:0;line-height:1.75;">Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:var(--vx-primary);">Google Analytics Opt-out Browser Add-on</a> to prevent Google Analytics from collecting data on all websites you visit.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 7 -->
+        <div style="margin-bottom:48px;" data-aos="fade-up" id="contact">
+          <h2 style="font-size:1.375rem;color:var(--vx-heading);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--vx-border);">7. Contact Us</h2>
+          <p style="color:var(--vx-text);line-height:1.8;margin-bottom:16px;">If you have questions about our use of cookies or wish to exercise your data rights under the DPDP Act, please contact our Data Protection Officer:</p>
+          <div style="background:var(--vx-light);border-radius:12px;padding:24px;">
+            <p style="margin:0 0 8px;"><strong>Ventryx Technologies Pvt. Ltd.</strong></p>
+            <p style="margin:0 0 8px;color:var(--vx-text);">Data Protection Officer</p>
+            <p style="margin:0 0 8px;"><a href="mailto:privacy@ventryx.com" style="color:var(--vx-primary);">privacy@ventryx.com</a></p>
+            <p style="margin:0;color:var(--vx-text);">Response within 3 business days.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

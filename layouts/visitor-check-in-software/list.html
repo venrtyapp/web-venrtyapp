@@ -1,0 +1,319 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How fast is QR code visitor check-in compared to manual?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Manual check-in at a reception desk typically takes 3–5 minutes per visitor. With Ventryx QR code check-in, the process takes under 30 seconds. Visitors with pre-registration check in even faster - about 10 seconds - because their details are already in the system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What hardware do I need for touchless visitor check-in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All you need is a tablet (any Android 7 inch+ or iPad) on a stand at your entrance. Visitors use their phone camera to scan the QR code displayed on the tablet. For badge printing, you add a compatible label printer. No special hardware or servers required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can visitors check in without downloading an app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx check-in is browser-based. Visitors scan a QR code which opens a web form in their browser - no app download required. This is important for external visitors who won't download a dedicated app for a single visit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does check-in work for unannounced visitors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For walk-in visitors, they check in on the kiosk tablet at your reception. They fill in their name, purpose of visit, and who they're meeting. The host gets an instant notification and can come to reception or send directions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the check-in system work for high-traffic office entrances?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can deploy multiple kiosk tablets at different entry points - each syncs to the same central dashboard. Receptionists see all entry points from one screen and reports aggregate data across all check-in points."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Visitor Check-in Software</span>
+    </nav>
+    <h1>Visitor Check-in Software That Makes Every Entry <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Fast and Secure</span></h1>
+    <p class="subtitle">Replace slow, manual check-ins with QR codes, pre-registration, and instant host WhatsApp alerts. Visitors check in under 30 seconds - no app download required.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-play-circle"></i> See It Live</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-stopwatch text-primary me-2"></i>Under 30 Sec Check-in</div>
+      <div class="vx-logo-item"><i class="bi bi-qr-code text-primary me-2"></i>QR Code - No App</div>
+      <div class="vx-logo-item"><i class="bi bi-whatsapp text-primary me-2"></i>Instant WhatsApp Alert</div>
+      <div class="vx-logo-item"><i class="bi bi-phone text-primary me-2"></i>Works on Any Tablet</div>
+      <div class="vx-logo-item"><i class="bi bi-shield-check text-primary me-2"></i>Watchlist Screening</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-lightning-charge-fill"></i> Check-in Methods</span>
+      <h2 class="section-heading">Four Ways to Check In - All Under 60 Seconds</h2>
+      <p class="section-subheading centered">Ventryx adapts to every visitor type and office setup - from pre-registered VIP clients to unannounced walk-in visitors.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-qr-code-scan"></i></div>
+        <h4>QR Code Self Check-in</h4>
+        <p>A QR code displayed on the kiosk tablet. Visitors scan with their phone - a branded web form opens instantly. No app, no account needed. Done in 30 seconds.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-envelope-open"></i></div>
+        <h4>Pre-Registration Link</h4>
+        <p>Host sends an invite link before the visit. Visitor fills details from home. On arrival, scan the QR and check in is complete in 10 seconds - fastest method.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-tablet"></i></div>
+        <h4>Kiosk Self Check-in</h4>
+        <p>Fully self-service tablet kiosk at your entrance. Visitors tap the touchscreen to complete check-in without any receptionist involvement.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-person-workspace"></i></div>
+        <h4>Reception-Assisted Check-in</h4>
+        <p>Your receptionist checks in visitors from the web dashboard - ideal for VIP guests, elderly visitors, or accessibility needs.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-bell-fill"></i></div>
+        <h4>Instant Host Notification</h4>
+        <p>The moment a visitor checks in, their host gets an instant WhatsApp, SMS, or email notification - no manual lobby calls, no waiting.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-printer-fill"></i></div>
+        <h4>Auto Badge Printing</h4>
+        <p>Visitor badge auto-prints on check-in - with photo, name, host, and expiry. No manual badge filling. Works with Zebra and Dymo printers.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-shield-lock"></i></div>
+        <h4>Watchlist Auto-Screen</h4>
+        <p>Every check-in is silently screened against your watchlist. Security receives an instant alert if a flagged visitor attempts entry.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-camera2"></i></div>
+        <h4>Photo Capture at Entry</h4>
+        <p>Kiosk camera captures visitor photo at check-in - stored with their visit record for visual verification and security review.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Bar -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:64px 0;">
+  <div class="container">
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">500+</div>
+        <div class="vx-stat-label">Indian Companies</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">12L+</div>
+        <div class="vx-stat-label">Visitors Processed</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">4.8★</div>
+        <div class="vx-stat-label">Customer Rating</div>
+      </div>
+      <div class="vx-stat-item">
+        <div class="vx-stat-number">80%</div>
+        <div class="vx-stat-label">Faster Check-in</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-stopwatch"></i> Speed Comparison</span>
+        <h2 class="section-heading">From 5 Minutes to 30 Seconds</h2>
+        <p class="section-subheading">Traditional reception check-in takes 3–5 minutes per visitor. Ventryx reduces this to under 30 seconds - a professional, frictionless experience that creates the right first impression.</p>
+        <ul class="vx-check-list" style="margin-top:24px;">
+          <li><i class="bi bi-check-circle-fill"></i> QR code check-in: under 30 seconds for walk-ins</li>
+          <li><i class="bi bi-check-circle-fill"></i> Pre-registration: under 10 seconds on arrival day</li>
+          <li><i class="bi bi-check-circle-fill"></i> Zero forms to fill - mobile web form, no app download</li>
+          <li><i class="bi bi-check-circle-fill"></i> Brand your check-in with logo, colours, welcome message</li>
+          <li><i class="bi bi-check-circle-fill"></i> Deploy multiple kiosks for high-traffic entrances</li>
+        </ul>
+        <div style="margin-top:28px;">
+          <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> See the Demo</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#EFF6FF,#ECFEFF);border:1px solid #BFDBFE;border-radius:20px;padding:36px;">
+          <div style="background:white;border-radius:12px;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,0.07);">
+            <div style="font-size:0.75rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:#94A3B8;margin-bottom:14px;font-family:'Inter',sans-serif;">Check-in Method Speed</div>
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                  <span style="color:#374151;font-weight:500;">Pre-registration</span>
+                  <span style="color:#10B981;font-weight:700;">~10 sec</span>
+                </div>
+                <div style="background:#F1F5F9;border-radius:99px;height:8px;"><div style="background:#10B981;width:8%;height:8%;border-radius:99px;height:8px;"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                  <span style="color:#374151;font-weight:500;">QR Code scan</span>
+                  <span style="color:#2563EB;font-weight:700;">~30 sec</span>
+                </div>
+                <div style="background:#F1F5F9;border-radius:99px;height:8px;"><div style="background:#2563EB;width:20%;height:8%;border-radius:99px;height:8px;"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                  <span style="color:#374151;font-weight:500;">Kiosk touchscreen</span>
+                  <span style="color:#F59E0B;font-weight:700;">~45 sec</span>
+                </div>
+                <div style="background:#F1F5F9;border-radius:99px;height:8px;"><div style="background:#F59E0B;width:30%;height:8%;border-radius:99px;height:8px;"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                  <span style="color:#374151;font-weight:500;">Reception-assisted</span>
+                  <span style="color:#94A3B8;font-weight:700;">~90 sec</span>
+                </div>
+                <div style="background:#F1F5F9;border-radius:99px;height:8px;"><div style="background:#94A3B8;width:60%;height:8%;border-radius:99px;height:8px;"></div></div>
+              </div>
+              <div>
+                <div style="display:flex;justify-content:space-between;margin-bottom:4px;font-size:0.8125rem;font-family:'Inter',sans-serif;">
+                  <span style="color:#374151;font-weight:500;">Paper register</span>
+                  <span style="color:#EF4444;font-weight:700;">3–5 min</span>
+                </div>
+                <div style="background:#F1F5F9;border-radius:99px;height:8px;"><div style="background:#EF4444;width:100%;border-radius:99px;height:8px;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Visitor Check-in Software - Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>How fast is QR code visitor check-in compared to manual?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Manual check-in takes 3–5 minutes. Ventryx QR code check-in takes under 30 seconds. Pre-registered visitors check in in about 10 seconds - their details are already in the system.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>What hardware do I need for touchless visitor check-in?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>All you need is a tablet (any Android 7 inch+ or iPad) on a stand at your entrance. Visitors use their phone camera to scan the QR code. For badge printing, add a compatible label printer. No special hardware or servers required.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can visitors check in without downloading an app?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx check-in is entirely browser-based. Visitors scan a QR code which opens a web form in their browser - no app download required. This is essential for external visitors who won't install an app for a single visit.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How does check-in work for unannounced visitors?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Walk-in visitors check in on the kiosk tablet at reception. They fill in their name, purpose of visit, and who they're meeting. The host gets an instant notification and can come to reception or send directions.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does the check-in system work for high-traffic office entrances?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Deploy multiple kiosk tablets at different entry points - each syncs to the same central dashboard. Receptionists see all entry points from one screen and reports aggregate data across all check-in points.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>See How Fast Visitor Check-in Can Be</h2>
+    <p>Book a demo and watch a visitor check in under 30 seconds - live. No commitment, no credit card.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-play-circle"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Setup in 30 minutes &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>No app download needed</p>
+  </div>
+</section>
+
+{{ end }}

@@ -1,0 +1,87 @@
+{{ define "main" }}
+
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Blog</span>
+    </nav>
+    <h1>Workplace Management <span style="background:linear-gradient(135deg,#67E8F9,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Insights</span></h1>
+    <p class="subtitle">Guides, tips, and expert insights on visitor management, attendance tracking, and building smarter workplaces in India.</p>
+  </div>
+</section>
+
+<section class="vx-section">
+  <div class="container">
+
+    <!-- Category filter -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:40px;justify-content:center;" data-aos="fade-up">
+      <button class="vx-industry-tab active" onclick="filterBlog('all', this)">All Articles</button>
+      <button class="vx-industry-tab" onclick="filterBlog('visitor', this)"><i class="bi bi-person-badge"></i> Visitor Management</button>
+      <button class="vx-industry-tab" onclick="filterBlog('attendance', this)"><i class="bi bi-calendar-check"></i> Attendance</button>
+      <button class="vx-industry-tab" onclick="filterBlog('security', this)"><i class="bi bi-shield-check"></i> Security</button>
+      <button class="vx-industry-tab" onclick="filterBlog('guides', this)"><i class="bi bi-journal-text"></i> Guides</button>
+    </div>
+
+    {{ if .Pages }}
+    <div class="vx-blog-grid">
+      {{ range .Pages }}
+      <article class="vx-blog-card" data-category="{{ lower (.Params.category | default "guides") }}" data-aos="fade-up">
+        <div class="vx-blog-card-image" style="background:{{ if eq .Params.category "Visitor Management" }}linear-gradient(135deg,#EFF6FF,#ECFEFF){{ else if eq .Params.category "Attendance Management" }}linear-gradient(135deg,#F0FDF4,#EFF6FF){{ else if eq .Params.category "Security" }}linear-gradient(135deg,#FFF1F2,#FFF5F5){{ else }}linear-gradient(135deg,#F5F3FF,#EFF6FF){{ end }};">
+          <i class="bi {{ if eq .Params.category "Visitor Management" }}bi-person-badge{{ else if eq .Params.category "Attendance Management" }}bi-calendar-check{{ else if eq .Params.category "Security" }}bi-shield-lock-fill{{ else }}bi-lightbulb{{ end }}" style="color:{{ if eq .Params.category "Visitor Management" }}var(--vx-primary){{ else if eq .Params.category "Attendance Management" }}#10B981{{ else if eq .Params.category "Security" }}#EF4444{{ else }}#8B5CF6{{ end }};"></i>
+        </div>
+        <div class="vx-blog-card-body">
+          <div class="vx-blog-meta">
+            <span class="vx-blog-category">{{ .Params.category | default "Insights" }}</span>
+            <span class="vx-blog-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
+          <h3><a href="{{ .RelPermalink }}" style="color:inherit;text-decoration:none;">{{ .Title }}</a></h3>
+          <p>{{ .Summary | truncate 120 }}</p>
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
+            <a href="{{ .RelPermalink }}" class="read-more">Read article <i class="bi bi-arrow-right"></i></a>
+            <span style="font-size:0.8rem;color:var(--vx-text);">{{ .Params.readingTime | default "5 min" }}</span>
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <div style="text-align:center;padding:60px 20px;color:var(--vx-text);">
+      <i class="bi bi-journal-text" style="font-size:3rem;opacity:0.3;display:block;margin-bottom:16px;"></i>
+      <p>Blog posts coming soon. Check back shortly!</p>
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Never Miss a Workplace Insight</h2>
+    <p>Join 3,000+ HR managers and admins who get our weekly workplace management tips.</p>
+    <form style="display:flex;gap:10px;max-width:440px;margin:0 auto;" onsubmit="return false;">
+      <input type="email" placeholder="your@company.com" style="flex:1;padding:13px 16px;border:1px solid rgba(255,255,255,0.15);background:rgba(255,255,255,0.08);border-radius:50px;color:white;font-size:0.9375rem;font-family:'Inter',sans-serif;outline:none;" />
+      <button type="submit" class="btn-vx-primary">Subscribe</button>
+    </form>
+    <p style="font-size:0.8rem;color:rgba(255,255,255,0.35);margin-top:10px;">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>
+
+<script>
+function filterBlog(category, btn) {
+  document.querySelectorAll('.vx-industry-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.vx-blog-card').forEach(function(card) {
+    if (category === 'all') {
+      card.style.display = 'flex';
+    } else {
+      var cat = (card.dataset.category || '').toLowerCase();
+      card.style.display = cat.includes(category) ? 'flex' : 'none';
+    }
+  });
+}
+</script>
+
+{{ end }}

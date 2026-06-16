@@ -1,0 +1,155 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Ventryx",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ventryx",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ .Site.BaseURL }}images/ventryx-logo.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+{{ with .Params.faqs }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {{ range $i, $faq := . }}{{ if $i }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $faq.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $faq.answer | jsonify }}
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+
+<section class="vx-page-hero" style="padding:56px 0 48px;">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <a href="/blog">Blog</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>{{ .Title | truncate 40 }}</span>
+    </nav>
+    {{ with .Params.category }}<span class="section-label" style="margin-bottom:14px;">{{ . }}</span>{{ end }}
+    <h1 style="font-size:clamp(1.5rem,3.5vw,2.25rem);max-width:800px;margin:0 auto 16px;">{{ .Title }}</h1>
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;font-size:0.8125rem;color:rgba(255,255,255,0.50);">
+      <span><i class="bi bi-calendar3 me-1"></i>{{ .Date.Format "January 2, 2006" }}</span>
+      {{ with .Params.readingTime }}<span><i class="bi bi-clock me-1"></i>{{ . }} read</span>{{ end }}
+      {{ with .Params.author }}<span><i class="bi bi-person me-1"></i>{{ . }}</span>{{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="vx-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="vx-seo-content" style="font-size:1rem;line-height:1.8;">
+          {{ .Content }}
+        </div>
+
+        <!-- Tags -->
+        {{ with .Params.tags }}
+        <div style="margin-top:36px;padding-top:24px;border-top:1px solid var(--vx-border);">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            {{ range . }}
+            <span style="background:var(--vx-light);border:1px solid var(--vx-border);color:var(--vx-text);font-size:0.8125rem;padding:4px 12px;border-radius:20px;">#{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+
+        <!-- Author Card -->
+        <div style="margin-top:36px;background:var(--vx-light);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
+          <div style="width:52px;height:52px;background:var(--vx-gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.25rem;flex-shrink:0;"><i class="bi bi-building-check"></i></div>
+          <div>
+            <div style="font-size:0.9375rem;font-weight:700;color:var(--vx-dark);margin-bottom:4px;">Ventryx Team</div>
+            <p style="font-size:0.875rem;color:var(--vx-text);margin:0;">We build and share insights on visitor management, attendance tracking, and smart workplace operations for Indian businesses.</p>
+          </div>
+        </div>
+
+        <!-- Share -->
+        <div style="margin-top:28px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <span style="font-size:0.875rem;font-weight:600;color:var(--vx-secondary);">Share this article:</span>
+          <a href="https://linkedin.com/sharing/share-offsite/?url={{ .Permalink | urlize }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-linkedin" style="color:#0A66C2;"></i> LinkedIn</a>
+          <a href="https://twitter.com/intent/tweet?text={{ .Title | urlize }}&url={{ .Permalink | urlize }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-twitter-x"></i> Twitter</a>
+          <a href="https://wa.me/?text={{ .Title | urlize }}%20{{ .Permalink | urlize }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:6px;padding:7px 14px;background:var(--vx-light);border:1px solid var(--vx-border);border-radius:8px;font-size:0.8125rem;color:var(--vx-secondary)!important;"><i class="bi bi-whatsapp" style="color:#25D366;"></i> WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section - only renders when FAQs are defined in front matter -->
+{{ with .Params.faqs }}
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center" style="margin-bottom:40px;">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-heading">Frequently Asked Questions</h2>
+        </div>
+        <div class="vx-faq-list">
+          {{ range $i, $faq := . }}
+          <div class="vx-faq-item{{ if eq $i 0 }} open{{ end }}">
+            <button class="vx-faq-question" aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+              <span>{{ $faq.question }}</span>
+              <i class="bi bi-chevron-down vx-faq-icon"></i>
+            </button>
+            <div class="vx-faq-answer" {{ if ne $i 0 }}style="display:none;"{{ end }}>
+              <p>{{ $faq.answer }}</p>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<!-- Related posts / CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>See Ventryx in Action</h2>
+    <p>Ready to replace paper registers with a smarter system? Book a free 30-minute demo with our team.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/blog" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">More Articles</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

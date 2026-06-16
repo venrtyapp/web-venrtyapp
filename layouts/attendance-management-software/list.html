@@ -1,0 +1,323 @@
+{{ define "schema" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ventryx",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "Offer",
+    "price": "2999",
+    "priceCurrency": "INR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "512",
+    "bestRating": "5",
+    "worstRating": "1"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is attendance management software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Attendance management software is a digital system that tracks when employees check in and out of work. Modern solutions like Ventryx allow employees to mark attendance via mobile app, web browser, or kiosk, with GPS verification for remote and hybrid workers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does mobile attendance tracking work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With Ventryx, employees open the mobile app and tap Check In. The app captures their GPS location and an optional selfie for verification. Managers see real-time attendance on their dashboard. The system flags late arrivals and missed check-outs automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can attendance management software replace biometric devices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx provides a complete cloud-based alternative to biometric devices. It offers GPS verification and selfie proof which in many cases provides better verification than biometrics, while eliminating the hardware cost per device."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Ventryx attendance software work for shift workers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Ventryx handles multiple shifts, rotational rosters, and night shift differentials. You define shift timings and assign employees, and the system automatically tracks compliance, overtime, and late arrivals against the correct shift rules."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which payroll software does Ventryx integrate with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventryx integrates natively with GreytHR, Keka, and Razorpay Payroll. For any other system, payroll-ready Excel/CSV export is available. Enterprise customers can use the REST API for real-time integration."
+      }
+    }
+  ]
+}
+</script>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Hero -->
+<section class="vx-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <i class="bi bi-chevron-right" style="font-size:0.625rem;"></i>
+      <span>Attendance Management Software</span>
+    </nav>
+    <h1>Attendance Management <span style="background:linear-gradient(135deg,#6EE7B7,#60A5FA);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Software</span> That Works for Indian Teams</h1>
+    <p class="subtitle">Replace biometric punching and paper registers with a mobile-first attendance system. Track check-ins, manage shifts, handle leaves, and generate payroll reports - without manual effort.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1;margin-top:28px;">
+      <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#fff!important;border-color:rgba(255,255,255,0.25);">View Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="vx-trust-bar">
+  <div class="container">
+    <div class="vx-logo-strip">
+      <div class="vx-logo-item"><i class="bi bi-shield-check"></i> SOC 2 Compliant</div>
+      <div class="vx-logo-item"><i class="bi bi-geo-alt"></i> Data Stored in India</div>
+      <div class="vx-logo-item"><i class="bi bi-people"></i> 500+ Indian Businesses</div>
+      <div class="vx-logo-item"><i class="bi bi-phone"></i> Android &amp; iOS</div>
+      <div class="vx-logo-item"><i class="bi bi-headset"></i> Indian Support Team</div>
+    </div>
+  </div>
+</div>
+
+<!-- Features Grid -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-grid-fill"></i> Features</span>
+      <h2 class="section-heading">Everything You Need to Manage Attendance</h2>
+      <p class="section-subheading centered">From mobile check-in to payroll export - Ventryx covers the complete attendance lifecycle for Indian businesses.</p>
+    </div>
+    <div class="vx-features-grid">
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-phone"></i></div>
+        <h4>Mobile Check-In</h4>
+        <p>One-tap check-in from Android or iOS. GPS location and optional selfie captured automatically for tamper-proof records.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <h4>GPS Geofencing</h4>
+        <p>Restrict attendance marking to within a defined radius of your office or worksite. Works for multiple locations simultaneously.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-calendar3-week"></i></div>
+        <h4>Shift Management</h4>
+        <p>Define unlimited shifts with custom timings, grace periods, and overtime rules. Automate rotational and night shift rosters.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-calendar2-heart"></i></div>
+        <h4>Leave Management</h4>
+        <p>Employees apply, managers approve, HR tracks - all in one platform. Supports EL, SL, CL, Comp Off, and custom leave types.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-clock-history"></i></div>
+        <h4>Overtime Tracking</h4>
+        <p>Overtime calculated automatically against each shift's rules. Real-time alerts for managers when employees exceed thresholds.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+        <h4>Regularisation Workflow</h4>
+        <p>Employees request regularisation for missed punches. Manager-approved and logged separately for full HR audit visibility.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+        <h4>Payroll-Ready Reports</h4>
+        <p>One-click export of monthly attendance data to GreytHR, Keka, Razorpay Payroll, or any custom Excel/CSV format.</p>
+      </div>
+      <div class="vx-feature-card" data-aos="fade-up">
+        <div class="vx-feature-icon"><i class="bi bi-tablet"></i></div>
+        <h4>Kiosk Mode</h4>
+        <p>Shared tablet at reception or factory gate for PIN or face-based check-in. No personal device required for every employee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section style="background:linear-gradient(135deg,#0F172A,#1E293B);padding:80px 0;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label" style="background:rgba(255,255,255,0.1);color:#E2E8F0;"><i class="bi bi-bar-chart-fill"></i> Results</span>
+      <h2 class="section-heading" style="color:white;">What Ventryx Customers Report</h2>
+    </div>
+    <div class="vx-stats-grid">
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="70">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Reduction in HR admin time spent on attendance compilation</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="100">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Elimination of attendance disputes with verifiable GPS proof</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="30">0</div>
+        <div class="stat-suffix">%</div>
+        <div class="stat-label">Improvement in punctuality within 60 days of going live</div>
+      </div>
+      <div class="vx-stat-item" data-aos="fade-up">
+        <div class="stat-number" data-count="500">0</div>
+        <div class="stat-suffix">+</div>
+        <div class="stat-label">Indian businesses across manufacturing, IT, retail, and services</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Feature Highlight Row -->
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="section-label"><i class="bi bi-phone-fill"></i> Mobile-First Design</span>
+        <h2 class="section-heading" style="text-align:left;">Mark Attendance in One Tap, From Anywhere</h2>
+        <p class="section-subheading">The Ventryx mobile app is designed for India's diverse workforce - factory workers, field teams, remote employees, and office staff all use the same platform with different check-in modes suited to their context.</p>
+        <ul class="vx-check-list" style="margin-top:20px;">
+          <li><i class="bi bi-check-circle-fill"></i> Android and iOS apps available on Play Store and App Store</li>
+          <li><i class="bi bi-check-circle-fill"></i> Works on low-end Android devices with 2G/3G connectivity</li>
+          <li><i class="bi bi-check-circle-fill"></i> Offline mode - records attendance without internet, syncs when connected</li>
+          <li><i class="bi bi-check-circle-fill"></i> Selfie capture with liveness detection to prevent buddy punching</li>
+          <li><i class="bi bi-check-circle-fill"></i> Employees view their own attendance, leaves, and payslips</li>
+        </ul>
+        <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="/book-demo" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book Demo</a>
+          <a href="/pricing" class="btn-vx-outline">See Pricing</a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div style="background:linear-gradient(135deg,#F0FDF4,#ECFEFF);border:1px solid #BBF7D0;border-radius:20px;padding:36px;text-align:center;">
+          <div style="max-width:220px;margin:0 auto;background:#0F172A;border-radius:24px;padding:16px 12px;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <div style="background:#1E293B;border-radius:16px;padding:16px;">
+              <div style="text-align:center;margin-bottom:16px;">
+                <div style="font-size:0.65rem;color:#94A3B8;font-family:'Inter',sans-serif;">Monday, June 10, 2026</div>
+                <div style="font-size:1.5rem;font-weight:800;color:white;font-family:'Poppins',sans-serif;">09:02 AM</div>
+              </div>
+              <div style="background:#0F172A;border-radius:12px;padding:12px;margin-bottom:12px;">
+                <div style="display:flex;gap:8px;align-items:center;">
+                  <div style="width:32px;height:32px;background:linear-gradient(135deg,#2563EB,#06B6D4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:0.75rem;font-weight:700;font-family:'Poppins',sans-serif;">SK</div>
+                  <div>
+                    <div style="font-size:0.75rem;font-weight:600;color:white;font-family:'Poppins',sans-serif;">Suresh Kumar</div>
+                    <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;">Engineering · Floor 3</div>
+                  </div>
+                </div>
+              </div>
+              <div style="background:#0F172A;border-radius:10px;padding:10px;margin-bottom:8px;">
+                <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;margin-bottom:2px;">LOCATION</div>
+                <div style="font-size:0.7rem;color:#34D399;font-family:'Inter',sans-serif;display:flex;align-items:center;gap:4px;"><i class="bi bi-geo-alt-fill" style="font-size:0.6rem;"></i>Whitefield, Bengaluru ✓</div>
+              </div>
+              <button style="width:100%;padding:12px;background:linear-gradient(135deg,#2563EB,#06B6D4);border:none;border-radius:12px;color:white;font-size:0.8125rem;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;">
+                <i class="bi bi-check2-circle me-1"></i>Mark Attendance
+              </button>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px;">
+                <div style="background:#0F172A;border-radius:8px;padding:8px;text-align:center;">
+                  <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;">Check-in</div>
+                  <div style="font-size:0.75rem;font-weight:600;color:#34D399;font-family:'Poppins',sans-serif;">09:02</div>
+                </div>
+                <div style="background:#0F172A;border-radius:8px;padding:8px;text-align:center;">
+                  <div style="font-size:0.6rem;color:#64748B;font-family:'Inter',sans-serif;">Check-out</div>
+                  <div style="font-size:0.75rem;font-weight:600;color:#475569;font-family:'Poppins',sans-serif;">-</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:0.8125rem;color:#64748B;margin-top:16px;font-family:'Inter',sans-serif;">Employee mobile check-in with GPS verification</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="vx-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-label"><i class="bi bi-question-circle-fill"></i> FAQ</span>
+      <h2 class="section-heading">Attendance Management Questions Answered</h2>
+    </div>
+    <div class="vx-faq-section" data-aos="fade-up">
+      <div class="vx-faq-item open">
+        <div class="vx-faq-question">
+          <h4>What is attendance management software?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Attendance management software is a digital system that tracks when employees check in and out of work. Modern solutions like Ventryx allow employees to mark attendance via mobile app, web browser, or kiosk, with GPS verification for remote and hybrid workers. The system calculates hours worked, overtime, late arrivals, and absences automatically.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>How does mobile attendance tracking work?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>With Ventryx, employees open the mobile app and tap Check In. The app captures their GPS location and an optional selfie for verification. Managers see real-time attendance on their dashboard. The system flags late arrivals and missed check-outs automatically - no manual intervention needed.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Can attendance management software replace biometric devices?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx provides a complete cloud-based alternative to biometric devices. GPS verification and selfie proof provide better verification than biometrics in many cases, while eliminating the ₹5,000–₹20,000 hardware cost per device. For organisations that want to keep existing biometric hardware, Ventryx can sync with ZKTeco, eSSL, and Matrix devices.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Does Ventryx attendance software work for shift workers?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Yes. Ventryx handles multiple shifts, rotational rosters, and night shift differentials. You define shift timings and assign employees, and the system automatically tracks compliance, overtime, and late arrivals against the correct shift rules. Automated monthly roster generation is available for rotational shift operations.</p>
+        </div>
+      </div>
+      <div class="vx-faq-item">
+        <div class="vx-faq-question">
+          <h4>Which payroll software does Ventryx integrate with?</h4>
+          <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
+        </div>
+        <div class="vx-faq-answer">
+          <p>Ventryx integrates natively with GreytHR, Keka, and Razorpay Payroll. For any other payroll system, payroll-ready Excel/CSV export is available in any format you require. Enterprise customers can use the Ventryx REST API for real-time attendance data integration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="vx-cta-dark">
+  <div class="container" data-aos="fade-up">
+    <h2>Say Goodbye to Manual Attendance Forever</h2>
+    <p>See Ventryx Attendance Management Software in action with a personalised demo for your team. No commitment required.</p>
+    <div class="vx-cta-actions">
+      <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>
+      <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">View Pricing</a>
+    </div>
+    <p class="vx-cta-note"><i class="bi bi-check-circle me-1"></i>14-day free trial &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Works for teams of 10 to 10,000 &nbsp;·&nbsp; <i class="bi bi-check-circle me-1"></i>Cancel anytime</p>
+  </div>
+</section>
+
+{{ end }}
