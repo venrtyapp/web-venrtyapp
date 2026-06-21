@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Visitor Management on Ventryx – Visitor &amp; Attendance Management Software India</title>
-		<link>http://localhost:39789/tags/visitor-management/</link>
+		<link>http://localhost:42245/tags/visitor-management/</link>
 		<description>Recent content in Visitor Management on Ventryx – Visitor &amp; Attendance Management Software India</description>
 		<generator>Hugo</generator>
 		<language>en-IN</language>
@@ -10,92 +10,15 @@
 		
 		
 		
-			<lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+			<lastBuildDate>Sun, 21 Jun 2026 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="http://localhost:39789/tags/visitor-management/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:42245/tags/visitor-management/index.xml" rel="self" type="application/rss+xml" />
 			<item>
-				<title>How Visitor Management Software Strengthens Office Security in 2026</title>
-				<link>http://localhost:39789/blog/visitor-management-office-security/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/visitor-management-office-security/</guid>
-				<description>&lt;p&gt;Walk into almost any mid-sized office in Bengaluru, Pune, or Gurgaon and you will find the same scene at the front desk: a spiral-bound register, a pen on a string, and a receptionist juggling phone calls while a visitor scribbles something illegible in the &amp;ldquo;Name&amp;rdquo; column. That visitor could be anyone. Nobody checked. Nobody will check.&lt;/p&gt;&#xA;&lt;p&gt;This is not a knock on receptionists - they are doing their best. It is a structural problem. The front desk is the single point of entry for every external person who walks into your workplace, yet it typically gets the least investment in security infrastructure. Organisations spend lakhs on CCTV cameras, access control systems, and endpoint security software, then leave the actual human entry point running on paper and trust.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Visitor Management for Schools in India: A Complete Guide</title>
-				<link>http://localhost:39789/blog/visitor-management-for-schools-india/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/visitor-management-for-schools-india/</guid>
-				<description>&lt;p&gt;Every morning at 8:15 AM, the main gate of a busy CBSE school in Pune sees the same scene. Parents dropping off kids, a few stopping to speak with teachers, a delivery person from the stationery supplier, two electricians arriving for a repair job, and somewhere in the middle of all this, the security guard is trying to manually log names in a dog-eared register.&lt;/p&gt;&#xA;&lt;p&gt;By 8:45 AM, the register has four entries. The rest have simply walked in.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>What Is a Visitor Management System? A Complete Guide for Indian Businesses</title>
-				<link>http://localhost:39789/blog/what-is-visitor-management-system/</link>
-				<pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/what-is-visitor-management-system/</guid>
-				<description>&lt;p&gt;Walk into almost any modern office in Bengaluru, Mumbai, or Gurugram today and you will find a receptionist with a paper register on the desk. A vendor scribbles their name. A job candidate jots down their phone number. A government inspector signs in with a barely legible signature. By end of day that register holds thirty entries, and nobody will ever look at it again - until something goes wrong.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>How to Choose the Right Visitor Management System for Your Office in India (2026)</title>
-				<link>http://localhost:39789/blog/how-to-choose-visitor-management-system-india/</link>
-				<pubDate>Thu, 28 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/how-to-choose-visitor-management-system-india/</guid>
-				<description>&lt;p&gt;There are now dozens of visitor management systems available to Indian businesses, ranging from globally built platforms localised for the Indian market to homegrown SaaS tools built specifically for offices in Mumbai, Bengaluru, or Delhi NCR. If you have been tasked with finding the right one for your organisation, that range is both helpful and overwhelming.&lt;/p&gt;&#xA;&lt;p&gt;This guide cuts through the noise. It is written for office managers, IT heads, and admin leads who need to make a defensible purchasing decision - not for someone looking to be dazzled by feature slides.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Visitor Management for Hospitals: Meeting NABH Standards and Improving Patient Safety</title>
-				<link>http://localhost:39789/blog/visitor-management-hospitals-nabh-compliance/</link>
-				<pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/visitor-management-hospitals-nabh-compliance/</guid>
-				<description>&lt;p&gt;Every day in an Indian hospital, hundreds of people move through the corridors who are not patients and not staff. They are relatives, friends, vendors, diagnostics representatives, contractors, and the occasional curious onlooker who wandered off the main path. Managing this constant flow is not a hospitality challenge - it is a clinical and regulatory one.&lt;/p&gt;&#xA;&lt;p&gt;Uncontrolled visitor access is one of the most underappreciated sources of risk in healthcare. It contributes to hospital-acquired infections, compromises patient privacy, creates security gaps in restricted areas, and - when things go wrong - leaves hospitals with no audit trail to rely on. For hospitals pursuing NABH accreditation or working to maintain it, a structured visitor management process is not optional. It is built into the standards.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Visitor Pre-Registration: How It Works and Why Every Office Should Use It</title>
-				<link>http://localhost:39789/blog/visitor-pre-registration-how-it-works/</link>
-				<pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/visitor-pre-registration-how-it-works/</guid>
-				<description>&lt;p&gt;If you have ever watched a receptionist manually type out a visitor&amp;rsquo;s name, company, phone number, and the name of the employee they are here to meet - while a small queue forms behind the visitor - you have seen the problem that pre-registration solves.&lt;/p&gt;&#xA;&lt;p&gt;Visitor pre-registration is a simple concept: the host employee registers their guest in advance, the visitor gets a digital invite with their check-in details, and when they arrive, most of the work is already done. What sounds like a minor convenience turns out to have significant downstream effects on security, productivity, and the quality of the visitor experience.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>QR Code Check-In for Offices: The Complete Guide for 2026</title>
-				<link>http://localhost:39789/blog/qr-code-visitor-checkin-guide/</link>
-				<pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/qr-code-visitor-checkin-guide/</guid>
-				<description>&lt;p&gt;Walk into a modern office in Hyderabad or Pune today and there is a reasonable chance you will see a tablet near the reception desk with a QR code displayed on the screen. Scan it with your phone, confirm a few details, and you are checked in. No queue. No clipboard. No receptionist asking you to spell your company name twice.&lt;/p&gt;&#xA;&lt;p&gt;QR code check-in has become the dominant method for contactless visitor management - and for good reason. It is fast, hygienic, hardware-light, and works well across a wide range of office types. But implementing it well requires understanding more than just the technology. This guide covers everything from how it works to the hardware choices, security implications, and how it compares to other check-in methods.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>How Coworking Spaces Can Use Visitor Management to Improve Member Experience</title>
-				<link>http://localhost:39789/blog/visitor-management-for-coworking-spaces/</link>
-				<pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/visitor-management-for-coworking-spaces/</guid>
-				<description>&lt;p&gt;India&amp;rsquo;s coworking sector has grown faster than almost anyone predicted. From the early days of WeWork and Awfis to the current landscape that includes IndiQube, Smartworks, 91Springboard, and hundreds of independent operators in tier-2 cities, shared office spaces have moved from a niche option to a mainstream real estate choice for startups, enterprises, and freelancers alike.&lt;/p&gt;&#xA;&lt;p&gt;With that growth has come an operational challenge that coworking operators have not always solved well: how do you manage visitors to a space that, by definition, belongs to multiple companies at once?&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Keeping Children Safe: A School&#39;s Guide to Digital Visitor Management in India</title>
-				<link>http://localhost:39789/blog/visitor-management-schools-india-child-safety/</link>
-				<pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/visitor-management-schools-india-child-safety/</guid>
-				<description>&lt;p&gt;The school gate is the most important security checkpoint in any educational institution. In a country where school safety incidents - from unauthorised pickups to vendor-related accidents - make headlines with uncomfortable regularity, the process at that gate deserves more than a guard with a register.&lt;/p&gt;&#xA;&lt;p&gt;Most Indian schools manage their gates with a combination of familiar faces, informal recognition, and a handwritten visitor book. This works until it doesn&amp;rsquo;t. A parent who has separated from their spouse. A vendor who arrives at an unusual hour. A stranger claiming to be a relative. The guard at the gate is asked to make a security decision with almost no information and no backup.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>How to Create a Visitor Policy for Your Office (With a Free Template)</title>
-				<link>http://localhost:39789/blog/how-to-create-visitor-policy-template/</link>
-				<pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/how-to-create-visitor-policy-template/</guid>
-				<description>&lt;p&gt;Most Indian businesses manage visitors the same way they have always managed them - through a combination of informal instructions, receptionist judgment, and the assumption that nothing bad will happen. For years, this approach was mostly fine. A paper register and a friendly front desk handled the few visitors who came through.&lt;/p&gt;&#xA;&lt;p&gt;The situation has changed. Offices are larger and more open. Visitor volumes are higher. Compliance requirements - from ISO certifications to data protection regulations - increasingly require documented processes. And the consequences of a security incident, a privacy breach, or an audit failure have grown significantly.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Capturing NDAs at Check-In: How to Protect Your IP Every Time a Visitor Walks In</title>
-				<link>http://localhost:39789/blog/nda-visitor-checkin-protecting-ip/</link>
-				<pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/nda-visitor-checkin-protecting-ip/</guid>
-				<description>&lt;p&gt;Most companies have a vendor NDA process. They have a client confidentiality agreement. They have employment contracts with IP assignment clauses. What many of them do not have is any formal confidentiality protection in place at the moment a visitor walks through the door.&lt;/p&gt;&#xA;&lt;p&gt;That visitor might be a procurement consultant evaluating your technology. A potential investor touring your R&amp;amp;D floor. A journalist invited for a product briefing. A candidate arriving for a technical assessment. Or a vendor&amp;rsquo;s technical team being given access to your production environment for an integration discussion. In each case, the visitor will hear things, see things, and potentially carry information out of your office that your standard contracts do not cover.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Modern Reception Desk Software: 10 Features That Replace Three Registers and Two Spreadsheets</title>
-				<link>http://localhost:39789/blog/reception-desk-software-features-guide/</link>
-				<pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-				<guid>http://localhost:39789/blog/reception-desk-software-features-guide/</guid>
-				<description>&lt;p&gt;Walk into the reception area of a mid-size corporate office in Gurugram, Pune, or Bengaluru and you will often find some version of the same setup: a visitor register with handwritten entries, a separate courier register that no one cross-references with anything, a paper sheet for employees signing out for external meetings, and a spreadsheet on the receptionist&amp;rsquo;s desktop tracking meeting room bookings. On a busy day, managing all of this while also answering the phone, handling walk-ins, and notifying hosts of arrivals is genuinely chaotic.&lt;/p&gt;</description>
+				<title>Why We Started Ventry: Simplifying Visitor &amp; Attendance Management</title>
+				<link>http://localhost:42245/blog/why-we-started-ventry/</link>
+				<pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:42245/blog/why-we-started-ventry/</guid>
+				<description>&lt;h2 id=&#34;why-we-started-ventry-building-smarter-workplaces-through-digital-transformation&#34;&gt;Why We Started Ventry: Building Smarter Workplaces Through Digital Transformation&lt;/h2&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;Modern workplaces are evolving rapidly, yet many organizations still rely on outdated processes to manage visitors and employee attendance. Paper registers, manual attendance tracking, security gaps, and inefficient front-desk operations continue to create challenges for businesses of all sizes.&lt;/p&gt;&#xA;&lt;p&gt;These challenges inspired the creation of Ventry.&lt;/p&gt;&#xA;&lt;p&gt;Ventry was founded with a clear mission: to simplify workplace operations through intelligent, secure, and user-friendly technology that helps organizations manage visitors and employee attendance more efficiently.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

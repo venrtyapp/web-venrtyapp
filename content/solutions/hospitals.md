@@ -33,7 +33,7 @@ features:
     icon: "bi-exclamation-triangle"
 stats:
   - number: "80+"
-    label: "Hospitals Using Ventryx"
+    label: "Hospitals Using Ventry"
   - number: "NABH"
     label: "Audit Ready"
   - number: "AES-256"
@@ -41,12 +41,15 @@ stats:
   - number: "India"
     label: "Data Residency"
 faqs:
-  - question: "How does Ventryx help with NABH accreditation?"
-    answer: "NABH standards require documented visitor management policies and records. Ventryx provides timestamped digital visitor logs, visitor health screening records, and staff attendance data - all in formats exportable for NABH assessors. Enterprise customers receive a compliance report template."
+  - question: "How does Ventry help with NABH accreditation?"
+    answer: "NABH standards require documented visitor management policies and records. Ventry provides timestamped digital visitor logs, visitor health screening records, and staff attendance data - all in formats exportable for NABH assessors. Enterprise customers receive a compliance report template."
   - question: "Can we restrict visitors to specific wards only?"
     answer: "Yes. Each visitor is checked in against a specific patient and ward. The visitor badge prints the permitted ward and hours. Security staff can verify the badge on any floor. If integrated with access control, physical gate access can be restricted to the approved ward."
   - question: "How does infection control screening work at check-in?"
     answer: "The kiosk displays customisable screening questions (current symptoms, recent international travel, exposure history). If a visitor answers yes to any risk question, check-in is paused and they're directed to the infection control officer. All screening responses are stored in the visitor log."
-  - question: "Does Ventryx support multiple check-in points for large hospitals?"
+  - question: "Does Ventry support multiple check-in points for large hospitals?"
     answer: "Yes. Large hospitals often have a main gate, casualty entrance, OPD lobby, and staff entrance. Each can have its own kiosk with location-specific rules. All logs are unified in a single admin dashboard for the security or admin head."
+sitemap:
+  priority: 0.8
+  changefreq: weekly
 ---

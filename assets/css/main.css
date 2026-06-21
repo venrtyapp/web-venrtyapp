@@ -1,5 +1,5 @@
 /* ============================================================
-   VENTRYX — Main Stylesheet
+   VENTRY — Main Stylesheet
    Design system: Blue #2563EB · Navy #0F172A · Cyan #06B6D4
    Fonts: Poppins (headings) · Inter (body)
    ============================================================ */
@@ -1432,6 +1432,202 @@ body { padding-top: 68px; }
   margin-bottom: 6px;
 }
 
+/* --- FAQ Page — Sidebar Layout (main /faq page) --- */
+.vx-faq-layout {
+  display: grid;
+  grid-template-columns: 272px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.vx-faq-sidebar {
+  position: sticky;
+  top: 88px;
+}
+.vx-faq-cats {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.vx-faq-cat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--vx-border);
+  background: white;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--vx-transition);
+  width: 100%;
+}
+.vx-faq-cat:hover { background: var(--vx-primary-light); border-color: rgba(37,99,235,0.20); }
+.vx-faq-cat.active { background: var(--vx-primary); border-color: var(--vx-primary); }
+.vx-faq-cat-icon {
+  width: 36px; height: 36px;
+  border-radius: 8px;
+  background: var(--vx-primary-light);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--vx-primary);
+  font-size: 1rem;
+  flex-shrink: 0;
+  transition: var(--vx-transition);
+}
+.vx-faq-cat.active .vx-faq-cat-icon { background: rgba(255,255,255,0.18); color: white; }
+.vx-faq-cat-name {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--vx-dark);
+  transition: color 0.2s;
+}
+.vx-faq-cat.active .vx-faq-cat-name { color: white; }
+.vx-faq-cat-count {
+  font-size: 0.725rem;
+  font-weight: 700;
+  background: var(--vx-light);
+  color: var(--vx-text);
+  padding: 2px 8px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  transition: var(--vx-transition);
+}
+.vx-faq-cat.active .vx-faq-cat-count { background: rgba(255,255,255,0.22); color: white; }
+.vx-faq-cat-arrow { color: var(--vx-text); font-size: 0.7rem; transition: color 0.2s; }
+.vx-faq-cat.active .vx-faq-cat-arrow { color: rgba(255,255,255,0.65); }
+
+/* Sidebar contact card */
+.vx-faq-contact-card {
+  border: 1px solid var(--vx-border);
+  border-radius: 14px;
+  padding: 20px 16px;
+  background: white;
+  text-align: center;
+}
+.vx-faq-contact-card .fcc-icon {
+  width: 44px; height: 44px;
+  background: var(--vx-primary-light);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 12px;
+  color: var(--vx-primary);
+  font-size: 1.25rem;
+}
+.vx-faq-contact-card strong {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--vx-dark);
+  margin-bottom: 4px;
+}
+.vx-faq-contact-card p {
+  font-size: 0.8rem;
+  color: var(--vx-text);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+.vx-faq-contact-card a.fcc-btn {
+  display: inline-block;
+  background: var(--vx-primary);
+  color: white !important;
+  padding: 9px 22px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.vx-faq-contact-card a.fcc-btn:hover { background: var(--vx-primary-dark); }
+
+/* Right panels */
+.vx-faq-panel { display: none; }
+.vx-faq-panel.active { display: block; }
+
+/* Panel heading */
+.vx-faq2-heading {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--vx-dark);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.vx-faq2-heading i { color: var(--vx-primary); }
+.vx-faq2-subtext {
+  font-size: 0.875rem;
+  color: var(--vx-text);
+  margin-bottom: 24px;
+}
+
+/* Accordion items — new sidebar layout */
+.vx-faq2-item { border-bottom: 1px solid var(--vx-border); }
+.vx-faq2-item:first-of-type { border-top: 1px solid var(--vx-border); }
+.vx-faq2-q {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 20px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+.vx-faq2-q:hover .vx-faq2-text { color: var(--vx-primary); }
+.vx-faq2-num {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--vx-primary);
+  opacity: 0.22;
+  flex-shrink: 0;
+  width: 40px;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  transition: opacity 0.2s;
+}
+.vx-faq2-item.open .vx-faq2-num { opacity: 1; }
+.vx-faq2-text {
+  flex: 1;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--vx-dark);
+  line-height: 1.45;
+  transition: color 0.2s;
+}
+.vx-faq2-icon {
+  color: var(--vx-text);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: transform 0.25s, color 0.2s;
+  background: var(--vx-light);
+  border-radius: 50%;
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+}
+.vx-faq2-item.open .vx-faq2-icon { transform: rotate(180deg); background: var(--vx-primary); color: white; }
+.vx-faq2-a {
+  display: none;
+  padding: 0 16px 20px 56px;
+}
+.vx-faq2-item.open .vx-faq2-a { display: block; }
+.vx-faq2-a p { font-size: 0.9375rem; color: var(--vx-text); line-height: 1.75; margin-bottom: 10px; }
+.vx-faq2-a ul { padding-left: 18px; margin: 8px 0; }
+.vx-faq2-a ul li { font-size: 0.9375rem; color: var(--vx-text); line-height: 1.7; margin-bottom: 6px; }
+.vx-faq2-a strong { color: var(--vx-dark); }
+
+@media (max-width: 991px) {
+  .vx-faq-layout { grid-template-columns: 1fr; gap: 24px; }
+  .vx-faq-sidebar { position: static; }
+  .vx-faq-cats { flex-direction: row; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+  .vx-faq-cat { flex-shrink: 0; }
+  .vx-faq-cat-icon { display: none; }
+  .vx-faq-contact-card { display: none; }
+  .vx-faq2-num { font-size: 1.125rem; width: 34px; }
+  .vx-faq2-a { padding-left: 50px; }
+}
+
 /* --- CTA Section --- */
 .vx-cta-dark {
   background: var(--vx-gradient-dark);
@@ -2105,6 +2301,42 @@ body { padding-top: 68px; }
 }
 
 /* --- Scroll-to-top --- */
+/* --- WhatsApp Floating Button --- */
+.vx-whatsapp-btn {
+  position: fixed;
+  bottom: 84px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 50px;
+  padding: 10px 16px 10px 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  z-index: 998;
+  transition: all 0.2s ease;
+  max-width: 44px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.vx-whatsapp-btn i { font-size: 1.25rem; flex-shrink: 0; }
+.vx-whatsapp-label { opacity: 0; max-width: 0; transition: all 0.3s ease; }
+.vx-whatsapp-btn:hover {
+  max-width: 180px;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+  transform: translateY(-2px);
+}
+.vx-whatsapp-btn:hover .vx-whatsapp-label { opacity: 1; max-width: 120px; }
+@media (max-width: 640px) {
+  .vx-whatsapp-btn { bottom: 80px; right: 16px; padding: 10px 12px; }
+  .vx-whatsapp-label { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .vx-whatsapp-btn { transition: none; } }
+
 .vx-scroll-top {
   position: fixed;
   bottom: 28px;

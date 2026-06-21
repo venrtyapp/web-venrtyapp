@@ -1,14 +1,14 @@
 ---
 title: "Visitor & Member Management for Coworking Spaces"
-description: "Run your coworking space smarter with Ventryx. Member check-in, hot-desk management, guest WiFi provisioning, meeting room booking, and multi-tenant visitor management."
+description: "Run your coworking space smarter with Ventry. Member check-in, hot-desk management, guest WiFi provisioning, meeting room booking, and multi-tenant visitor management."
 industry: "Coworking"
 icon: "bi-laptop"
 color: "#7C3AED"
 heroTitle: "The All-in-One Platform for Modern Coworking Spaces"
-heroSubtitle: "From hot-desk check-ins to multi-tenant visitor management, Ventryx gives coworking operators and their members a seamless, professional experience from the moment they walk in."
+heroSubtitle: "From hot-desk check-ins to multi-tenant visitor management, Ventry gives coworking operators and their members a seamless, professional experience from the moment they walk in."
 features:
   - title: "Member Check-In & Out"
-    desc: "Members tap in with the Ventryx app or scan a QR code at the reception. See who's in the space right now - floor, desk, and duration - in real time."
+    desc: "Members tap in with the Ventry app or scan a QR code at the reception. See who's in the space right now - floor, desk, and duration - in real time."
     icon: "bi-qr-code-scan"
   - title: "Hot-Desk & Seat Management"
     desc: "Members book a hot-desk slot through the app. You see desk occupancy live - perfect for optimising capacity and enforcing fair usage policies."
@@ -42,11 +42,14 @@ stats:
     label: "Occupancy View"
 faqs:
   - question: "Can members invite guests themselves without involving the front desk?"
-    answer: "Yes. Members send a digital invite to their guest from the Ventryx app. The guest receives a QR code by email or WhatsApp. On arrival, they scan at the kiosk - no front desk involvement needed. The member gets a notification when the guest checks in."
+    answer: "Yes. Members send a digital invite to their guest from the Ventry app. The guest receives a QR code by email or WhatsApp. On arrival, they scan at the kiosk - no front desk involvement needed. The member gets a notification when the guest checks in."
   - question: "How does multi-tenant visitor privacy work?"
     answer: "Each tenant (company) in your space is configured as a separate organisation. When a visitor checks in and selects their host, they only see the employee list of the company they're visiting - not all companies in the space. Visitor logs are also siloed per tenant."
   - question: "Can we charge members for visitor entries or meeting room usage?"
-    answer: "Ventryx tracks all usage data - visitor count per member, meeting room hours, desk bookings. You can export this data to your billing system or use it as the basis for add-on charges. Native billing integration with Zoho and Razorpay is available."
-  - question: "Does Ventryx work for coworking spaces with multiple floors or buildings?"
+    answer: "Ventry tracks all usage data - visitor count per member, meeting room hours, desk bookings. You can export this data to your billing system or use it as the basis for add-on charges. Native billing integration with Zoho and Razorpay is available."
+  - question: "Does Ventry work for coworking spaces with multiple floors or buildings?"
     answer: "Yes. Multi-floor and multi-building coworking campuses are fully supported. Each floor or building can have its own kiosk with its own desk map. The central admin sees occupancy and visitor logs across the entire campus in one dashboard."
+sitemap:
+  priority: 0.8
+  changefreq: weekly
 ---

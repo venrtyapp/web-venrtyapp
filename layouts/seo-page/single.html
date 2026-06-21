@@ -68,12 +68,13 @@
           <h2 style="font-size:1.75rem;margin-bottom:24px;">Frequently Asked Questions</h2>
           <div class="vx-faq-section">
             {{ range $i, $faq := .Params.faqs }}
-            <div class="vx-faq-item {{ if eq $i 0 }}open{{ end }}">
-              <div class="vx-faq-question">
-                <h4>{{ $faq.question }}</h4>
-                <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
-              </div>
-              <div class="vx-faq-answer"><p>{{ $faq.answer }}</p></div>
+            <div class="vx-faq2-item{{ if eq $i 0 }} open{{ end }}">
+              <button class="vx-faq2-q" aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+                <span class="vx-faq2-num">{{ printf "%02d" (add $i 1) }}</span>
+                <span class="vx-faq2-text">{{ $faq.question }}</span>
+                <i class="bi bi-chevron-down vx-faq2-icon"></i>
+              </button>
+              <div class="vx-faq2-a"{{ if ne $i 0 }} style="display:none;"{{ end }}><p>{{ $faq.answer }}</p></div>
             </div>
             {{ end }}
           </div>
@@ -86,7 +87,7 @@
         <!-- CTA Card -->
         <div style="background:var(--vx-gradient-dark);border-radius:20px;padding:32px;margin-bottom:24px;position:sticky;top:88px;" data-aos="fade-left">
           <h3 style="color:white;font-size:1.25rem;margin-bottom:12px;">Ready to Get Started?</h3>
-          <p style="color:rgba(255,255,255,0.65);font-size:0.9rem;margin-bottom:24px;">Book a free demo and see exactly how Ventryx solves your specific challenges.</p>
+          <p style="color:rgba(255,255,255,0.65);font-size:0.9rem;margin-bottom:24px;">Book a free demo and see exactly how Ventry solves your specific challenges.</p>
           <a href="/book-demo" class="btn-vx-white w-100 justify-content-center mb-3">
             <i class="bi bi-calendar-check"></i> Book Free Demo
           </a>
@@ -130,7 +131,7 @@
 <section class="vx-cta-dark">
   <div class="container" data-aos="fade-up">
     <h2>{{ .Params.ctaHeading | default "Start Your Free Trial Today" }}</h2>
-    <p>{{ .Params.ctaSubheading | default "Join 500+ Indian businesses already using Ventryx. 14-day free trial, no credit card required." }}</p>
+    <p>{{ .Params.ctaSubheading | default "Join 500+ Indian businesses already using Ventry. 14-day free trial, no credit card required." }}</p>
     <div class="vx-cta-actions">
       <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Demo</a>
       <a href="/pricing" class="btn-vx-outline" style="color:#CBD5E1!important;border-color:rgba(255,255,255,0.20);">See Pricing</a>

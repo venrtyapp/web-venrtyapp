@@ -97,9 +97,9 @@
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6" data-aos="fade-right">
-        <div class="section-label"><i class="bi bi-award"></i> Why Ventryx</div>
+        <div class="section-label"><i class="bi bi-award"></i> Why Ventry</div>
         <h2 class="section-heading">Built for Indian Businesses,<br>Priced for Indian Budgets</h2>
-        <p style="color:var(--vx-text);margin-bottom:24px;line-height:1.75;">Ventryx is designed from the ground up for how Indian organisations work - Hindi and English interface, India data residency, UPI and NEFT payments, GST invoices, and support in your timezone.</p>
+        <p style="color:var(--vx-text);margin-bottom:24px;line-height:1.75;">Ventry is designed from the ground up for how Indian organisations work - Hindi and English interface, India data residency, UPI and NEFT payments, GST invoices, and support in your timezone.</p>
         <div style="display:flex;flex-direction:column;gap:12px;">
           <div style="display:flex;align-items:flex-start;gap:12px;">
             <div style="width:28px;height:28px;background:var(--vx-primary-light);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;"><i class="bi bi-check2" style="color:var(--vx-primary);font-size:0.875rem;"></i></div>
@@ -145,20 +145,19 @@
           <h2 class="section-heading">Common Questions from <br>{{ $.Params.industry }}</h2>
         </div>
         <div class="vx-faq-section" data-aos="fade-up" data-aos-delay="100">
-          <div class="vx-faq-category">
-            {{ range $i, $faq := . }}
-            <div class="vx-faq-item{{ if eq $i 0 }} open{{ end }}">
-              <div class="vx-faq-question">
-                <h4>{{ $faq.question }}</h4>
-                <span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span>
-              </div>
-              <div class="vx-faq-answer"><p>{{ $faq.answer }}</p></div>
-            </div>
-            {{ end }}
+          {{ range $i, $faq := . }}
+          <div class="vx-faq2-item{{ if eq $i 0 }} open{{ end }}">
+            <button class="vx-faq2-q" aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+              <span class="vx-faq2-num">{{ printf "%02d" (add $i 1) }}</span>
+              <span class="vx-faq2-text">{{ $faq.question }}</span>
+              <i class="bi bi-chevron-down vx-faq2-icon"></i>
+            </button>
+            <div class="vx-faq2-a"{{ if ne $i 0 }} style="display:none;"{{ end }}><p>{{ $faq.answer }}</p></div>
           </div>
+          {{ end }}
         </div>
         <div style="text-align:center;margin-top:32px;" data-aos="fade-up">
-          <p style="color:var(--vx-text);margin-bottom:16px;">Have more questions about Ventryx for {{ $.Params.industry }}?</p>
+          <p style="color:var(--vx-text);margin-bottom:16px;">Have more questions about Ventry for {{ $.Params.industry }}?</p>
           <a href="/contact/" class="btn-vx-outline"><i class="bi bi-chat-dots"></i> Talk to Our Team</a>
         </div>
       </div>
@@ -172,7 +171,7 @@
   <div class="container text-center">
     <div data-aos="fade-up">
       <h2>Ready to Transform Your {{ .Params.industry }}?</h2>
-      <p>Join 1,000+ Indian organisations that trust Ventryx for visitor and attendance management. Start your 14-day free trial today - no credit card required.</p>
+      <p>Join 1,000+ Indian organisations that trust Ventry for visitor and attendance management. Start your 14-day free trial today - no credit card required.</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:32px;">
         <a href="/book-demo/" class="btn-vx-primary"><i class="bi bi-calendar-check"></i> Book a Free Demo</a>
         <a href="/contact/" class="btn-vx-white"><i class="bi bi-telephone"></i> Talk to Sales</a>

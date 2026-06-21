@@ -1,6 +1,6 @@
 ---
 title: "Visitor Management for Schools & Educational Institutions"
-description: "Protect students with Ventryx. Digital visitor check-in, parent entry management, staff attendance, emergency headcount, and child safety screening for schools in India."
+description: "Protect students with Ventry. Digital visitor check-in, parent entry management, staff attendance, emergency headcount, and child safety screening for schools in India."
 industry: "Schools"
 icon: "bi-mortarboard"
 color: "#16A34A"
@@ -43,10 +43,13 @@ stats:
 faqs:
   - question: "Can parents be notified when their child is picked up?"
     answer: "Yes. When a guardian collects a student and checks out, an SMS/WhatsApp notification is sent to the registered parent number automatically. This gives parents real-time confirmation even when they aren't the ones picking up."
-  - question: "Does Ventryx work for boarding schools with 24-hour monitoring?"
-    answer: "Yes. Ventryx supports round-the-clock monitoring with shift-based access for night security staff. All entries and exits are logged regardless of the time, and alerts can be sent to designated wardens or principals."
+  - question: "Does Ventry work for boarding schools with 24-hour monitoring?"
+    answer: "Yes. Ventry supports round-the-clock monitoring with shift-based access for night security staff. All entries and exits are logged regardless of the time, and alerts can be sent to designated wardens or principals."
   - question: "How does the system help during Parent-Teacher Meeting days?"
     answer: "The pre-registration feature is ideal for PTMs. The school sends a digital invite to each parent with a unique QR code. On the day, parents scan and check in in under 5 seconds - no queues, no paper slips."
   - question: "Is student data protected under India's data laws?"
-    answer: "Yes. All data including student names, parent contacts, and photos are stored in India (Mumbai). Ventryx is aligned with India's PDPB and DPDP Act. Schools receive a data processing agreement upon request."
+    answer: "Yes. All data including student names, parent contacts, and photos are stored in India (Mumbai). Ventry is aligned with India's PDPB and DPDP Act. Schools receive a data processing agreement upon request."
+sitemap:
+  priority: 0.8
+  changefreq: weekly
 ---

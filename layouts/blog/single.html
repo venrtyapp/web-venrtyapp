@@ -8,16 +8,16 @@
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
-    "@type": "Organization",
-    "name": "Ventryx",
+    "@type": "Person",
+    "name": "{{ with .Params.author }}{{ . }}{{ else }}Ventry Team{{ end }}",
     "url": "{{ .Site.BaseURL }}"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Ventryx",
+    "name": "Ventry",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ .Site.BaseURL }}images/ventryx-logo.svg"
+      "url": "{{ .Site.BaseURL }}images/ventry-logo.svg"
     }
   },
   "mainEntityOfPage": {
@@ -74,6 +74,16 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
 
+        <!-- Table of Contents -->
+        {{ if .TableOfContents }}
+        <div class="vx-toc" style="background:var(--vx-light);border:1px solid var(--vx-border);border-radius:12px;padding:20px 24px;margin-bottom:32px;">
+          <div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--vx-secondary);margin-bottom:10px;display:flex;align-items:center;gap:6px;">
+            <i class="bi bi-list-ul"></i> Table of Contents
+          </div>
+          {{ .TableOfContents }}
+        </div>
+        {{ end }}
+
         <div class="vx-seo-content" style="font-size:1rem;line-height:1.8;">
           {{ .Content }}
         </div>
@@ -91,10 +101,10 @@
 
         <!-- Author Card -->
         <div style="margin-top:36px;background:var(--vx-light);border-radius:16px;padding:24px;display:flex;gap:16px;align-items:flex-start;">
-          <div style="width:52px;height:52px;background:var(--vx-gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.25rem;flex-shrink:0;"><i class="bi bi-building-check"></i></div>
+          <div style="width:52px;height:52px;background:var(--vx-gradient-primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:1.25rem;flex-shrink:0;"><i class="bi bi-person-fill"></i></div>
           <div>
-            <div style="font-size:0.9375rem;font-weight:700;color:var(--vx-dark);margin-bottom:4px;">Ventryx Team</div>
-            <p style="font-size:0.875rem;color:var(--vx-text);margin:0;">We build and share insights on visitor management, attendance tracking, and smart workplace operations for Indian businesses.</p>
+            <div style="font-size:0.9375rem;font-weight:700;color:var(--vx-dark);margin-bottom:4px;">{{ with .Params.author }}{{ . }}{{ else }}Ventry Team{{ end }}</div>
+            <p style="font-size:0.875rem;color:var(--vx-text);margin:0;">{{ with .Params.authorBio }}{{ . }}{{ else }}Workplace technology writer covering visitor management, attendance tracking, and HR compliance for Indian businesses.{{ end }}</p>
           </div>
         </div>
 
@@ -111,6 +121,33 @@
   </div>
 </section>
 
+<!-- Related Articles -->
+{{ $related := where (where .Site.RegularPages "Section" "blog") ".Permalink" "!=" .Permalink | first 3 }}
+{{ if $related }}
+<section class="vx-section vx-section-alt">
+  <div class="container">
+    <div class="text-center" style="margin-bottom:32px;">
+      <span class="section-label"><i class="bi bi-journal-text"></i> Keep Reading</span>
+      <h2 class="section-heading" style="font-size:1.5rem;">Related Articles</h2>
+    </div>
+    <div class="row g-4">
+      {{ range $related }}
+      <div class="col-md-4">
+        <a href="{{ .Permalink }}" style="text-decoration:none;display:block;height:100%;">
+          <div style="background:white;border:1px solid var(--vx-border);border-radius:16px;padding:24px;height:100%;transition:var(--vx-transition);" onmouseover="this.style.boxShadow='var(--vx-shadow-md)';this.style.transform='translateY(-3px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+            {{ with .Params.category }}<span style="font-size:0.6875rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--vx-primary);">{{ . }}</span>{{ end }}
+            <h4 style="font-size:1rem;font-weight:700;color:var(--vx-dark);margin:8px 0 10px;line-height:1.4;">{{ .Title | truncate 70 }}</h4>
+            <p style="font-size:0.875rem;color:var(--vx-text);margin:0 0 14px;line-height:1.6;">{{ .Description | truncate 100 }}</p>
+            <div style="font-size:0.8125rem;color:var(--vx-primary);font-weight:600;">Read article <i class="bi bi-arrow-right"></i></div>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
 <!-- FAQ Section - only renders when FAQs are defined in front matter -->
 {{ with .Params.faqs }}
 <section class="vx-section vx-section-alt">
@@ -123,12 +160,13 @@
         </div>
         <div class="vx-faq-list">
           {{ range $i, $faq := . }}
-          <div class="vx-faq-item{{ if eq $i 0 }} open{{ end }}">
-            <button class="vx-faq-question" aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
-              <span>{{ $faq.question }}</span>
-              <i class="bi bi-chevron-down vx-faq-icon"></i>
+          <div class="vx-faq2-item{{ if eq $i 0 }} open{{ end }}">
+            <button class="vx-faq2-q" aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}">
+              <span class="vx-faq2-num">{{ printf "%02d" (add $i 1) }}</span>
+              <span class="vx-faq2-text">{{ $faq.question }}</span>
+              <i class="bi bi-chevron-down vx-faq2-icon"></i>
             </button>
-            <div class="vx-faq-answer" {{ if ne $i 0 }}style="display:none;"{{ end }}>
+            <div class="vx-faq2-a" {{ if ne $i 0 }}style="display:none;"{{ end }}>
               <p>{{ $faq.answer }}</p>
             </div>
           </div>
@@ -143,7 +181,7 @@
 <!-- Related posts / CTA -->
 <section class="vx-cta-dark">
   <div class="container" data-aos="fade-up">
-    <h2>See Ventryx in Action</h2>
+    <h2>See Ventry in Action</h2>
     <p>Ready to replace paper registers with a smarter system? Book a free 30-minute demo with our team.</p>
     <div class="vx-cta-actions">
       <a href="/book-demo" class="btn-vx-white"><i class="bi bi-calendar-check"></i> Book Free Demo</a>

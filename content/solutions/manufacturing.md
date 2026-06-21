@@ -1,6 +1,6 @@
 ---
 title: "Visitor & Attendance Management for Manufacturing Plants"
-description: "Secure your plant with Ventryx. Contractor management, shift-based attendance, safety briefing acknowledgements, labour law compliance, and plant security for manufacturing in India."
+description: "Secure your plant with Ventry. Contractor management, shift-based attendance, safety briefing acknowledgements, labour law compliance, and plant security for manufacturing in India."
 industry: "Manufacturing"
 icon: "bi-gear-wide-connected"
 color: "#D97706"
@@ -17,7 +17,7 @@ features:
     desc: "Manage morning, afternoon, and night shifts with automatic shift assignment. Late arrivals, early exits, and no-shows are flagged to the shift supervisor in real time."
     icon: "bi-clock-history"
   - title: "Biometric Integration"
-    desc: "Integrate with existing ZKTeco, eSSL, or Matrix biometric devices on the shop floor. Attendance data syncs automatically into Ventryx for centralised reporting."
+    desc: "Integrate with existing ZKTeco, eSSL, or Matrix biometric devices on the shop floor. Attendance data syncs automatically into Ventry for centralised reporting."
     icon: "bi-fingerprint"
   - title: "Labour Law Compliance Reports"
     desc: "Auto-generate Form 25 (muster roll), overtime statements, and monthly wage registers required under the Factories Act and Shops & Establishments Act."
@@ -41,12 +41,15 @@ stats:
   - number: "Factories Act"
     label: "Compliant Reports"
 faqs:
-  - question: "How does Ventryx handle daily wage and contract labour attendance?"
-    answer: "Ventryx supports separate attendance tracking for permanent employees, contract workers, and daily wage labour. Each category can have different rules for overtime, grace periods, and leave. Monthly reports are generated in the format required by contractors and the Factories Act."
-  - question: "Can Ventryx manage attendance for workers without smartphones?"
-    answer: "Yes. Workers without smartphones use the biometric kiosk or RFID card reader at the gate. Ventryx integrates with hardware from ZKTeco, eSSL, Matrix, and others - so your existing devices can be retained."
+  - question: "How does Ventry handle daily wage and contract labour attendance?"
+    answer: "Ventry supports separate attendance tracking for permanent employees, contract workers, and daily wage labour. Each category can have different rules for overtime, grace periods, and leave. Monthly reports are generated in the format required by contractors and the Factories Act."
+  - question: "Can Ventry manage attendance for workers without smartphones?"
+    answer: "Yes. Workers without smartphones use the biometric kiosk or RFID card reader at the gate. Ventry integrates with hardware from ZKTeco, eSSL, Matrix, and others - so your existing devices can be retained."
   - question: "How do safety briefing acknowledgements work for contractors?"
     answer: "When a contractor checks in for the first time (or at configurable intervals like monthly), the kiosk displays your safety briefing video or slides. The contractor must tap 'I acknowledge' before check-in is completed. The timestamp and contractor ID are stored - this constitutes a legal digital record."
-  - question: "Does Ventryx support multiple plant locations under one account?"
+  - question: "Does Ventry support multiple plant locations under one account?"
     answer: "Yes. Enterprise customers manage multiple plant locations from a single dashboard. Each plant has its own admin, rules, and reports, but the top-level account gets a consolidated view across all plants."
+sitemap:
+  priority: 0.8
+  changefreq: weekly
 ---

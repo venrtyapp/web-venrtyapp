@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Categories on Ventryx – Visitor &amp; Attendance Management Software India</title>
-		<link>http://localhost:39789/categories/</link>
+		<link>http://localhost:42245/categories/</link>
 		<description>Recent content in Categories on Ventryx – Visitor &amp; Attendance Management Software India</description>
 		<generator>Hugo</generator>
 		<language>en-IN</language>
@@ -10,6 +10,6 @@
 		
 		
 		
-			<atom:link href="http://localhost:39789/categories/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:42245/categories/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

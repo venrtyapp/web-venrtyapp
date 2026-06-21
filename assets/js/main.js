@@ -1,5 +1,5 @@
 /* ============================================================
-   VENTRYX — Main JavaScript
+   VENTRY — Main JavaScript
    ============================================================ */
 
 (function () {
@@ -22,6 +22,8 @@
     initNavbar();
     initMobileMenu();
     initFAQ();
+    initFAQ2();
+    initFAQTabs();
     initIndustryTabs();
     initCounters();
     initScrollTop();
@@ -98,6 +100,59 @@
         // Toggle clicked
         if (!isOpen) {
           item.classList.add('open');
+        }
+      });
+    });
+  }
+
+  // --- FAQ Sidebar Category Tabs (all pages with sidebar) ---
+  function initFAQTabs() {
+    document.querySelectorAll('.vx-faq-cat').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var targetId = btn.getAttribute('aria-controls');
+        var layout = btn.closest('.vx-faq-layout');
+        if (!layout || !targetId) return;
+
+        layout.querySelectorAll('.vx-faq-cat').forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        layout.querySelectorAll('.vx-faq-panel').forEach(function (p) {
+          if (p.id === targetId) {
+            p.style.display = 'block';
+            p.classList.add('active');
+          } else {
+            p.style.display = 'none';
+            p.classList.remove('active');
+          }
+        });
+      });
+    });
+  }
+
+  // --- FAQ2 Accordion (numbered sidebar design) ---
+  function initFAQ2() {
+    document.querySelectorAll('.vx-faq2-q').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var item = btn.closest('.vx-faq2-item');
+        var answer = item.querySelector('.vx-faq2-a');
+        var isOpen = item.classList.contains('open');
+        var container = item.parentElement;
+
+        container.querySelectorAll('.vx-faq2-item').forEach(function (el) {
+          el.classList.remove('open');
+          el.querySelector('.vx-faq2-q').setAttribute('aria-expanded', 'false');
+          var a = el.querySelector('.vx-faq2-a');
+          if (a) a.style.display = 'none';
+        });
+
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          answer.style.display = 'block';
         }
       });
     });

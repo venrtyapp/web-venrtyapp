@@ -1,6 +1,6 @@
 ---
 title: "Visitor Management for Corporate Offices"
-description: "Digitise your front desk with Ventryx. Enterprise visitor management, meeting room check-ins, contractor tracking, and security compliance for corporate offices in India."
+description: "Digitise your front desk with Ventry. Enterprise visitor management, meeting room check-ins, contractor tracking, and security compliance for corporate offices in India."
 industry: "Corporate Offices"
 icon: "bi-building"
 color: "#2563EB"
@@ -41,12 +41,15 @@ stats:
   - number: "0"
     label: "Paper Registers"
 faqs:
-  - question: "Can Ventryx integrate with our existing access control system?"
-    answer: "Yes. Ventryx integrates with popular access control systems including HID, Honeywell, and Matrix. When a visitor checks in, their QR badge can trigger door unlocking on approved floors - no manual intervention needed."
-  - question: "How does Ventryx handle large offices with multiple reception desks?"
+  - question: "Can Ventry integrate with our existing access control system?"
+    answer: "Yes. Ventry integrates with popular access control systems including HID, Honeywell, and Matrix. When a visitor checks in, their QR badge can trigger door unlocking on approved floors - no manual intervention needed."
+  - question: "How does Ventry handle large offices with multiple reception desks?"
     answer: "Each reception desk can have its own kiosk with a location-specific configuration. All logs are centralised in a single dashboard. You can set different check-in flows, notification rules, and badge designs for each desk."
   - question: "Is there a way to restrict which floors or areas a visitor can access?"
     answer: "Yes. During check-in, you can assign floor/area access permissions. These can be printed on the visitor badge and, if integrated with access control, can be enforced at the gate itself."
   - question: "How long is visitor data retained?"
     answer: "By default, visitor data is retained for 12 months. Enterprise customers can configure retention periods from 3 months up to 5 years to meet their internal compliance policies."
+sitemap:
+  priority: 0.8
+  changefreq: weekly
 ---

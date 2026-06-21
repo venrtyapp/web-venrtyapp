@@ -6,10 +6,10 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "How much does Ventryx cost?",
+      "name": "How much does Ventry cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ventryx offers three plans: Starter at ₹999/month (up to 25 users), Professional at ₹2,999/month (unlimited users), and Enterprise with custom pricing. All plans include a 14-day free trial."
+        "text": "Ventry offers three plans: Starter at ₹999/month (up to 25 users), Professional at ₹2,999/month (unlimited users), and Enterprise with custom pricing. All plans include a 14-day free trial."
       }
     },
     {
@@ -27,13 +27,13 @@
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Ventryx Visitor & Attendance Management Software",
+  "name": "Ventry Visitor & Attendance Management Software",
   "description": "Cloud-based Visitor Management System and Attendance Management Software for Indian businesses. Automate check-ins, track attendance, and ensure compliance.",
   "brand": {
     "@type": "Brand",
-    "name": "Ventryx"
+    "name": "Ventry"
   },
-  "url": "https://ventryx.in/pricing",
+  "url": "{{ .Permalink }}",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
@@ -50,7 +50,7 @@
       "priceCurrency": "INR",
       "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
-      "url": "https://ventryx.in/pricing"
+      "url": "{{ .Permalink }}"
     },
     {
       "@type": "Offer",
@@ -60,7 +60,7 @@
       "priceCurrency": "INR",
       "priceValidUntil": "2027-12-31",
       "availability": "https://schema.org/InStock",
-      "url": "https://ventryx.in/pricing"
+      "url": "{{ .Permalink }}"
     },
     {
       "@type": "Offer",
@@ -69,7 +69,7 @@
       "price": "0",
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
-      "url": "https://ventryx.in/pricing"
+      "url": "{{ .Permalink }}"
     }
   ]
 }
@@ -203,7 +203,7 @@
     <div style="text-align:center;margin-top:48px;padding:36px;background:var(--vx-light);border-radius:20px;max-width:680px;margin-left:auto;margin-right:auto;" data-aos="fade-up">
       <div style="font-size:2.5rem;margin-bottom:12px;">🛡️</div>
       <h3 style="font-size:1.25rem;margin-bottom:10px;">14-Day Money-Back Guarantee</h3>
-      <p style="font-size:0.9375rem;max-width:480px;margin:0 auto;">Try Ventryx risk-free. If you're not completely satisfied within 14 days of your paid subscription, we'll refund 100% - no questions asked.</p>
+      <p style="font-size:0.9375rem;max-width:480px;margin:0 auto;">Try Ventry risk-free. If you're not completely satisfied within 14 days of your paid subscription, we'll refund 100% - no questions asked.</p>
     </div>
 
   </div>
@@ -262,21 +262,45 @@
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="vx-faq-section" data-aos="fade-up">
-          <div class="vx-faq-item open">
-            <div class="vx-faq-question"><h4>Is the pricing in Indian Rupees (INR)?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
-            <div class="vx-faq-answer"><p>Yes. All Ventryx plans are priced in INR. Payments are accepted via UPI, NEFT, credit/debit cards, and we raise GST invoices for all subscriptions.</p></div>
+          <div class="vx-faq2-item open">
+            <button class="vx-faq2-q" aria-expanded="true">
+              <span class="vx-faq2-num">01</span>
+              <span class="vx-faq2-text">Is the pricing in Indian Rupees (INR)?</span>
+              <i class="bi bi-chevron-down vx-faq2-icon"></i>
+            </button>
+            <div class="vx-faq2-a">
+              <p>Yes. All Ventry plans are priced in INR. Payments are accepted via UPI, NEFT, credit/debit cards, and we raise GST invoices for all subscriptions.</p>
+            </div>
           </div>
-          <div class="vx-faq-item">
-            <div class="vx-faq-question"><h4>Can I switch plans after I start?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
-            <div class="vx-faq-answer"><p>Yes. You can upgrade from Starter to Professional at any time - the price difference is prorated for the remaining billing period. Downgrades take effect at the next billing cycle.</p></div>
+          <div class="vx-faq2-item">
+            <button class="vx-faq2-q" aria-expanded="false">
+              <span class="vx-faq2-num">02</span>
+              <span class="vx-faq2-text">Can I switch plans after I start?</span>
+              <i class="bi bi-chevron-down vx-faq2-icon"></i>
+            </button>
+            <div class="vx-faq2-a" style="display:none;">
+              <p>Yes. You can upgrade from Starter to Professional at any time - the price difference is prorated for the remaining billing period. Downgrades take effect at the next billing cycle.</p>
+            </div>
           </div>
-          <div class="vx-faq-item">
-            <div class="vx-faq-question"><h4>Do I get a GST invoice?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
-            <div class="vx-faq-answer"><p>Yes. We issue a proper GST invoice for every payment. You can add your company GSTIN during checkout for input tax credit.</p></div>
+          <div class="vx-faq2-item">
+            <button class="vx-faq2-q" aria-expanded="false">
+              <span class="vx-faq2-num">03</span>
+              <span class="vx-faq2-text">Do I get a GST invoice?</span>
+              <i class="bi bi-chevron-down vx-faq2-icon"></i>
+            </button>
+            <div class="vx-faq2-a" style="display:none;">
+              <p>Yes. We issue a proper GST invoice for every payment. You can add your company GSTIN during checkout for input tax credit.</p>
+            </div>
           </div>
-          <div class="vx-faq-item">
-            <div class="vx-faq-question"><h4>What happens after my free trial ends?</h4><span class="vx-faq-toggle"><i class="bi bi-plus-lg"></i></span></div>
-            <div class="vx-faq-answer"><p>After 14 days, your account moves to a read-only mode - you can still view your data but cannot add new entries. No charges are applied automatically. You choose a plan and pay only if you want to continue.</p></div>
+          <div class="vx-faq2-item">
+            <button class="vx-faq2-q" aria-expanded="false">
+              <span class="vx-faq2-num">04</span>
+              <span class="vx-faq2-text">What happens after my free trial ends?</span>
+              <i class="bi bi-chevron-down vx-faq2-icon"></i>
+            </button>
+            <div class="vx-faq2-a" style="display:none;">
+              <p>After 14 days, your account moves to a read-only mode - you can still view your data but cannot add new entries. No charges are applied automatically. You choose a plan and pay only if you want to continue.</p>
+            </div>
           </div>
         </div>
       </div>

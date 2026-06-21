@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang | default "en" }}" class="no-js">
+<html lang="{{ .Site.Language.Locale | default "en-IN" }}" class="no-js">
 <head>
   {{ partial "head.html" . }}
 </head>
@@ -21,6 +21,18 @@
   <button class="vx-scroll-top" aria-label="Scroll to top">
     <i class="bi bi-arrow-up"></i>
   </button>
+
+  <!-- WhatsApp Chat Button -->
+  {{ $waNum := replaceRE "[^0-9]" "" .Site.Params.phone }}
+  <a href="https://wa.me/{{ $waNum }}?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Ventry."
+     class="vx-whatsapp-btn"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp"
+     title="Chat with Ventry on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    <span class="vx-whatsapp-label">Chat with us</span>
+  </a>
 
   <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
