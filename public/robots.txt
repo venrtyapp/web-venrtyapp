@@ -21,4 +21,4 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 
-Sitemap: http://localhost:42245/sitemap.xml
+Sitemap: https://ventryx.in/sitemap.xml
